@@ -7,19 +7,21 @@
                 "rating": 5,
                 "comment": "Runs great, 40-60FPS in game. No major issues noticed.<br>Source: <a href=\"https://github.com/evelyneee\" target=\"_blank\">@evelyneee</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "MacBook Air 2022 (M2)",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             },
             {
                 "rating": 4.5,
                 "comment": "Seems to run okay, at around 20-25 FPS in-game. Only tested the first 5 minutes of the game but it seems very promising.<br>Source: <a href=\"https://github.com/emiyl\" target=\"_blank\">@emiyl</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "MacBook Air 2020 (M1, 7-GPU, 8GB)",
-                "software": "macOS 13.0 beta 8 (22A5352e)"
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "vulkan"
             }
         ]
     },
@@ -31,10 +33,11 @@
                 "rating": 2,
                 "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             }
         ]
     },
@@ -46,10 +49,11 @@
                 "rating": 2,
                 "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             }
         ]
     },
@@ -61,10 +65,11 @@
                 "rating": 2,
                 "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             }
         ]
     },
@@ -76,10 +81,11 @@
                 "rating": 5,
                 "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             }
         ]
     },
@@ -91,10 +97,11 @@
                 "rating": 5,
                 "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             }
         ]
     },
@@ -106,10 +113,11 @@
                 "rating": 0,
                 "comment": "Does not run at all.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             }
         ]
     },
@@ -121,10 +129,11 @@
                 "rating": 0,
                 "comment": "Does not run at all.<br>Source: <a href=\"https://github.com/evelyneee\" target=\"_blank\">@evelyneee</a>",
                 "author": "emiyl",
-                "version": "2.0",
                 "date": "2022-09-25",
+                "version": "2.0",
                 "hardware": "MacBook Air 2022 (M2)",
-                "software": ""
+                "osVersion": "",
+                "renderingApi": "vulkan"
             }
         ]
     }
