@@ -154,5 +154,23 @@
                 "renderingApi": "Vulkan"
             }
         ]
+    },
+    "0005000010176a00": {
+        "name": "Splatoon",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 0,
+                "comment": "Hangs on black screen",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-09-26",
+                "version": "2.0",
+                "hardware": "MacBook Air 2022 (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan"
+            }
+        ]
     }
 }
