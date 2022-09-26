@@ -5,7 +5,9 @@
         "tests": [
             {
                 "rating": 5,
-                "comment": "Runs great, 40-60FPS in game. No major issues noticed.<br>Source: <a href=\"https://github.com/evelyneee\" target=\"_blank\">@evelyneee</a>",
+                "comment": "Runs great, 40-60FPS in game. No major issues noticed.",
+                "source": "@evelyneee",
+                "sourceURL": "https://github.com/evelyneee",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -15,7 +17,9 @@
             },
             {
                 "rating": 4.5,
-                "comment": "Seems to run okay, at around 20-25 FPS in-game. Only tested the first 5 minutes of the game but it seems very promising.<br>Source: <a href=\"https://github.com/emiyl\" target=\"_blank\">@emiyl</a>",
+                "comment": "Seems to run okay, at around 20-25 FPS in-game. Only tested the first 5 minutes of the game but it seems very promising.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -31,7 +35,9 @@
         "tests": [
             {
                 "rating": 2,
-                "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.",
+                "source": "Andrew Tsai",
+                "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -47,7 +53,9 @@
         "tests": [
             {
                 "rating": 2,
-                "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "comment": "Gets to the first menus and loading screens, but then crashes.",
+                "source": "Andrew Tsai",
+                "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -63,7 +71,9 @@
         "tests": [
             {
                 "rating": 2,
-                "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "comment": "Gets to the first menus and loading screens, but then crashes.",
+                "source": "Andrew Tsai",
+                "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -79,7 +89,9 @@
         "tests": [
             {
                 "rating": 5,
-                "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "comment": "Seems to run perfectly.",
+                "source": "Andrew Tsai",
+                "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -95,7 +107,9 @@
         "tests": [
             {
                 "rating": 5,
-                "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "comment": "Seems to run perfectly.",
+                "source": "Andrew Tsai",
+                "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -111,7 +125,9 @@
         "tests": [
             {
                 "rating": 0,
-                "comment": "Does not run at all.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "comment": "Does not run at all.",
+                "source": "Andrew Tsai",
+                "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
@@ -127,7 +143,9 @@
         "tests": [
             {
                 "rating": 0,
-                "comment": "Does not run at all.<br>Source: <a href=\"https://github.com/evelyneee\" target=\"_blank\">@evelyneee</a>",
+                "comment": "Does not run at all.",
+                "source": "@evelyneee",
+                "sourceURL": "https://github.com/evelyneee",
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
