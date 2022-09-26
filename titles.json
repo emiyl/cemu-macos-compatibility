@@ -2,73 +2,121 @@
     "0005000010143600": {
         "name": "Zelda Wind Waker HD",
         "region": "EUR",
-        "rating": 4.5,
-        "comment": "Seems to run okay, at around 20-25 FPS in-game on my M1 MacBook Air. Only tested the first 5 minutes of the game but it seems very promising.<br>Source: <a href=\"https://github.com/emiyl\" target=\"_blank\">@emiyl</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 4.5,
+                "comment": "Seems to run okay, at around 20-25 FPS in-game on my M1 MacBook Air. Only tested the first 5 minutes of the game but it seems very promising.<br>Source: <a href=\"https://github.com/emiyl\" target=\"_blank\">@emiyl</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "MacBook Air 2020 (M1, 7-GPU, 8GB)",
+                "software": "macOS 13.0 beta 8 (22A5352e)"
+            }
+        ]
     },
     "0005000010101d00": {
         "name": "New Super Mario Bros U",
         "region": "USA",
-        "rating": 2,
-        "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 2,
+                "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "",
+                "software": ""
+            }
+        ]
     },
     "0005000010172600": {
         "name": "Bayonetta 2",
         "region": "USA",
-        "rating": 2,
-        "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 2,
+                "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "",
+                "software": ""
+            }
+        ]
     },
     "00050000101abc00": {
         "name": "Kirby and the Rainbow Curse",
         "region": "USA",
-        "rating": 2,
-        "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 2,
+                "comment": "Gets to the first menus and loading screens, but then crashes.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "",
+                "software": ""
+            }
+        ]
     },
     "000500001012bf00": {
         "name": "D & D: Chronicles of Mystara",
         "region": "EUR",
-        "rating": 5,
-        "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 5,
+                "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "",
+                "software": ""
+            }
+        ]
     },
     "0005000010178f00": {
         "name": "Shovel Knight",
         "region": "EUR",
-        "rating": 5,
-        "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 5,
+                "comment": "Seems to run perfectly.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "",
+                "software": ""
+            }
+        ]
     },
     "00050000101c9400": {
         "name": "Zelda Breath of The Wild",
         "region": "USA",
-        "rating": 0,
-        "comment": "Does not run at all.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 0,
+                "comment": "Does not run at all.<br>Source: <a href=\"https://www.youtube.com/watch?v=4YoHFRIHrTw\" target=\"_blank\">Andrew Tsai</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "",
+                "software": ""
+            }
+        ]
     },
     "000500001010ec00": {
         "name": "Mario Kart 8",
         "region": "USA",
-        "rating": 0,
-        "comment": "Does not run at all.<br>Source: <a href=\"https://github.com/evelyneee\" target=\"_blank\">@evelyneee</a>",
-        "author": "emiyl",
-        "version": "2.0",
-        "date": "2022-09-25"
+        "tests": [
+            {
+                "rating": 0,
+                "comment": "Does not run at all.<br>Source: <a href=\"https://github.com/evelyneee\" target=\"_blank\">@evelyneee</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "MacBook Air 2022 (M2)",
+                "software": ""
+            }
+        ]
     }
 }

@@ -6,8 +6,12 @@
       var o = compatListObj[i]
       o.titleID = i
     
-      if (!Array.isArray(o.author)) o.author = [o.author]
-      o.author = o.author.join(', ')
+      if (o.tests) o.tests = o.tests.map(test => {
+        if (!Array.isArray(test.author)) test.author = [test.author]
+        test.author = test.author.join(', ')
+        return test
+      })
+      
       compatList.push(o)
     }
     
@@ -86,8 +90,8 @@
               <td class="tableMinWidth">{{title.name}} ({{title.region}})</td>
               <!--<td class="centerText">{{title.titleID}}</td>
               <td class="centerText">{{title.region}}</td>-->
-              <td v-html="title.comment"/>
-              <td class="centerText">{{title.rating}}</td>
+              <td v-html="title.tests[0].comment"/>
+              <td class="centerText">{{title.tests[0].rating}}</td>
             </tr>
           </table>
         </div>
