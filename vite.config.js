@@ -13,5 +13,3 @@ export default defineConfig({
     }
   }
 })
-
-console.log(require('./getIcon')('0005000010178f00'))
