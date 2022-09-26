@@ -34,7 +34,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 1,
+                "rating": 2,
                 "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
@@ -52,7 +52,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 1,
+                "rating": 2,
                 "comment": "Gets to the first menus and loading screens, but then crashes.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
@@ -70,7 +70,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 1,
+                "rating": 2,
                 "comment": "Gets to the first menus and loading screens, but then crashes.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
