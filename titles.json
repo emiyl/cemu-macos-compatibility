@@ -160,7 +160,7 @@
         "region": "EUR",
         "tests": [
             {
-                "rating": 0,
+                "rating": 1,
                 "comment": "Hangs on black screen",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
