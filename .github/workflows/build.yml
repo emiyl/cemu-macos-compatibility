@@ -49,10 +49,10 @@ jobs:
       - name: Grab icons
         run: |
           wget https://gist.githubusercontent.com/NWPlayer123/7e6233aee364796c55d85f143bba4bd1/raw/b11771b95fe10da1097a010edd9007815f110faf/verify.py
-          sed 's/from StringIO import StringIO/from io import StringIO/' verify.py >> verify.py
+          sed 's/from StringIO import StringIO/from io import StringIO/' verify.py >> verify0.py
           for n in $(node -e "console.log(Object.keys(require('./titles.json')).join(' '))"); 
           do
-              sed "s/title_id = \".*\"/title_id = \"$n\"/" verify.py >> $n.py
+              sed "s/title_id = \".*\"/title_id = \"$n\"/" verify0.py >> $n.py
               python3 $n.py
           done
 
