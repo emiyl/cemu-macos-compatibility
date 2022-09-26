@@ -62,6 +62,9 @@ jobs:
 
       - name: Copy images over
         run: cp -r icons dist
+      
+      - name: Add CNAME
+        run: echo 'cemu.emiyl.com' >> dist/CNAME
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
