@@ -1,45 +1,47 @@
 <template>
-    <template v-if="titleID">
-        <h1><router-link to="/"><i class="fas fa-chevron-left" style="font-size: 0.8em; vertical-align: middle; padding-bottom: 5px;"></i></router-link> {{ pageTitle }}</h1>
-        <ul style="padding-left: 0; list-style-type: none;">
-            <li>Title ID: {{ titleID }}</li>
-            <li>Region: {{ region }}</li>
-            <li v-if="tests.length">Average rating: {{ (tests.map(x => x.rating).reduce((total, current) => total + current, 0) / tests.length).toString().slice(0,4) }}</li>
-        </ul>
+    <div class="smallerMain">
+        <template v-if="titleID">
+            <h1><router-link to="/"><i class="fas fa-chevron-left" style="font-size: 0.8em; vertical-align: middle; padding-bottom: 5px;"></i></router-link> {{ pageTitle }}</h1>
+            <ul style="padding-left: 0; list-style-type: none;">
+                <li>Title ID: {{ titleID }}</li>
+                <li>Region: {{ region }}</li>
+                <li v-if="tests.length">Average rating: {{ (tests.map(x => x.rating).reduce((total, current) => total + current, 0) / tests.length).toString().slice(0,4) }}</li>
+            </ul>
 
-        <template v-if="tests.length">
-            <h2 style="margin-bottom: 0;">Tests</h2>
-            <hr>
+            <template v-if="tests.length">
+                <h2 style="margin-bottom: 0;">Tests</h2>
+                <hr>
+            </template>
+
+            <template v-for="test in tests" :key="test">
+                <div class="customContainer"><p>
+                    <ul style="padding-left: 0; list-style-type: none;">
+                        <li v-if="test.rating">Rating: {{ test.rating }}
+                            <template v-if="parseInt(test.rating) > 0 && parseInt(test.rating) < 6"> ({{ ratingArr[parseInt(test.rating)-1]}})</template>
+                        </li>
+                        <li v-if="test.comment">Comment: {{ test.comment }}</li>
+                        <li>
+                            <span>Source: </span>
+                            <a v-if="test.sourceURL" :href="test.sourceURL" target="_blank">{{ test.source }}</a>
+                            <span v-else>{{ test.source }}</span>
+                        </li>
+                    </ul>
+                    <ul style="padding-left: 0; list-style-type: none;">
+                        <li v-if="test.version">Cemu version: {{ test.version }}</li>
+                        <li v-if="test.version">Rendering API: {{ test.renderingApi }}</li>
+                        <li v-if="test.hardware">Hardware: {{ test.hardware }}</li>
+                        <li v-if="test.osVersion">OS version: {{ test.osVersion }}</li>
+                    </ul>
+
+                    <p>Entry added by {{ test.author }} on {{ test.date }}.</p>
+                </p></div>
+            </template>
         </template>
-
-        <template v-for="test in tests" :key="test">
-            <div class="customContainer"><p>
-                <ul style="padding-left: 0; list-style-type: none;">
-                    <li v-if="test.rating">Rating: {{ test.rating }}
-                        <template v-if="parseInt(test.rating) > 0 && parseInt(test.rating) < 6"> ({{ ratingArr[parseInt(test.rating)-1]}})</template>
-                    </li>
-                    <li v-if="test.comment">Comment: {{ test.comment }}</li>
-                    <li>
-                        <span>Source: </span>
-                        <a v-if="test.sourceURL" :href="test.sourceURL" target="_blank">{{ test.source }}</a>
-                        <span v-else>{{ test.source }}</span>
-                    </li>
-                </ul>
-                <ul style="padding-left: 0; list-style-type: none;">
-                    <li v-if="test.version">Cemu version: {{ test.version }}</li>
-                    <li v-if="test.version">Rendering API: {{ test.renderingApi }}</li>
-                    <li v-if="test.hardware">Hardware: {{ test.hardware }}</li>
-                    <li v-if="test.osVersion">OS version: {{ test.osVersion }}</li>
-                </ul>
-
-                <p>Entry added by {{ test.author }} on {{ test.date }}.</p>
-            </p></div>
+        <template v-else>
+            <h2>TitleID not found</h2>
+            <p><a href="/">Take me home</a></p>
         </template>
-    </template>
-    <template v-else>
-        <h2>TitleID not found</h2>
-        <p><a href="/">Take me home</a></p>
-    </template>
+    </div>
 </template>
 
 <script>

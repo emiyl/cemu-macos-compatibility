@@ -8,7 +8,7 @@ html {
 }
   
 body {
-  background-color: #fff;
+  background-color: #f6f6f6;
   color: #2c3e50;
 }
 
@@ -116,6 +116,11 @@ label, input {
   width: 70%;
 }
 
+.smallerMain {
+  margin: auto;
+  width: 65%;
+}
+
 footer {
   padding: .7em 2em;
   margin: auto;
@@ -128,6 +133,10 @@ footer {
 @media (max-width: 1100px) {
   .main {
     width: 90%;
+  }
+
+  .smallerMain {
+    width: 100%;
   }
 
   .tableContainer { 
