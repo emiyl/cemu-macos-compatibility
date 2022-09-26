@@ -66,6 +66,14 @@ jobs:
       - name: Add CNAME
         run: echo 'cemu.emiyl.com' >> dist/CNAME
 
+      - name: Create title pages
+        run: |
+          mkdir dist/titleid
+          for n in $(node -e "console.log(Object.keys(require('./titles.json')).join(' '))"); 
+          do
+            cp dist/index.html dist/titleid/$n.html
+          done
+          
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
