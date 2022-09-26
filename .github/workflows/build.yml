@@ -60,6 +60,9 @@ jobs:
       - name: Build Vue site
         run: yarn build
 
+      - name: Copy images over
+        run: cp -r icons dist
+
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
