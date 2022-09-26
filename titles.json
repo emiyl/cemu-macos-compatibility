@@ -16,7 +16,7 @@
                 "renderingApi": "vulkan"
             },
             {
-                "rating": 4.5,
+                "rating": 5,
                 "comment": "Seems to run okay, at around 20-25 FPS in-game. Only tested the first 5 minutes of the game but it seems very promising.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
@@ -34,7 +34,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 2,
+                "rating": 1,
                 "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
@@ -52,7 +52,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 2,
+                "rating": 1,
                 "comment": "Gets to the first menus and loading screens, but then crashes.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
@@ -70,7 +70,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 2,
+                "rating": 1,
                 "comment": "Gets to the first menus and loading screens, but then crashes.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
