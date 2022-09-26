@@ -13,7 +13,7 @@
                 "version": "2.0",
                 "hardware": "MacBook Air 2022 (M2, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.6 (21G115)",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             },
             {
                 "rating": 5,
@@ -25,7 +25,7 @@
                 "version": "2.0",
                 "hardware": "MacBook Air 2020 (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     },
@@ -43,7 +43,7 @@
                 "version": "2.0",
                 "hardware": "",
                 "osVersion": "",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     },
@@ -61,7 +61,7 @@
                 "version": "2.0",
                 "hardware": "",
                 "osVersion": "",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     },
@@ -79,7 +79,7 @@
                 "version": "2.0",
                 "hardware": "",
                 "osVersion": "",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     },
@@ -97,7 +97,7 @@
                 "version": "2.0",
                 "hardware": "",
                 "osVersion": "",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     },
@@ -115,7 +115,7 @@
                 "version": "2.0",
                 "hardware": "",
                 "osVersion": "",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     },
@@ -133,7 +133,7 @@
                 "version": "2.0",
                 "hardware": "",
                 "osVersion": "",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     },
@@ -151,7 +151,7 @@
                 "version": "2.0",
                 "hardware": "MacBook Air 2022 (M2, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.6 (21G115)",
-                "renderingApi": "vulkan"
+                "renderingApi": "Vulkan"
             }
         ]
     }
