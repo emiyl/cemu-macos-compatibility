@@ -11,8 +11,8 @@
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
-                "hardware": "MacBook Air 2022 (M2)",
-                "osVersion": "",
+                "hardware": "MacBook Air 2022 (M2, 8-GPU, 16GB)",
+                "osVersion": "macOS 12.6 (21G115)",
                 "renderingApi": "vulkan"
             },
             {
@@ -149,8 +149,8 @@
                 "author": "emiyl",
                 "date": "2022-09-25",
                 "version": "2.0",
-                "hardware": "MacBook Air 2022 (M2)",
-                "osVersion": "",
+                "hardware": "MacBook Air 2022 (M2, 8-GPU, 16GB)",
+                "osVersion": "macOS 12.6 (21G115)",
                 "renderingApi": "vulkan"
             }
         ]
