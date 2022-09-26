@@ -11,7 +11,7 @@
         test.author = test.author.join(', ')
         return test
       })
-      
+
       compatList.push(o)
     }
     
@@ -69,7 +69,7 @@
               <!--<th>Title ID <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'titleID') ? direction = !direction : sortBy = 'titleID'" class="fas fa-sort"></i></th>
               <th>Region</th>-->
               <th>Comment</th>
-              <th>Rating</th>
+              <th>Rating <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'rating') ? direction = !direction : sortBy = 'rating'" class="fas fa-sort"></i></th>
             </tr>
             <tr v-for="title in compatList.filter(x => 
               (
@@ -83,8 +83,12 @@
                 x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
               )
             ).sort(function(a,b) {
+              let bool = false
+              if (a.hasOwnProperty(sortBy) && b.hasOwnProperty) bool = a[sortBy] < b[sortBy]
+              else if (a.tests[0].hasOwnProperty(sortBy) && b.tests[0].hasOwnProperty(sortBy)) bool = a.tests[0][sortBy] < b.tests[0][sortBy]
+              
               var m = (direction) ? -1 : 1
-              return (a[sortBy] < b[sortBy]) ? -1*m : 1*m
+              return bool ? -1*m : 1*m
             })" :key="title">
               <td style="width: 2.4em; padding: 0;"><img :src="`icons/${title.titleID}.png`" onerror='this.src="icons/fallback.png"' style="width: 2.4em; vertical-align: middle;"></td>
               <td class="tableMinWidth">{{title.name}} ({{title.region}})</td>
