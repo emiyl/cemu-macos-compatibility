@@ -4,11 +4,13 @@
         <ul style="padding-left: 0; list-style-type: none;">
             <li>Title ID: {{ titleID }}</li>
             <li>Region: {{ region }}</li>
-            <li>Average rating: {{ (tests.map(x => x.rating).reduce((total, current) => total + current, 0) / tests.length).toString().slice(0,4) }}</li>
+            <li v-if="tests.length">Average rating: {{ (tests.map(x => x.rating).reduce((total, current) => total + current, 0) / tests.length).toString().slice(0,4) }}</li>
         </ul>
 
-        <h2 style="margin-bottom: 0;" v-if="tests.length">Tests</h2>
-        <hr>
+        <template v-if="tests.length">
+            <h2 style="margin-bottom: 0;">Tests</h2>
+            <hr>
+        </template>
 
         <template v-for="test in tests" :key="test">
             <div class="customContainer"><p>
@@ -55,7 +57,7 @@ export default {
         this.pageTitle = data.name
         this.region = data.region
         this.titleID = data.titleID
-        this.tests = data.tests
+        this.tests = data.tests.filter(x => !x.fakeEntry)
 
         document.title = this.pageTitle + ' | Cemu macOS Compatibility'
     },

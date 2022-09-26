@@ -14,6 +14,21 @@
   
       compatList.push(o)
     }
+
+    compatList = compatList.map(x => {
+      if (x.tests.length) x.tests = x.tests.sort((a,b) => {
+        const date = [a,b].map(y => new Date(y.date))
+        if (date[0] > date[1]) return -1
+        if (date[0] < date[1]) return 1
+        return 0
+      })
+      else x.tests[0] = {
+        rating: 0,
+        comment: 'Unknown',
+        fakeEntry: true
+      }
+      return x
+    })
     
     export default {
       data() {
@@ -100,16 +115,8 @@
           })" :key="title">
             <td style="width: 2.4em; padding: 0;"><img :src="`icons/${title.titleID}.png`" onerror='this.src="icons/fallback.png"' style="width: 2.4em; vertical-align: middle;"></td>
             <td class="tableMinWidth"><router-link :to="`/titleid/${title.titleID}`">{{title.name}} ({{title.region}})</router-link></td>
-            <!--<td class="centerText">{{title.titleID}}</td>
-            <td class="centerText">{{title.region}}</td>-->
             <td>
               {{ title.tests[0].comment }}
-              <template v-if="title.tests[0].source">
-                <br>
-                <span>Source: </span>
-                <a v-if="title.tests[0].sourceURL" :href="title.tests[0].sourceURL" target="_blank">{{ title.tests[0].source }}</a>
-                <span v-else>{{ title.tests[0].source }}</span>
-              </template>
             </td>
             <td class="centerText">{{title.tests[0].rating}}</td>
           </tr>
