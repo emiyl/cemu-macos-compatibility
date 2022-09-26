@@ -1,10 +1,8 @@
 name: build
 
 on:
-  # trigger deployment on every push to main branch
   push:
     branches: main
-  # trigger deployment manually
   workflow_dispatch:
 
 jobs:
@@ -15,18 +13,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: recursive
-      #- uses: actions/setup-python@v4
-      #  with:
-      #    python-version: '2.7' 
-      #    cache: 'pip'
-
-      #- name: Install Python dependencies
-      #  run: pip install pycrypto requests
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          # choose node.js version to use
           node-version: '16'
 
       - name: Get yarn cache directory path
@@ -46,46 +36,24 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
 
-      #- name: Grab icons
-      #  run: |
-      #    wget https://gist.githubusercontent.com/NWPlayer123/7e6233aee364796c55d85f143bba4bd1/raw/b11771b95fe10da1097a010edd9007815f110faf/verify.py
-      #    sed 's/from StringIO import StringIO/from io import StringIO/' verify.py >> verify0.py
-      #    for n in $(node -e "console.log(Object.keys(require('./titles.json')).join(' '))"); 
-      #    do
-      #        sed "s/title_id = \".*\"/title_id = \"$n\"/" verify0.py >> $n.py
-      #        python3 $n.py
-      #    done
-
-      # run build script
       - name: Build Vue site
         run: yarn build
 
-      - name: Copy images over
-        run: cp -r icons dist
-      
-      - name: Add CNAME
-        run: echo 'cemu.emiyl.com' >> dist/CNAME
-
-      - name: Create title pages
+      - name: Finishing up
         run: |
+          cp -r icons dist
+          echo 'cemu.emiyl.com' >> dist/CNAME
+          echo '' >> dist/.nojekyll
           mkdir dist/titleid
           for n in $(node -e "console.log(Object.keys(require('./titles.json')).join(' '))"); 
           do
             cp dist/index.html dist/titleid/$n.html
           done
 
-      - name: No jekyll
-        run: echo '' >> dist/.nojekyll
-          
-      # please check out the docs of the workflow for more details
-      # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          # deploy to gh-pages branch
           target_branch: gh-pages
-          # deploy the default output dir of Vue
           build_dir: dist
         env:
-          # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
