@@ -124,7 +124,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 0,
+                "rating": 1,
                 "comment": "Does not run at all.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
@@ -142,7 +142,7 @@
         "region": "USA",
         "tests": [
             {
-                "rating": 0,
+                "rating": 1,
                 "comment": "Does not run at all.",
                 "source": "@evelyneee",
                 "sourceURL": "https://github.com/evelyneee",
