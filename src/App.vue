@@ -35,7 +35,17 @@
       <h1>Cemu macOS Compatibility</h1>
       <p>Unofficial list of compatibility with the macOS builds of Cemu.</p>
       <p><b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a>.</p>
-      
+
+      <h3 style="margin-bottom: 0;">Ratings</h3>
+      <hr>
+      <ol>
+        <li>Crashes when booting/infinite black screen</li>
+        <li>Game loads, but crashes in title screen/menu/in-game</li>
+        <li>Starts, maybe runs well, but major glitches/issues prevent game from being completed</li>
+        <li>Game can be played through with minor audio or graphical glitches</li>
+        <li>Game can be played with no issues.</li>
+      </ol>
+
       <hr>
   
       <p>
@@ -68,7 +78,7 @@
             <!--<th>Title ID <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'titleID') ? direction = !direction : sortBy = 'titleID'" class="fas fa-sort"></i></th>
             <th>Region</th>-->
             <th>Comment</th>
-            <th>Rating <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'rating') ? direction = !direction : sortBy = 'rating'" class="fas fa-sort"></i></th>
+            <th style="min-width: 4.5em;">Rating <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'rating') ? direction = !direction : sortBy = 'rating'" class="fas fa-sort"></i></th>
           </tr>
           <tr v-for="title in compatList.filter(x => 
             (
