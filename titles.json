@@ -4,8 +4,17 @@
         "region": "EUR",
         "tests": [
             {
+                "rating": 5,
+                "comment": "Runs great, 40-60FPS in game. No major issues noticed.<br>Source: <a href=\"https://github.com/evelyneee\" target=\"_blank\">@evelyneee</a>",
+                "author": "emiyl",
+                "version": "2.0",
+                "date": "2022-09-25",
+                "hardware": "MacBook Air 2022 (M2)",
+                "software": ""
+            },
+            {
                 "rating": 4.5,
-                "comment": "Seems to run okay, at around 20-25 FPS in-game on my M1 MacBook Air. Only tested the first 5 minutes of the game but it seems very promising.<br>Source: <a href=\"https://github.com/emiyl\" target=\"_blank\">@emiyl</a>",
+                "comment": "Seems to run okay, at around 20-25 FPS in-game. Only tested the first 5 minutes of the game but it seems very promising.<br>Source: <a href=\"https://github.com/emiyl\" target=\"_blank\">@emiyl</a>",
                 "author": "emiyl",
                 "version": "2.0",
                 "date": "2022-09-25",
