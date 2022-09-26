@@ -73,6 +73,9 @@ jobs:
           do
             cp dist/index.html dist/titleid/$n.html
           done
+
+      - name: No jekyll
+        run: echo '' >> dist/.nojekyll
           
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
