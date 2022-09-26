@@ -93,7 +93,15 @@
             <td class="tableMinWidth">{{title.name}} ({{title.region}})</td>
             <!--<td class="centerText">{{title.titleID}}</td>
             <td class="centerText">{{title.region}}</td>-->
-            <td v-html="title.tests[0].comment"/>
+            <td>
+              {{ title.tests[0].comment }}
+              <template v-if="title.tests[0].source">
+                <br>
+                <span>Source: </span>
+                <a v-if="title.tests[0].sourceURL" :href="title.tests[0].sourceURL" target="_blank">{{ title.tests[0].source }}</a>
+                <span v-else>{{ title.tests[0].source }}</span>
+              </template>
+            </td>
             <td class="centerText">{{title.tests[0].rating}}</td>
           </tr>
         </table>
