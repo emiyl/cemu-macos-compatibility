@@ -45,6 +45,14 @@ footer {
   border-color: #e6edef;
   background-color: #e6edef;
 }
+
+ul {
+  padding-left: 2em;
+}
+
+li {
+  padding-bottom: .1em;
+}
   
 @media (prefers-color-scheme: dark) {
   html {
