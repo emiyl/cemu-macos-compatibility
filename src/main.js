@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import mainPage from './components/mainPage.vue'
 import title from './components/title.vue'
+import instructions from './components/instructions.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -10,6 +11,10 @@ const router = createRouter({
     {
       path: '/',
       component: mainPage,
+    },
+    {
+      path: '/instructions',
+      component: instructions
     },
     {
       path: '/titleid/:titleid?',
