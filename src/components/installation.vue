@@ -24,7 +24,7 @@
                 Apple (ARM)
             </label>
             <div class="tab tab-last" style="overflow-x: scroll;">
-                <p style="margin-top: .5em;">To install Cemu on macOS, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This secondary installation of brew will not conflict with any pre-existing brew installations.</p>
+                <p style="margin-top: .5em;">To install Cemu on macOS, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This installation of brew will not conflict with a pre-existing ARM brew installation.</p>
                 <ol>
                     <li>Download the <a :href="latestReleaseUrl" :target="dlLinkTarget">latest release of Cemu</a></li>
                     <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
