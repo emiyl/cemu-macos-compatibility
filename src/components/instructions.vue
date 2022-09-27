@@ -10,7 +10,7 @@
             </label>
             <div class="tab" style="overflow-x: scroll;">
                 <ol>
-                    <li>Download the <a href="https://github.com/cemu-project/Cemu/releases" target="_blank">latest release of Cemu</a></li>
+                    <li>Download the <a :href="latestReleaseUrl" :target="dlLinkTarget">latest release of Cemu</a></li>
                     <li>Extract the binary to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install brew (if you haven't already) by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
@@ -26,7 +26,7 @@
             <div class="tab tab-last" style="overflow-x: scroll;">
                 <p style="margin-top: .5em;">To install Cemu on macOS, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This secondary installation of brew will not conflict with any pre-existing brew installations.</p>
                 <ol>
-                    <li>Download the <a href="https://github.com/cemu-project/Cemu/releases" target="_blank">latest release of Cemu</a></li>
+                    <li>Download the <a :href="latestReleaseUrl" :target="dlLinkTarget">latest release of Cemu</a></li>
                     <li>Extract the binary to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install the x86 version of brew by running <code>arch --x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
@@ -53,7 +53,29 @@
 export default {
     data() {
         return {
-            cpuType: 'x86'
+            cpuType: 'x86',
+            latestReleaseUrl: 'https://github.com/cemu-project/Cemu/releases',
+            dlLinkTarget: '_blank'
+        }
+    },
+    async created() {
+        let response = await this.getLatestRelease()
+        if (response[0]) this.latestReleaseUrl = response[0].html_url
+        else return
+
+        let macosAsset = response[0].assets.find(x => x.name.includes('macos'))
+        if (!macosAsset) return
+        
+        this.latestReleaseUrl = macosAsset.browser_download_url
+        this.dlLinkTarget = ''
+    },
+    methods: {
+        getLatestRelease() {
+            const url = 'https://api.github.com/repos/cemu-project/Cemu/releases'
+
+            return fetch(url, { method: 'GET', headers: { 'Content-Type': 'application/json' } })
+            .then((response) => response.text())
+            .then((response) => JSON.parse(response))
         }
     }
 }
