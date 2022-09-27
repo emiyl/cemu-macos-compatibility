@@ -44,7 +44,10 @@ jobs:
           cp -r icons dist
           echo 'cemu.emiyl.com' >> dist/CNAME
           echo '' >> dist/.nojekyll
-          cp dist/index.html dist/instructions.html
+          for n in instructions installations;
+          do
+            cp dist/index.html dist/$n.html
+          done
           mkdir dist/titleid
           for n in $(node -e "console.log(Object.keys(require('./titles.json')).join(' '))"); 
           do

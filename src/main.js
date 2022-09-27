@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import mainPage from './components/mainPage.vue'
 import title from './components/title.vue'
-import instructions from './components/instructions.vue'
+import installation from './components/installation.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -13,8 +13,12 @@ const router = createRouter({
       component: mainPage,
     },
     {
+      path: '/installation',
+      component: installation
+    },
+    {
       path: '/instructions',
-      component: instructions
+      redirect: to => { return { path: '/installation' }},
     },
     {
       path: '/titleid/:titleid?',
