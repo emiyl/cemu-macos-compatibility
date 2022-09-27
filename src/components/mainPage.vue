@@ -48,6 +48,11 @@
             'Perfect'
           ]
         }
+      },
+      methods: {
+        getRatingPercentage(i) {
+          return (this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100).toString().slice(0,5)
+        }
       }
     }
   </script>
@@ -55,23 +60,16 @@
   <template>
       <h1>Cemu macOS Compatibility</h1>
       <p>Unofficial list of compatibility with the macOS builds of Cemu.</p>
-      <p><b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a>.</p>
-  
-      <h3 style="margin-bottom: 0;">Stats</h3>
-      <hr>
-      <ul style="padding-left: 0; list-style-type: none;">
-        <li>Games tested: {{ compatList.length }}</li><br>
-        <li v-for="i in [5,4,3,2,1]" :key="i">{{ratingArr[i-1]}}: {{ (compatList.filter(x => x.tests[0].rating == i).length / compatList.length * 100).toString().slice(0,5) }}%</li>
-      </ul>
+      <p><b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
   
       <h3 style="margin-bottom: 0;">Ratings</h3>
       <hr>
       <ul>
-        <li><b>Perfect</b> - Crashes when booting/infinite black screen</li>
-        <li><b>Playable</b> - Game loads, but crashes in title screen/menu/in-game</li>
-        <li><b>Runs</b> - Starts, maybe runs well, but major glitches/issues prevent game from being completed</li>
-        <li><b>Loads</b> - Game can be played through with minor audio or graphical glitches</li>
-        <li><b>Unplayable</b> - Game can be played with no issues</li>
+        <li><b>Perfect</b> ({{getRatingPercentage(5)}}%) - Crashes when booting/infinite black screen</li>
+        <li><b>Playable</b> ({{getRatingPercentage(4)}}%) - Game loads, but crashes in title screen/menu/in-game</li>
+        <li><b>Runs</b> ({{getRatingPercentage(3)}}%) - Starts, maybe runs well, but major glitches/issues prevent game from being completed</li>
+        <li><b>Loads</b> ({{getRatingPercentage(2)}}%) - Game can be played through with minor audio or graphical glitches</li>
+        <li><b>Unplayable</b> ({{getRatingPercentage(1)}}%) - Game can be played with no issues</li>
       </ul>
   
       <hr>
