@@ -39,7 +39,14 @@
           showJPN: true,
           sortBy: "name",
           direction: false,
-          searchStr: ''
+          searchStr: '',
+          ratingArr: [
+            'Unplayable',
+            'Loads',
+            'Runs',
+            'Playable',
+            'Perfect'
+          ]
         }
       }
     }
@@ -50,15 +57,22 @@
       <p>Unofficial list of compatibility with the macOS builds of Cemu.</p>
       <p><b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a>.</p>
   
+      <h3 style="margin-bottom: 0;">Stats</h3>
+      <hr>
+      <ul style="padding-left: 0; list-style-type: none;">
+        <li>Games tested: {{ compatList.length }}</li><br>
+        <li v-for="i in [5,4,3,2,1]" :key="i">{{ratingArr[i-1]}}: {{ (compatList.filter(x => x.tests[0].rating == i).length / compatList.length * 100).toString().slice(0,5) }}%</li>
+      </ul>
+  
       <h3 style="margin-bottom: 0;">Ratings</h3>
       <hr>
-      <ol>
-        <li>Crashes when booting/infinite black screen</li>
-        <li>Game loads, but crashes in title screen/menu/in-game</li>
-        <li>Starts, maybe runs well, but major glitches/issues prevent game from being completed</li>
-        <li>Game can be played through with minor audio or graphical glitches</li>
-        <li>Game can be played with no issues</li>
-      </ol>
+      <ul>
+        <li><b>Perfect</b> - Crashes when booting/infinite black screen</li>
+        <li><b>Playable</b> - Game loads, but crashes in title screen/menu/in-game</li>
+        <li><b>Runs</b> - Starts, maybe runs well, but major glitches/issues prevent game from being completed</li>
+        <li><b>Loads</b> - Game can be played through with minor audio or graphical glitches</li>
+        <li><b>Unplayable</b> - Game can be played with no issues</li>
+      </ul>
   
       <hr>
   
@@ -118,7 +132,7 @@
             <td>
               {{ title.tests[0].comment }}
             </td>
-            <td class="centerText">{{title.tests[0].rating}}</td>
+            <td class="centerText">{{ratingArr[title.tests[0].rating-1]}}</td>
           </tr>
         </table>
       </div>
