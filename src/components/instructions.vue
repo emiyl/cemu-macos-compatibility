@@ -18,7 +18,7 @@
                     <li>Copy the binary to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install brew (if you haven't already) by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
-                    <li>Install moltenvk by running <code>brew install moltenvk</code></li>
+                    <li>Install moltenvk by running <code>brew install molten-vk</code></li>
                 </ol>
             </div>
         </section>
