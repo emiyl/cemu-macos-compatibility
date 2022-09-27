@@ -35,7 +35,7 @@
                     <li>Copy the binary to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install the x86 version of brew by running <code>arch --x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
-                    <li>Install moltenvk by running <code>arch --x86_64 /usr/local/Homebrew/bin/brew install molten-vk</code></li>
+                    <li>Install the x86 version of moltenvk by running <code>arch --x86_64 /usr/local/Homebrew/bin/brew install molten-vk</code></li>
                 </ol>
             </div>
         </section>
