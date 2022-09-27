@@ -37,8 +37,8 @@
           showEUR: true,
           showUSA: true,
           showJPN: true,
-          sortBy: "name",
-          direction: false,
+          sortBy: "rating",
+          direction: true,
           searchStr: '',
           ratingArr: [
             'Unplayable',
