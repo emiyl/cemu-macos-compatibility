@@ -12,5 +12,5 @@
 </template>
     
 <style>
-  @import '@/assets/base.css';
+  @import '@/assets/main.scss';
 </style>

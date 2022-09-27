@@ -1,0 +1,180 @@
+a {
+  color: var(--c-brand);
+  text-decoration: none;
+}
+
+html {
+    color-scheme: light;
+}
+  
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark !important;
+  }
+}
+  
+body {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+}
+
+td, th {
+  border: 1px solid var(--c-border);
+}
+
+tr:nth-child(even) {
+  background-color: var(--c-bg-light);
+}
+
+hr {
+  border: 1px solid var(--c-border);
+}
+
+.search {
+  color: var(--c-text);
+  border: 1px solid var(--c-border-dark);
+  background: var(--c-bg-search) url(@/assets/search.svg) 0.6rem 0.5rem no-repeat;
+  background-size: 1rem;
+}
+
+footer {
+  border-top: 1px solid var(--c-border);
+  background-color: var(--c-bg-light);
+}
+
+.customContainer {
+  border-color: var(--c-container-border);
+  background-color: var(--c-container-bg);
+}
+
+code {
+  color: var(--c-text-code);
+  background-color: var(--c-bg-code);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+code {
+  padding: .25rem .5rem;
+  margin: 0;
+  border-radius: 3px;
+  overflow-wrap: break-word;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+.main {
+  margin: auto;
+  width: 70%;
+}
+
+.smallerMain {
+  margin: auto;
+  width: 65%;
+}
+
+footer {
+  padding: .7em 2em;
+  margin: auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .main {
+    width: 90%;
+  }
+
+  .smallerMain {
+    width: 100%;
+  }
+
+  .tableContainer { 
+      width: 100% !important;
+      overflow-x: scroll; 
+  }
+
+  .tableMinWidth {
+    min-width: 200px;
+  }
+}
+
+@keyframes spinning {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}
+.spin {
+  animation-name: spinning;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.search {
+  cursor: text;
+  height: 2rem;
+  display: inline-block;
+  border-radius: 2rem;
+  font-size: .9rem;
+  line-height: 2rem;
+  padding: 0 0.5rem 0 2rem;
+  outline: 0;
+  transition: all ease .3s;
+}
+
+.regionCheckbox {
+  margin-left: .5em;
+}
+
+.githubBtn {
+  float: right;
+  line-height: 2rem;
+}
+
+@media (max-width: 690px) {
+  .search {
+    float: right;
+  }
+  .regionCheckbox, .githubBtn {
+    padding-top: .5em;
+    margin-left: 0;
+    display: block;
+    float: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .search {
+    float: none;
+  }
+  .regionCheckbox {
+    padding-top: 1em;
+  }
+}
+
+.customContainer {
+  border-width: 1px;
+  border-style: solid;
+  padding: .1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
