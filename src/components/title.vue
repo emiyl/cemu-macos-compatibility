@@ -61,7 +61,7 @@ export default {
         this.titleID = data.titleID
         this.tests = data.tests.filter(x => !x.fakeEntry)
 
-        document.title = this.pageTitle + ' | Cemu macOS Compatibility'
+        document.title = this.pageTitle
     },
     mounted() {
         document.title = this.pageTitle // Yes this needs to be done twice idk why

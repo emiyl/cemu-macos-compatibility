@@ -59,6 +59,8 @@ export default {
         }
     },
     async created() {
+        document.title = 'macOS Cemu Installation Guide'
+
         let response = await this.getLatestRelease()
         if (response[0]) this.latestReleaseUrl = response[0].html_url
         else return
@@ -68,6 +70,9 @@ export default {
         
         this.latestReleaseUrl = macosAsset.browser_download_url
         this.dlLinkTarget = ''
+    },
+    mounted() {
+        document.title = 'macOS Cemu Installation Guide'
     },
     methods: {
         getLatestRelease() {
