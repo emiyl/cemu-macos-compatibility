@@ -66,11 +66,11 @@
       <h3 style="margin-bottom: 0;">Ratings</h3>
       <hr>
       <ul>
-        <li><b>Perfect</b> ({{getRatingPercentage(5)}}%) - Crashes when booting/infinite black screen</li>
-        <li><b>Playable</b> ({{getRatingPercentage(4)}}%) - Game loads, but crashes in title screen/menu/in-game</li>
+        <li><b>Perfect</b> ({{getRatingPercentage(5)}}%) - Game can be played with no issues</li>
+        <li><b>Playable</b> ({{getRatingPercentage(4)}}%) - Game can be played through with minor audio or graphical glitches</li>
         <li><b>Runs</b> ({{getRatingPercentage(3)}}%) - Starts, maybe runs well, but major glitches/issues prevent game from being completed</li>
-        <li><b>Loads</b> ({{getRatingPercentage(2)}}%) - Game can be played through with minor audio or graphical glitches</li>
-        <li><b>Unplayable</b> ({{getRatingPercentage(1)}}%) - Game can be played with no issues</li>
+        <li><b>Loads</b> ({{getRatingPercentage(2)}}%) - Game loads, but crashes in title screen/menu/in-game</li>
+        <li><b>Unplayable</b> ({{getRatingPercentage(1)}}%) - Crashes when booting/infinite black screen</li>
       </ul>
   
       <hr>
