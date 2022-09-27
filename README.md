@@ -29,7 +29,7 @@ The "tests" property is an array to store the information regarding your experie
 
 ```js
 {
-    "rating": 4.5, // Rate the game's performance and stability out of 5, more information on this below
+    "rating": 5, // Rate the game's performance and stability out of 5, more information on this below
     "comment": "Write about how the game runs, where it crashes, if it performs well, if there are any unexpected glitches, etc.",
     "source": "Write your name here, or someone else's name if you are getting the information from somewhere else.",
     "sourceURL": "https://github.com/yourGitHubName", // This can also be a link to your own profile, or a link to where you got the information
