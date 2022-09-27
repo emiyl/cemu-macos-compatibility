@@ -61,6 +61,7 @@
       <h1>Cemu macOS Compatibility</h1>
       <p>Unofficial list of compatibility with the macOS builds of Cemu.</p>
       <p><b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
+      <p>To run Cemu on macOS, you can download the <a href="https://github.com/cemu-project/Cemu/actions/workflows/build_check.yml?query=branch%3Amain+" target="_blank">latest build</a> from the Cemu GitHub. Note that this requires you to be logged into a GitHub account; if you do not have one, you can compile it from source by following the instructions on the <a href="https://github.com/cemu-project/Cemu/blob/main/BUILD.md" target="_blank">BUILD.md</a> page. Once you have downloaded the binary, open a Terminal and run <code>chmod +x /path/to/Cemu</code> to mark it as an executable.</p>
   
       <h3 style="margin-bottom: 0;">Ratings</h3>
       <hr>
