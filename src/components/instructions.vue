@@ -11,7 +11,7 @@
             <div class="tab" style="overflow-x: scroll;">
                 <ol>
                     <li>Download the <a :href="latestReleaseUrl" :target="dlLinkTarget">latest release of Cemu</a></li>
-                    <li>Extract the binary to its own folder</li>
+                    <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install brew (if you haven't already) by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
                     <li>Install moltenvk by running <code>brew install molten-vk</code></li>
@@ -27,7 +27,7 @@
                 <p style="margin-top: .5em;">To install Cemu on macOS, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This secondary installation of brew will not conflict with any pre-existing brew installations.</p>
                 <ol>
                     <li>Download the <a :href="latestReleaseUrl" :target="dlLinkTarget">latest release of Cemu</a></li>
-                    <li>Extract the binary to its own folder</li>
+                    <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install the x86 version of brew by running <code>arch --x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
                     <li>Install the x86 version of moltenvk by running <code>arch --x86_64 /usr/local/Homebrew/bin/brew install molten-vk</code></li>
