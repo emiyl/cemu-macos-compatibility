@@ -47,6 +47,7 @@ export default {
 div {
     border-bottom: 1px solid var(--c-border);
     padding: 1em;
+    box-shadow: var(--shadow);
 }
 
 ul {

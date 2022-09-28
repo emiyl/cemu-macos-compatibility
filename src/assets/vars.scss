@@ -10,6 +10,7 @@
     --c-border-dark: #eaecef;
     --c-container-bg: #e6edef;
     --c-container-border: var(--c-container-bg);
+    --shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,5 +25,6 @@
         --c-border-dark: #3e4c5a;
         --c-container-bg: #2b313a;
         --c-container-border: var(--c-container-bg);
+        --shadow: 0;
     }
 }
