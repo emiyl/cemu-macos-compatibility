@@ -5,7 +5,7 @@
         "tests": [
             {
                 "rating": 5,
-                "comment": "Runs perfectly, no major issues. Only tested the first 5 minutes of the game but it seems very promising.",
+                "comment": "Runs perfectly, no major issues noticed. 20-25FPS in game on M1. Only tested the first 5 minutes of the game but it seems very promising.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -18,7 +18,7 @@
             },
             {
                 "rating": 5,
-                "comment": "Runs great, 20-30FPS in game. No major issues noticed.",
+                "comment": "Runs great, 20-30FPS in game on M1. No major issues noticed.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -37,7 +37,7 @@
         "tests": [
             {
                 "rating": 5,
-                "comment": "Runs great, 40-60FPS in game. No major issues noticed.",
+                "comment": "Runs great, 40-60FPS in game on M2. No major issues noticed.",
                 "source": "@evelyneee",
                 "sourceURL": "https://github.com/evelyneee",
                 "author": "emiyl",
