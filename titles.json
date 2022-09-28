@@ -203,7 +203,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Freezes on loading black screen (doesn't even show the splash screen)",
+                "comment": "Freezes on loading black screen (doesn't even show the splash screen).",
                 "source": "@jkcoxson",
                 "sourceURL": "https://github.com/jkcoxson",
                 "author": "emiyl",
