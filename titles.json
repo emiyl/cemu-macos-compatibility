@@ -451,8 +451,8 @@
         "comment": "",
         "tests": [
             {
-                "rating": 4,
-                "comment": "Seems to work fine but Mii rendering is a little messed up.",
+                "rating": 3,
+                "comment": "Seems to work fine, however I can't access the internet.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
