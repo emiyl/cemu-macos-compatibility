@@ -5,6 +5,24 @@
         "tests": [
             {
                 "rating": 5,
+                "comment": "Runs perfectly, no major issues. Only tested the first 5 minutes of the game but it seems very promising.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-09-25",
+                "version": "2.0-4",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan"
+            }
+        ]
+    },
+    "0005000010143500": {
+        "name": "Zelda Wind Waker HD",
+        "region": "USA",
+        "tests": [
+            {
+                "rating": 5,
                 "comment": "Runs great, 40-60FPS in game. No major issues noticed.",
                 "source": "@evelyneee",
                 "sourceURL": "https://github.com/evelyneee",
@@ -13,18 +31,6 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.6 (21G115)",
-                "renderingApi": "Vulkan"
-            },
-            {
-                "rating": 5,
-                "comment": "Seems to run okay, at around 20-25 FPS in-game. Only tested the first 5 minutes of the game but it seems very promising.",
-                "source": "@emiyl",
-                "sourceURL": "https://github.com/emiyl",
-                "author": "emiyl",
-                "date": "2022-09-25",
-                "version": "2.0-4",
-                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
-                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
                 "renderingApi": "Vulkan"
             }
         ]
