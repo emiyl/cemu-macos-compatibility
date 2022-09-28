@@ -7,6 +7,8 @@
     "preview": "vite preview --port 5050"
   },
   "dependencies": {
+    "sharp": "^0.31.0",
+    "tga2png": "^0.1.3",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12"
   },

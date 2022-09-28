@@ -126,7 +126,13 @@
             var m = (direction) ? -1 : 1
             return bool ? -1*m : 1*m
           })" :key="title">
-            <td style="width: 2.4em; padding: 0;"><img :src="`icons/${title.titleID}.png`" onerror='this.src="icons/fallback.png"' style="width: 2.4em; vertical-align: middle;"></td>
+            <td style="width: 2.4em; padding: 0;">
+              <picture>
+                  <source :srcset="`icons/${title.titleID}.avif`" type="image/avif">
+                  <source :srcset="`icons/${title.titleID}.webp`" type="image/webp">
+                  <img :src="`icons/${title.titleID}.jpeg`" style="width: 2.4em; vertical-align: middle;">
+              </picture>
+            </td>
             <td class="tableMinWidth"><router-link :to="`/titleid/${title.titleID}`">{{title.name}} ({{title.region}})</router-link></td>
             <td>
               {{ title.tests[0].comment }}
