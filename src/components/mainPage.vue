@@ -51,7 +51,7 @@
       },
       methods: {
         getRatingPercentage(i) {
-          return (this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100).toString().slice(0,5)
+          return parseInt(this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100)
         }
       }
     }
