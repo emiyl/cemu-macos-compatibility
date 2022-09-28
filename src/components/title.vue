@@ -32,8 +32,12 @@
                         <li v-if="test.hardware">Hardware: {{ test.hardware }}</li>
                         <li v-if="test.osVersion">OS version: {{ test.osVersion }}</li>
                     </ul>
+                    
+                    <template v-if="test.logs">
+                        <pre>{{test.logs}}</pre>
+                    </template>
 
-                    <p>Entry added by {{ test.author }} on {{ test.date }}.</p>
+                    Entry added by {{ test.author }} on {{ test.date }}.
                 </p></div>
             </template>
         </template>
