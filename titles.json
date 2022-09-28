@@ -448,11 +448,11 @@
     "000500301001220a": {
         "name": "Internet Browser",
         "region": "EUR",
-        "comment": "",
+        "comment": "Network functions are stubbed on non-Windows builds, so you cannot access the internet.",
         "tests": [
             {
                 "rating": 3,
-                "comment": "Seems to work fine, however I can't access the internet.",
+                "comment": "Seems to work fine, however you can't view any web pages.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -488,7 +488,7 @@
     "000500301001420a": {
         "name": "Nintendo eShop",
         "region": "EUR",
-        "comment": "Must have a online files dumped to run.",
+        "comment": "Must have a online files dumped to run. Network functions are stubbed on non-Windows builds, so you cannot access the internet.",
         "tests": [
             {
                 "rating": 3,
