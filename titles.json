@@ -172,5 +172,95 @@
                 "renderingApi": "Vulkan"
             }
         ]
+    },
+    "0005000010145c00": {
+        "name": "Super Mario 3D World",
+        "region": "USA",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Crashes on startup",
+                "source": "@jkcoxson",
+                "sourceURL": "https://github.com/jkcoxson",
+                "author": "emiyl",
+                "date": "2022-09-27",
+                "version": "2.0-4",
+                "hardware": "",
+                "osVersion": "",
+                "renderingApi": "Vulkan"
+            }
+        ]
+    },
+    "000500001f600a00": {
+        "name": "Paper Mario Color Splash",
+        "region": "USA",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Freezes on loading black screen (doesn't even show the splash screen)",
+                "source": "@jkcoxson",
+                "sourceURL": "https://github.com/jkcoxson",
+                "author": "emiyl",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "",
+                "osVersion": "",
+                "renderingApi": "Vulkan"
+            }
+        ]
+    },
+    "0005000010144f00": {
+        "name": "Super Smash Bros. U",
+        "region": "USA",
+        "tests": [
+            {
+                "rating": 2,
+                "comment": "Segfaults after trying to play the opening video. Removing the video causes a segfault trying to load a battle.",
+                "source": "@jkcoxson",
+                "sourceURL": "https://github.com/jkcoxson",
+                "author": "emiyl",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "",
+                "osVersion": "",
+                "renderingApi": "Vulkan"
+            }
+        ]
+    },
+    "0005000010102000": {
+        "name": "Nintendo Land",
+        "region": "USA",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Segfaults while loading",
+                "source": "@jkcoxson",
+                "sourceURL": "https://github.com/jkcoxson",
+                "author": "emiyl",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "",
+                "osVersion": "",
+                "renderingApi": "Vulkan"
+            }
+        ]
+    },
+    "000500001012bd00": {
+        "name": "Pikmin 3",
+        "region": "USA",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Crashes immediately due to unsupported formats in MoltenVK",
+                "source": "@jkcoxson",
+                "sourceURL": "https://github.com/jkcoxson",
+                "author": "emiyl",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "",
+                "osVersion": "",
+                "renderingApi": "Vulkan"
+            }
+        ]
     }
 }
