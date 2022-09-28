@@ -167,7 +167,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Hangs on black screen",
+                "comment": "Hangs on black screen.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -185,7 +185,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Crashes on startup",
+                "comment": "Crashes on startup.",
                 "source": "@jkcoxson",
                 "sourceURL": "https://github.com/jkcoxson",
                 "author": "emiyl",
@@ -239,7 +239,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Segfaults while loading",
+                "comment": "Segfaults while loading.",
                 "source": "@jkcoxson",
                 "sourceURL": "https://github.com/jkcoxson",
                 "author": "emiyl",
@@ -257,7 +257,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Crashes immediately due to unsupported formats in MoltenVK",
+                "comment": "Crashes immediately due to unsupported formats in MoltenVK.",
                 "source": "@jkcoxson",
                 "sourceURL": "https://github.com/jkcoxson",
                 "author": "emiyl",
