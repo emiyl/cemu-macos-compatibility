@@ -15,6 +15,19 @@
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
                 "renderingApi": "Vulkan",
                 "log": ""
+            },
+            {
+                "rating": 5,
+                "comment": "Runs great, 20-30FPS in game. No major issues noticed.",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": ""
             }
         ]
     },
@@ -284,6 +297,25 @@
             }
         ]
     },
+    "000500001012be00": {
+        "name": "Pikmin 3",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Splash screen, then crashes",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": "[22:07:32.608] Unrecoverable error in Vulkan renderer\n[22:07:32.608] Msg: failed to submit command buffer. Error -11"
+            }
+        ]
+    },
     "000500301001520a": {
         "name": "Friend List",
         "region": "EUR",
@@ -298,6 +330,19 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan",
+                "log": ""
+            },
+            {
+                "rating": 1,
+                "comment": "Black screen, no progress",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
                 "renderingApi": "Vulkan",
                 "log": ""
             }
@@ -422,6 +467,19 @@
         "region": "EUR",
         "tests": [
             {
+                "rating": 3,
+                "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Crashes immediately, SIGTRAP.",
                 "source": "@emiyl",
@@ -452,6 +510,196 @@
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
                 "log": ""
+            }
+        ]
+    },
+    "00050000101a1200": {
+        "name": "Affordable Space Adventures",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Loads splash screen, never progresses, spinner when closing Cemu",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010180700": {
+        "name": "Captain Toad Treasure Tracker",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Splash screen loads, fades to infinite white screen",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010138300": {
+        "name": "DKC Tropical Freeze",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Splash screen, then either infinite white or plays banana animation but never progresses",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": "[mvk-error] VK_ERROR_INITIALIZATION_FAILED: Render pipeline compile failed (Error code 3): Fragment input(s) `user(locn0),user(locn1)` mismatching vertex shader output type(s) or not written by vertex shader."
+            }
+        ]
+    },
+    "00050000101cc900": {
+        "name": "Freedom Planet",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Splash screen, no further progress",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": ""
+            }
+        ]
+    },
+    "00050000101c6300": {
+        "name": "Mini Mario Amiibo Challenge",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 3,
+                "comment": "Launches, serious visual issues (half screen black triangle), animates, doesn’t seem to acknowledge amiibo bin files so can’t proceed",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": "Cemu-101ff77[44262:1217876] +[CATransaction synchronize] called within transaction"
+            }
+        ]
+    },
+    "0005000010146100": {
+        "name": "NES Remix",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 3,
+                "comment": "Runs, stable, but timer speeds are wrong so 60 second game completes in one second so cannot play",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010162600": {
+        "name": "NES Remix 2",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 3,
+                "comment": "Runs, stable, but timer speeds are wrong so 60 second game completes in one second so cannot play. Luigi Bros plays at about 30% speed.",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": ""
+            }
+        ]
+    },
+    "000500001019e600": {
+        "name": "Zelda Twilight Princess",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Splash screen, then crashes",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": "[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkPrimitiveTopology value 5 is not supported for rendering.\n[mvk-error] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support triangle fans."
+            }
+        ]
+    },
+    "00050000101c4c00": {
+        "name": "Xenoblade Chronicles X",
+        "region": "EUR",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Infinite black screen",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": "[mvk-error] VK_ERROR_INITIALIZATION_FAILED: Render pipeline compile failed (Error code 3): Fragment input(s) `user(locn0)` mismatching vertex shader output type(s) or not written by vertex shader.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 on this device does not support the VkFormat attachment capabilities required by the subpass at index 0.\nlibc++abi: terminating with uncaught exception of type std::runtime_error: failed to create render pass!"
+            }
+        ]
+    },
+    "0005000010184e00": {
+        "name": "Yoshi's Woolly World",
+        "region": "EU",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Splash screen, crashes",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-09-28",
+                "version": "2.0-4",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+                "renderingApi": "Vulkan",
+                "log": "[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 on this device does not support the VkFormat attachment capabilities required by the subpass at index 0.\nlibc++abi: terminating with uncaught exception of type std::runtime_error: failed to create render pass!"
             }
         ]
     }
