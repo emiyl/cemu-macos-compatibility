@@ -41,11 +41,26 @@
           direction: true,
           searchStr: '',
           ratingArr: [
-            'Unplayable',
-            'Loads',
-            'Runs',
-            'Playable',
-            'Perfect'
+            {
+              name: 'Unplayable',
+              description: 'Crashes when booting/infinite black screen'
+            },
+            {
+              name: 'Loads',
+              description: 'Title loads, but crashes in title screen/menu/in-game'
+            },
+            {
+              name: 'Runs',
+              description: 'Starts, maybe runs well, but major glitches/issues prevent game from being completed'
+            },
+            {
+              name: 'Playable',
+              description: 'Title can be played through with minor audio or graphical glitches'
+            },
+            {
+              name: 'Perfect',
+              description: 'Title can be played with no issues'
+            }
           ]
         }
       },
@@ -65,12 +80,10 @@
   
       <h3 style="margin-bottom: 0;">Ratings</h3>
       <hr>
-      <ul>
-        <li><b>Perfect</b> ({{getRatingPercentage(5)}}%) - Game can be played with no issues</li>
-        <li><b>Playable</b> ({{getRatingPercentage(4)}}%) - Game can be played through with minor audio or graphical glitches</li>
-        <li><b>Runs</b> ({{getRatingPercentage(3)}}%) - Starts, maybe runs well, but major glitches/issues prevent game from being completed</li>
-        <li><b>Loads</b> ({{getRatingPercentage(2)}}%) - Game loads, but crashes in title screen/menu/in-game</li>
-        <li><b>Unplayable</b> ({{getRatingPercentage(1)}}%) - Crashes when booting/infinite black screen</li>
+      <ul><li v-for="i in 5" :key="i">
+        <b>{{ ratingArr[5-i].name }}</b> 
+        ({{getRatingPercentage(6-i)}}%) - 
+        {{ ratingArr[5-i].description }}</li>
       </ul>
   
       <hr>
@@ -137,7 +150,7 @@
             <td>
               {{ title.tests[0].comment }}
             </td>
-            <td class="centerText">{{ratingArr[title.tests[0].rating-1]}}</td>
+            <td class="centerText">{{ratingArr[title.tests[0].rating-1].name}}</td>
           </tr>
         </table>
       </div>

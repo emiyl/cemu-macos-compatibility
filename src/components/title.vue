@@ -5,7 +5,6 @@
             <ul style="padding-left: 0; list-style-type: none;">
                 <li>Title ID: {{ titleID }}</li>
                 <li>Region: {{ region }}</li>
-                <li v-if="tests.length">Average rating: {{ (tests.map(x => x.rating).reduce((total, current) => total + current, 0) / tests.length).toString().slice(0,4) }}</li>
             </ul>
 
             <template v-if="tests.length">
@@ -16,9 +15,12 @@
             <template v-for="test in tests" :key="test">
                 <div class="customContainer"><p>
                     <ul style="padding-left: 0; list-style-type: none;">
-                        <li v-if="test.rating">Rating: {{ test.rating }}
-                            <template v-if="parseInt(test.rating) > 0 && parseInt(test.rating) < 6"> ({{ ratingArr[parseInt(test.rating)-1]}})</template>
-                        </li>
+                        <template v-if="test.rating">
+                            <li v-if="parseInt(test.rating) > 0 && parseInt(test.rating) < 6">
+                                Rating: {{ ratingArr[parseInt(test.rating)-1].name }} ({{ ratingArr[parseInt(test.rating)-1].description }})
+                            </li>
+                            <li v-else>Rating: {{ test.rating }}</li>
+                        </template>
                         <li v-if="test.comment">Comment: {{ test.comment }}</li>
                         <li>
                             <span>Source: </span>
@@ -77,11 +79,26 @@ export default {
             titleID: '',
             tests: [],
             ratingArr: [
-                "Crashes when booting/infinite black screen",
-                "Game loads, but crashes in title screen/menu/in-game",
-                "Starts, maybe runs well, but major glitches/issues prevent game from being completed",
-                "Game can be played through with minor audio or graphical glitches",
-                "Game can be played with no issues",
+                {
+                name: 'Unplayable',
+                description: 'Crashes when booting/infinite black screen'
+                },
+                {
+                name: 'Loads',
+                description: 'Title loads, but crashes in title screen/menu/in-game'
+                },
+                {
+                name: 'Runs',
+                description: 'Starts, maybe runs well, but major glitches/issues prevent game from being completed'
+                },
+                {
+                name: 'Playable',
+                description: 'Title can be played through with minor audio or graphical glitches'
+                },
+                {
+                name: 'Perfect',
+                description: 'Title can be played with no issues'
+                }
             ]
         }
     }
