@@ -14,7 +14,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -33,7 +33,7 @@
                 "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.6 (21G115)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -52,7 +52,7 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -71,7 +71,7 @@
                 "hardware": "MacBook Pro (16-inch, M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -90,7 +90,7 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -109,7 +109,7 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -128,7 +128,7 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -147,7 +147,7 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -166,7 +166,7 @@
                 "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.6 (21G115)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -185,7 +185,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -204,7 +204,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -223,7 +223,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -242,7 +242,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -261,7 +261,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -280,7 +280,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -299,7 +299,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -318,7 +318,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -337,7 +337,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -356,7 +356,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -375,7 +375,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -394,7 +394,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     },
@@ -413,7 +413,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": "[mvk-info] Created 3 swapchain images with initial size (1280, 720) and contents scale 1.0 for screen Built-in Retina Display.\n[mvk-error] VK_SUCCESS: Found attribute with size (16) larger than it's binding's stride (12). Changing descriptor format from MTLVertexFormatUInt4 to MTLVertexFormatUInt3.\nvalidateWithDevice:4134: failed assertion `Render Pipeline Descriptor Validation\nBlending is enabled for render target 0; however, the pixelformat MTLPixelFormatRGBA32Uint for this render target is not blendable."
+                "log": "[mvk-info] Created 3 swapchain images with initial size (1280, 720) and contents scale 1.0 for screen Built-in Retina Display.\n[mvk-error] VK_SUCCESS: Found attribute with size (16) larger than it's binding's stride (12). Changing descriptor format from MTLVertexFormatUInt4 to MTLVertexFormatUInt3.\nvalidateWithDevice:4134: failed assertion `Render Pipeline Descriptor Validation\nBlending is enabled for render target 0; however, the pixelformat MTLPixelFormatRGBA32Uint for this render target is not blendable."
             }
         ]
     },
@@ -432,7 +432,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": "zsh: trace trap  /Users/emma/Downloads/cemu_macos/Cemu"
+                "log": "zsh: trace trap  /Users/emma/Downloads/cemu_macos/Cemu"
             }
         ]
     },
@@ -451,7 +451,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "logs": ""
+                "log": ""
             }
         ]
     }

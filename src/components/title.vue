@@ -35,8 +35,8 @@
                         <li v-if="test.osVersion">OS version: {{ test.osVersion }}</li>
                     </ul>
                     
-                    <template v-if="test.logs">
-                        <pre>{{test.logs}}</pre>
+                    <template v-if="test.log">
+                        <pre>{{test.log}}</pre>
                     </template>
 
                     Entry added by {{ test.author }} on {{ test.date }}.
