@@ -1,4 +1,6 @@
 <template>
+  <navbar/>
+
   <div class="main">
     <RouterView />
   </div>
@@ -10,7 +12,7 @@
     <p>If you need further help, ask on the official Cemu <a href="https://discord.gg/5psYsup" target="_blank">Discord Server</a> for assistance.</p>
   </footer>
 </template>
-    
+
 <style>
   @import '@/assets/main.scss';
 </style>

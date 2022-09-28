@@ -1,6 +1,6 @@
 <template>
   <div class="smallerMain">
-    <h1><router-link to="/"><i class="fas fa-chevron-left" style="font-size: 0.8em; vertical-align: middle; padding-bottom: 5px;"></i></router-link> Installing Cemu (macOS)</h1>
+    <h1>Installing Cemu (macOS)</h1>
 
     <div class="tab-container">
         <section>

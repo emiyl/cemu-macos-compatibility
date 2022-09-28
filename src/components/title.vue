@@ -1,7 +1,7 @@
 <template>
     <div class="smallerMain">
         <template v-if="titleID">
-            <h1><router-link to="/"><i class="fas fa-chevron-left" style="font-size: 0.8em; vertical-align: middle; padding-bottom: 5px;"></i></router-link> {{ pageTitle }}</h1>
+            <h1>{{ pageTitle }}</h1>
             <ul style="padding-left: 0; list-style-type: none;">
                 <li>Title ID: {{ titleID }}</li>
                 <li>Region: {{ region }}</li>
