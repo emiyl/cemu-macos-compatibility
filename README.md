@@ -38,7 +38,8 @@ The "tests" property is an array to store the information regarding your experie
     "version": "2.0-4", // Your Cemu version. If applicable, include extra information such as the commit number
     "hardware": "MacBook Air (M1, 7-GPU, 8GB)", // Include your device and any properties relevant to performance
     "osVersion": "macOS 13.0 beta 8 (22A5352e)", // Your macOS version and build number
-    "renderingApi": "Vulkan" // The rendering API used when testing
+    "renderingApi": "Vulkan", // The rendering API used when testing
+    "logs": "Paste any relevant logs here that may be useful for diagnosing issues"
 }
 ```
 
