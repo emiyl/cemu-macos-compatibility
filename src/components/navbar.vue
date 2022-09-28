@@ -64,7 +64,7 @@ li {
 
 li a {
     color: var(--c-text);
-    transition: color 200ms;
+    transition: color 150ms;
     font-weight: 500;
 }
 
