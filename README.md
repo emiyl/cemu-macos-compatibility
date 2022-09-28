@@ -11,6 +11,7 @@ You can contribute by submitting a PR to edit the `titles.json` file. Each title
   "0005000010143600": {             // Title ID
     "name": "Zelda Wind Waker HD",  // Title name
     "region": "EUR",                // Title region
+    "comment": "Note on any requirements or recommendations to run this title"
     "tests": [                      // Compatibility test array (this is covered below)
       {
         "rating": 4.5,

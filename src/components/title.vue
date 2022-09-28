@@ -5,6 +5,7 @@
             <ul style="padding-left: 0; list-style-type: none;">
                 <li>Title ID: {{ titleID }}</li>
                 <li>Region: {{ region }}</li>
+                <li v-if="comment">Notes: {{comment}}</li>
             </ul>
 
             <template v-if="tests.length">
@@ -65,6 +66,7 @@ export default {
         this.pageTitle = data.name
         this.region = data.region
         this.titleID = data.titleID
+        this.comment = data.comment
         this.tests = data.tests.filter(x => !x.fakeEntry)
 
         document.title = this.pageTitle
@@ -77,6 +79,7 @@ export default {
             pageTitle: '',
             region: '',
             titleID: '',
+            comment: '',
             tests: [],
             ratingArr: [
                 {

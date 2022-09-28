@@ -2,6 +2,7 @@
     "0005000010143600": {
         "name": "Zelda Wind Waker HD",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 5,
@@ -34,6 +35,7 @@
     "0005000010143500": {
         "name": "Zelda Wind Waker HD",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 5,
@@ -53,6 +55,7 @@
     "0005000010101d00": {
         "name": "New Super Mario Bros U",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 2,
@@ -72,6 +75,7 @@
     "0005000010172600": {
         "name": "Bayonetta 2",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 2,
@@ -91,6 +95,7 @@
     "00050000101abc00": {
         "name": "Kirby and the Rainbow Curse",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 2,
@@ -110,6 +115,7 @@
     "000500001012bf00": {
         "name": "D & D: Chronicles of Mystara",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 5,
@@ -129,6 +135,7 @@
     "0005000010178f00": {
         "name": "Shovel Knight",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 5,
@@ -148,6 +155,7 @@
     "00050000101c9400": {
         "name": "Zelda Breath of The Wild",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -167,6 +175,7 @@
     "000500001010ec00": {
         "name": "Mario Kart 8",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -186,6 +195,7 @@
     "0005000010176a00": {
         "name": "Splatoon",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -205,6 +215,7 @@
     "0005000010145c00": {
         "name": "Super Mario 3D World",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -224,6 +235,7 @@
     "000500001f600a00": {
         "name": "Paper Mario Color Splash",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -243,6 +255,7 @@
     "0005000010144f00": {
         "name": "Super Smash Bros. U",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 2,
@@ -262,6 +275,7 @@
     "0005000010102000": {
         "name": "Nintendo Land",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -281,6 +295,7 @@
     "000500001012bd00": {
         "name": "Pikmin 3",
         "region": "USA",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -300,6 +315,7 @@
     "000500001012be00": {
         "name": "Pikmin 3",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -319,6 +335,7 @@
     "000500301001520a": {
         "name": "Friend List",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -351,6 +368,7 @@
     "000500301001020a": {
         "name": "HOME Menu",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -370,6 +388,7 @@
     "0005001010047200": {
         "name": "System Settings",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -389,6 +408,7 @@
     "0005001010040200": {
         "name": "Wii U Menu",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -408,6 +428,7 @@
     "000500101004e200": {
         "name": "Health and Safety Information",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -427,6 +448,7 @@
     "000500301001220a": {
         "name": "Internet Browser",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 4,
@@ -446,6 +468,7 @@
     "000500101004a200": {
         "name": "Mii Maker",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -465,6 +488,7 @@
     "000500301001420a": {
         "name": "Nintendo eShop",
         "region": "EUR",
+        "comment": "Must have a online files dumped to run.",
         "tests": [
             {
                 "rating": 3,
@@ -480,8 +504,8 @@
                 "log": ""
             },
             {
-                "rating": 1,
-                "comment": "Crashes immediately, SIGTRAP.",
+                "rating": 3,
+                "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -490,13 +514,14 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan",
-                "log": "zsh: trace trap  /Users/emma/Downloads/cemu_macos/Cemu"
+                "log": ""
             }
         ]
     },
     "000500101004c200": {
         "name": "Daily Log",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -516,6 +541,7 @@
     "00050000101a1200": {
         "name": "Affordable Space Adventures",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -535,6 +561,7 @@
     "0005000010180700": {
         "name": "Captain Toad Treasure Tracker",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -554,6 +581,7 @@
     "0005000010138300": {
         "name": "DKC Tropical Freeze",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -573,6 +601,7 @@
     "00050000101cc900": {
         "name": "Freedom Planet",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -592,6 +621,7 @@
     "00050000101c6300": {
         "name": "Mini Mario Amiibo Challenge",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 3,
@@ -611,6 +641,7 @@
     "0005000010146100": {
         "name": "NES Remix",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 3,
@@ -630,6 +661,7 @@
     "0005000010162600": {
         "name": "NES Remix 2",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 3,
@@ -649,6 +681,7 @@
     "000500001019e600": {
         "name": "Zelda Twilight Princess",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
@@ -668,6 +701,7 @@
     "00050000101c4c00": {
         "name": "Xenoblade Chronicles X",
         "region": "EUR",
+        "comment": "",
         "tests": [
             {
                 "rating": 1,
