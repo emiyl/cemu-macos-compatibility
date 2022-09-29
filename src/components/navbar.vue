@@ -74,12 +74,11 @@ export default {
 
 a {
     color: var(--c-text);
-    transition: color 150ms;
     font-weight: 500;
 }
 
 a:hover {
-    color: var(--c-brand);
+    color: var(--c-brand-hover);
 }
 
 .activeItem a {

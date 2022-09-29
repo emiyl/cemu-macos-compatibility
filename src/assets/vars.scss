@@ -1,5 +1,6 @@
 :root {
     --c-brand: #30bcd5;
+    --c-brand-hover: hsl(189, 70%, 40%);
     --c-bg: #f6f6f6;
     --c-bg-light: #f3f4f5;
     --c-bg-search: #fff;
@@ -15,6 +16,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --c-brand-hover: hsl(189, 80%, 35%);
         --c-bg: #22272e;
         --c-bg-light: #2b313a;
         --c-bg-search: #22272e;

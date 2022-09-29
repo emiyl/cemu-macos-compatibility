@@ -20,6 +20,11 @@ body {
 a {
   color: var(--c-brand);
   text-decoration: none;
+  transition: color 150ms;
+}
+
+a:hover {
+  color: var(--c-brand-hover);
 }
 
 td, th {
