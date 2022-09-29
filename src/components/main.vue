@@ -22,12 +22,10 @@
         />
         <span class="regionCheckbox">
           <label><b>Regions:</b></label>
-          <input type="checkbox" v-model="showEUR" id="showEURCheckbox">
-          <label for="showEURCheckbox">EUR</label>
-          <input type="checkbox" v-model="showUSA" id="showUSACheckbox">
-          <label for="showUSACheckbox">USA</label>
-          <input type="checkbox" v-model="showJPN" id="showJPNCheckbox">
-          <label for="showJPNCheckbox">JPN</label>
+          <template v-for="region in Array.from(new Set(compatList.map(x => x.region)))" :key="region">
+            <input type="checkbox" v-model="showRegions.find(x => x.region == region).show" :id="`show${region}Checkbox`">
+            <label :for="`show${region}Checkbox`">{{region}} ({{compatList.filter(x => x.region == region).length}})</label>
+          </template>
         </span>
       </p>
   
@@ -42,11 +40,7 @@
             <th style="min-width: 4.5em;">Rating <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'rating') ? direction = !direction : sortBy = 'rating'" class="fas fa-sort"></i></th>
           </tr>
           <tr v-for="title in compatList.filter(x => 
-            (
-              (x.region == 'EUR') && showEUR ||
-              (x.region == 'USA') && showUSA ||
-              (x.region == 'JPN') && showJPN
-            ) && (
+            showRegions.find(y => y.region == x.region).show && (
               !searchStr ||
               searchStr == '' ||
               x.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
@@ -117,9 +111,12 @@
     data() {
       return {
         compatList: compatList,
-        showEUR: true,
-        showUSA: true,
-        showJPN: true,
+        showRegions: Array.from(new Set(compatList.map(x => x.region))).map(x => {
+          return {
+            region: x,
+            show: true
+          }
+        }),
         sortBy: "rating",
         direction: true,
         showComments: true,
@@ -166,5 +163,6 @@
 <style scoped>
   label, input {
     margin-right: .5em;
+    user-select: none;
   }
 </style>
