@@ -27,7 +27,7 @@
 	border: 1px solid var(--c-border);
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 300px) {
 	.tab-container section html:not([dir=rtl]) & &:not(:first-of-type) .tab-link {
 		border-left-width: 0px;
 	}
@@ -61,7 +61,7 @@
 	}
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 299px) {
 	.tab-container section .tab-link {
 		width: 100%;
 	}
