@@ -76,6 +76,7 @@ export default {
         this.dlLinkTarget = ''
     },
     mounted() {
+        window.scrollTo(0, 0)
         document.title = 'macOS Cemu Installation Guide'
     },
     methods: {

@@ -72,6 +72,7 @@ export default {
         document.title = this.pageTitle
     },
     mounted() {
+        window.scrollTo(0, 0)
         document.title = this.pageTitle // Yes this needs to be done twice idk why
     },
     data() {
