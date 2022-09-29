@@ -1,82 +1,4 @@
-<script>
-    import compatListObj from '../../titles.json'
-      
-    var compatList = []
-    for (var i in compatListObj) {
-      var o = compatListObj[i]
-      o.titleID = i
-    
-      if (o.tests) o.tests = o.tests.map(test => {
-        if (!Array.isArray(test.author)) test.author = [test.author]
-        test.author = test.author.join(', ')
-        return test
-      })
-  
-      compatList.push(o)
-    }
-
-    compatList = compatList.map(x => {
-      if (x.tests.length) x.tests = x.tests.sort((a,b) => {
-        const date = [a,b].map(y => new Date(y.date))
-        if (date[0] > date[1]) return -1
-        if (date[0] < date[1]) return 1
-        return 0
-      })
-      else x.tests[0] = {
-        rating: 0,
-        comment: 'Unknown',
-        fakeEntry: true
-      }
-      return x
-    }).sort((a,b) => {
-      if (a.name > b.name) return -1
-      if (a.name < b.name) return 1
-      return 0
-    })
-    
-    export default {
-      data() {
-        return {
-          compatList: compatList,
-          showEUR: true,
-          showUSA: true,
-          showJPN: true,
-          sortBy: "rating",
-          direction: true,
-          searchStr: '',
-          ratingArr: [
-            {
-              name: 'Unplayable',
-              description: 'Crashes when booting/infinite black screen'
-            },
-            {
-              name: 'Loads',
-              description: 'Title loads, but crashes in title screen/menu/in-game'
-            },
-            {
-              name: 'Runs',
-              description: 'Starts, maybe runs well, but major glitches/issues prevent game from being completed'
-            },
-            {
-              name: 'Playable',
-              description: 'Title can be played through with minor audio or graphical glitches'
-            },
-            {
-              name: 'Perfect',
-              description: 'Title can be played with no issues'
-            }
-          ]
-        }
-      },
-      methods: {
-        getRatingPercentage(i) {
-          return parseInt(this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100)
-        }
-      }
-    }
-  </script>
-      
-  <template>
+<template>
       <h1>Cemu macOS Compatibility</h1>
       <p>Unofficial list of compatibility with the macOS builds of Cemu. <b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
       <p>To run Cemu on macOS, I recommend you follow my <router-link to="/installation">installation guide</router-link>. To discuss macOS Cemu development, there is a dedicated macOS thread on the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a> under #cemu_dev_public.</p>
@@ -106,10 +28,6 @@
           <label for="showUSACheckbox">USA</label>
           <input type="checkbox" v-model="showJPN" id="showJPNCheckbox">
           <label for="showJPNCheckbox">JPN</label>
-        </span>
-  
-        <span class="githubBtn">
-          <a href="https://github.com/emiyl/cemu-macos-compatibility" target="_blank"><i class="fab fa-github"></i></a>
         </span>
       </p>
   
@@ -158,6 +76,84 @@
         </table>
       </div>
 </template>
+
+<script>
+  import compatListObj from '../../titles.json'
+    
+  var compatList = []
+  for (var i in compatListObj) {
+    var o = compatListObj[i]
+    o.titleID = i
+  
+    if (o.tests) o.tests = o.tests.map(test => {
+      if (!Array.isArray(test.author)) test.author = [test.author]
+      test.author = test.author.join(', ')
+      return test
+    })
+
+    compatList.push(o)
+  }
+
+  compatList = compatList.map(x => {
+    if (x.tests.length) x.tests = x.tests.sort((a,b) => {
+      const date = [a,b].map(y => new Date(y.date))
+      if (date[0] > date[1]) return -1
+      if (date[0] < date[1]) return 1
+      return 0
+    })
+    else x.tests[0] = {
+      rating: 0,
+      comment: 'Unknown',
+      fakeEntry: true
+    }
+    return x
+  }).sort((a,b) => {
+    if (a.name > b.name) return -1
+    if (a.name < b.name) return 1
+    return 0
+  })
+  
+  export default {
+    data() {
+      return {
+        compatList: compatList,
+        showEUR: true,
+        showUSA: true,
+        showJPN: true,
+        sortBy: "rating",
+        direction: true,
+        searchStr: '',
+        ratingArr: [
+          {
+            name: 'Unplayable',
+            description: 'Crashes when booting/infinite black screen'
+          },
+          {
+            name: 'Loads',
+            description: 'Title loads, but crashes in title screen/menu/in-game'
+          },
+          {
+            name: 'Runs',
+            description: 'Starts, maybe runs well, but major glitches/issues prevent game from being completed'
+          },
+          {
+            name: 'Playable',
+            description: 'Title can be played through with minor audio or graphical glitches'
+          },
+          {
+            name: 'Perfect',
+            description: 'Title can be played with no issues'
+          }
+        ]
+      }
+    },
+    methods: {
+      getRatingPercentage(i) {
+        return parseInt(this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100)
+      }
+    }
+  }
+</script>
 
 <style scoped>
   label, input {
