@@ -38,7 +38,7 @@
             <th>Name <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'name') ? direction = !direction : sortBy = 'name'" class="fas fa-sort"></i></th>
             <!--<th>Title ID <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'titleID') ? direction = !direction : sortBy = 'titleID'" class="fas fa-sort"></i></th>
             <th>Region</th>-->
-            <th>Comment</th>
+            <th v-if="showComments">Comment</th>
             <th style="min-width: 4.5em;">Rating <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'rating') ? direction = !direction : sortBy = 'rating'" class="fas fa-sort"></i></th>
           </tr>
           <tr v-for="title in compatList.filter(x => 
@@ -68,7 +68,7 @@
               </picture>
             </td>
             <td class="tableMinWidth"><router-link :to="`/titleid/${title.titleID}`">{{title.name}} ({{title.region}})</router-link></td>
-            <td>
+            <td v-if="showComments">
               {{ title.tests[0].comment }}
             </td>
             <td class="centerText">{{ratingArr[title.tests[0].rating-1].name}}</td>
@@ -122,6 +122,7 @@
         showJPN: true,
         sortBy: "rating",
         direction: true,
+        showComments: true,
         searchStr: '',
         ratingArr: [
           {
@@ -150,6 +151,13 @@
     methods: {
       getRatingPercentage(i) {
         return parseInt(this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100)
+      }
+    },
+    mounted() {
+      if (window.innerWidth <= 700) this.showComments = false
+      window.onresize = () => {
+        if (window.innerWidth <= 700) this.showComments = false
+        else this.showComments = true
       }
     }
   }
