@@ -2,9 +2,11 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import main from './components/main.vue'
-import navbar from './components/navbar.vue'
 import title from './components/title.vue'
 import installation from './components/installation.vue'
+
+import navbar from './components/navbar.vue'
+import navbarLabel from './components/navbarLabel.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -33,4 +35,5 @@ const app = createApp(App)
 app
 .use(router)
 .component('navbar', navbar)
+.component('navbarLabel', navbarLabel)
 .mount('#app')
