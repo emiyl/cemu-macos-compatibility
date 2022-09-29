@@ -28,6 +28,7 @@ export default {
         return {
             navbar: [
                 {
+                    icon: 'fas fa-code',
                     label: 'Home',
                     url: '/',
                     collapse: {
