@@ -1,7 +1,7 @@
 <template>
-    <i v-if="icon" :class="[icon,(collapseTo != 'icon' ? 'collapse' : '')]"/>
+    <i v-if="icon" :class="[icon,(collapse.element != 'icon' ? 'collapse' : ''),(collapse.side == 'right' ? 'collapseRight' : '')]"/>
     <span class="spacer" v-if="icon && label"></span>
-    <span v-if="label" :class="(collapseTo != 'label' ? 'collapse' : '')">{{label}}</span>
+    <span v-if="label" :class="[(collapse.element != 'label' ? 'collapse' : ''),(collapse.side == 'right' ? 'collapseRight' : '')]">{{label}}</span>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
     props: {
         icon: String,
         label: String,
-        collapseTo: String
+        collapse: Object
     }
 }
 </script>
@@ -21,6 +21,10 @@ export default {
 @media (max-width: 500px) {
     .collapse {
         display: none;
+    }
+    .collapseRight {
+        margin-left: auto;
+        flex: 1;
     }
     .spacer {
         margin-inline: 0;

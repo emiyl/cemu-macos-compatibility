@@ -1,5 +1,5 @@
 <template>
-    <div class="navbarWrapper">
+    <div class="navbarWrapper"><div class="flexWrapper">
         <div
             v-for="navbarItem in navbar"
             :key="navbarItem.label"
@@ -7,17 +7,17 @@
         >
             <template v-if="navbarItem.url">
                 <a v-if="navbarItem.url.startsWith('http')" :href="navbarItem.url" target="_blank">
-                    <navbarLabel :label="navbarItem.label" :icon="navbarItem.icon" :collapseTo="navbarItem.collapseTo"/>
+                    <navbarLabel :label="navbarItem.label" :icon="navbarItem.icon" :collapse="navbarItem.collapse"/>
                 </a>
                 <router-link v-else :to="navbarItem.url">
-                    <navbarLabel :label="navbarItem.label" :icon="navbarItem.icon" :collapseTo="navbarItem.collapseTo"/>
+                    <navbarLabel :label="navbarItem.label" :icon="navbarItem.icon" :collapse="navbarItem.collapse"/>
                 </router-link>
             </template>
             <template v-else>
-                <navbarLabel :label="navbarItem.label" :icon="navbarItem.icon" :collapseTo="navbarItem.collapseTo"/>
+                <navbarLabel :label="navbarItem.label" :icon="navbarItem.icon" :collapse="navbarItem.collapse"/>
             </template>
         </div>
-    </div>
+    </div></div>
 </template>
 
 <script>
@@ -30,25 +30,37 @@ export default {
                 {
                     label: 'Home',
                     url: '/',
-                    collapseTo: 'label'
+                    collapse: {
+                        element: 'label',
+                        side: 'left'
+                    }
                 },
                 {
                     icon: 'far fa-download',
                     label: 'Installation',
                     url: '/installation',
-                    collapseTo: 'label'
+                    collapse: {
+                        element: 'label',
+                        side: 'left'
+                    }
                 },
                 {
                     icon: 'fab fa-discord',
                     label: 'Discord',
                     url: 'https://discord.gg/5psYsup',
-                    collapseTo: 'icon'
+                    collapse: {
+                        element: 'icon',
+                        side: 'right'
+                    }
                 },
                 {
                     icon: 'fab fa-github',
                     label: 'GitHub',
                     url: 'https://github.com/emiyl/cemu-macos-compatibility',
-                    collapseTo: 'icon'
+                    collapse: {
+                        element: 'icon',
+                        side: 'right'
+                    }
                 }
             ]
         }
@@ -61,10 +73,19 @@ export default {
 
 <style scoped>
 .navbarWrapper {
+    background-color: var(--c-bg);
     border-bottom: 1px solid var(--c-border);
-    padding: 1em;
     box-shadow: var(--shadow);
+    height: var(--navbar-height);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.flexWrapper {
+    margin-inline: auto;
     display: flex;
+    padding: 1em;
 }
 
 .navbarItem {
