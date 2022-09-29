@@ -77,16 +77,15 @@ export default {
     background-color: var(--c-bg);
     border-bottom: 1px solid var(--c-border);
     box-shadow: var(--shadow);
-    height: var(--navbar-height);
+    height: (var--navbar-height);
     width: 100%;
     position: sticky;
     top: 0;
 }
 
 .flexWrapper {
-    margin-inline: auto;
-    display: flex;
     padding: 1em;
+    display: flex;
 }
 
 .navbarItem {

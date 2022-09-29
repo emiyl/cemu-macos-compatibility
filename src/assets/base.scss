@@ -60,8 +60,12 @@ hr {
 footer {
   border-top: 1px solid var(--c-border);
   background-color: var(--c-bg-light);
-  padding: .7em 2em;
+  height: var(--footer-height);
   margin: auto;
+}
+
+.footerText {
+  padding: .7em 2em;
 }
 
 .customContainer {
@@ -107,6 +111,7 @@ ul {
 .main {
   margin: auto;
   width: 70%;
+  min-height: calc(100vh - var(--footer-height) - var(--navbar-height) - 2em);
 }
 
 .smallerMain {
