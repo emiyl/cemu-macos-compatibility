@@ -488,7 +488,7 @@
     "000500301001420a": {
         "name": "Nintendo eShop",
         "region": "EUR",
-        "comment": "Must have a online files dumped to run. Network functions are stubbed on non-Windows builds, so you cannot access the internet.",
+        "comment": "Must have a online files dumped to run. Network functions are stubbed on non-Windows builds, so you cannot access the eShop.",
         "tests": [
             {
                 "rating": 3,
