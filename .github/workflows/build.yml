@@ -45,7 +45,7 @@ jobs:
           echo 'cemu.emiyl.com' >> dist/CNAME
           echo '' >> dist/.nojekyll
           cp dist/index.html dist/404.html
-          for n in instructions installations;
+          for n in instructions installation;
           do
             cp dist/index.html dist/$n.html
           done
