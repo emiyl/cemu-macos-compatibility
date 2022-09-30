@@ -14,7 +14,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             },
             {
@@ -27,7 +27,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -47,7 +47,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.6 (21G115)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -67,7 +67,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -87,7 +87,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro (16-inch, M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -107,7 +107,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -127,7 +127,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -147,7 +147,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -167,7 +167,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -187,7 +187,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.6 (21G115)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -207,7 +207,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -227,7 +227,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -247,7 +247,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -267,7 +267,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -287,7 +287,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -307,7 +307,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -327,8 +327,8 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5352e)",
-                "renderingApi": "Vulkan",
-                "log": "[22:07:32.608] Unrecoverable error in Vulkan renderer\n[22:07:32.608] Msg: failed to submit command buffer. Error -11"
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": "[22:07:32.608] Unrecoverable error in Vulkan on MoltenVK v1.1.11 renderer\n[22:07:32.608] Msg: failed to submit command buffer. Error -11"
             }
         ]
     },
@@ -347,7 +347,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             },
             {
@@ -360,7 +360,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -380,7 +380,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -400,7 +400,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -420,7 +420,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -440,7 +440,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -460,7 +460,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -480,7 +480,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "[mvk-info] Created 3 swapchain images with initial size (1280, 720) and contents scale 1.0 for screen Built-in Retina Display.\n[mvk-error] VK_SUCCESS: Found attribute with size (16) larger than it's binding's stride (12). Changing descriptor format from MTLVertexFormatUInt4 to MTLVertexFormatUInt3.\nvalidateWithDevice:4134: failed assertion `Render Pipeline Descriptor Validation\nBlending is enabled for render target 0; however, the pixelformat MTLPixelFormatRGBA32Uint for this render target is not blendable."
             }
         ]
@@ -500,7 +500,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             },
             {
@@ -513,7 +513,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -533,7 +533,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -553,7 +553,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -573,7 +573,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -593,7 +593,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "[mvk-error] VK_ERROR_INITIALIZATION_FAILED: Render pipeline compile failed (Error code 3): Fragment input(s) `user(locn0),user(locn1)` mismatching vertex shader output type(s) or not written by vertex shader."
             }
         ]
@@ -613,7 +613,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -633,7 +633,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "Cemu-101ff77[44262:1217876] +[CATransaction synchronize] called within transaction"
             }
         ]
@@ -653,7 +653,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -673,7 +673,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
         ]
@@ -693,7 +693,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkPrimitiveTopology value 5 is not supported for rendering.\n[mvk-error] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support triangle fans."
             }
         ]
@@ -713,7 +713,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "[mvk-error] VK_ERROR_INITIALIZATION_FAILED: Render pipeline compile failed (Error code 3): Fragment input(s) `user(locn0)` mismatching vertex shader output type(s) or not written by vertex shader.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 on this device does not support the VkFormat attachment capabilities required by the subpass at index 0.\nlibc++abi: terminating with uncaught exception of type std::runtime_error: failed to create render pass!"
             }
         ]
@@ -732,7 +732,7 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 beta 8 (22A5352e)",
-                "renderingApi": "Vulkan",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 on this device does not support the VkFormat attachment capabilities required by the subpass at index 0.\nlibc++abi: terminating with uncaught exception of type std::runtime_error: failed to create render pass!"
             }
         ]
