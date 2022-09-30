@@ -198,6 +198,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 3,
+                "comment": "Managed to get through the tutorial and a shop in Inkopolis without crashing. Seems promising - however many rendering issues.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-09-30",
+                "version": "2.0 (3fb4b5e26c0125dda68b3858e8c3d9589244c211)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Hangs on black screen.",
                 "source": "@emiyl",
