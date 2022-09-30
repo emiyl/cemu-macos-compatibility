@@ -159,7 +159,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Crashes instantly, R5G6B5_UNORM_PACK16 not supported,",
+                "comment": "Crashes instantly, R5G6B5_UNORM_PACK16 not supported.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -412,7 +412,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Splash screen, then crashes",
+                "comment": "Splash screen, then crashes.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -458,7 +458,7 @@
             },
             {
                 "rating": 1,
-                "comment": "Black screen, no progress",
+                "comment": "Black screen, no progress.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -676,7 +676,7 @@
         "tests": [
             {
                 "rating": 3,
-                "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress",
+                "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -689,7 +689,7 @@
             },
             {
                 "rating": 3,
-                "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress",
+                "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -742,7 +742,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Loads splash screen, never progresses, spinner when closing Cemu",
+                "comment": "Loads splash screen, never progresses, spinner when closing Cemu.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -762,7 +762,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Splash screen loads, fades to infinite white screen",
+                "comment": "Splash screen loads, fades to infinite white screen.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -782,7 +782,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Splash screen, then either infinite white or plays banana animation but never progresses",
+                "comment": "Splash screen, then either infinite white or plays banana animation but never progresses.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -802,7 +802,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Splash screen, no further progress",
+                "comment": "Splash screen, no further progress.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -822,7 +822,7 @@
         "tests": [
             {
                 "rating": 3,
-                "comment": "Launches, serious visual issues (half screen black triangle), animates, doesn’t seem to acknowledge amiibo bin files so can’t proceed",
+                "comment": "Launches, serious visual issues (half screen black triangle), animates, doesn’t seem to acknowledge amiibo bin files so can’t proceed.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -842,7 +842,7 @@
         "tests": [
             {
                 "rating": 3,
-                "comment": "Runs, stable, but timer speeds are wrong so 60 second game completes in one second so cannot play",
+                "comment": "Runs, stable, but timer speeds are wrong so 60 second game completes in one second so cannot play.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -940,7 +940,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Crashes instantly",
+                "comment": "Crashes instantly.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "Jaimie",
