@@ -1,0 +1,25 @@
+.compatWrapper {
+    margin-bottom: 2em;
+}
+
+.compatIndicator {
+    font-size: .5em;
+    padding-inline: 1em 1.2em;
+    padding-block: 7px;
+}
+
+.perfect {
+    color: var(--c-perfect);
+}
+.playable {
+    color: var(--c-playable);
+}
+.runs {
+    color: var(--c-runs);
+}
+.loads {
+    color: var(--c-loads);
+}
+.unplayable {
+    color: var(--c-unplayable);
+}

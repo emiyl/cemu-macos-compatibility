@@ -3,15 +3,16 @@
       <p>Unofficial list of compatibility with the macOS builds of Cemu. <b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
       <p>To run Cemu on macOS, I recommend you follow my <router-link to="/installation">installation guide</router-link>. To discuss macOS Cemu development, there is a dedicated macOS thread on the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a> under #cemu_dev_public.</p>
   
-      <h3 style="margin-bottom: 0;">Ratings</h3>
-      <hr>
-      <ul><li v-for="i in 5" :key="i">
-        <b>{{ ratingArr[5-i].name }}</b> 
-        ({{getRatingPercentage(6-i)}}%) - 
-        {{ ratingArr[5-i].description }}</li>
-      </ul>
-  
-      <hr>
+      <h5>Ratings</h5>
+      <div class="flexWrapper compatWrapper">
+        <div v-for="i in 5" :key="i" class="flexWrapper flexItem" style="flex: 1 1 100%">
+          <i :class="['fas','fa-circle','compatIndicator',ratingArr[5-i].name.toLowerCase()]"></i>
+          <div>
+            <b>{{ ratingArr[5-i].name }}</b><br>
+            <span style="color: var(--c-text-grey)">{{ ratingArr[5-i].description }} - {{getRatingPercentage(6-i)}}%</span>
+          </div>
+        </div>
+      </div>
   
       <p>
         <input 
@@ -124,19 +125,19 @@
         ratingArr: [
           {
             name: 'Unplayable',
-            description: 'Crashes when booting/infinite black screen'
+            description: 'Title crashes or does not boot'
           },
           {
             name: 'Loads',
-            description: 'Title loads, but crashes in title screen/menu/in-game'
+            description: 'Title loads but crashes in title screen or menu'
           },
           {
             name: 'Runs',
-            description: 'Starts, maybe runs well, but major glitches/issues prevent game from being completed'
+            description: 'Major issues prevent title from being completed'
           },
           {
             name: 'Playable',
-            description: 'Title can be played through with minor audio or graphical glitches'
+            description: 'Minor audio or graphical glitches'
           },
           {
             name: 'Perfect',

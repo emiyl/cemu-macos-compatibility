@@ -1,0 +1,13 @@
+.flexWrapper {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .flexWrapper {
+        flex-wrap: wrap;
+    }
+
+    .flexItem {
+        padding-bottom: .5em;
+    }
+}

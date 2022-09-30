@@ -18,6 +18,21 @@ body {
   line-height: 1.4;
 }
 
+h5 {
+  color: var(--c-text-grey);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+h5::after {
+  content: "";
+  background: var(--c-border);
+  margin-left: 10px;
+  flex-grow: 1;
+  height: 1px;
+}
+
 a {
   color: var(--c-brand);
   text-decoration: none;
