@@ -159,7 +159,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Crashes instantly.",
+                "comment": "Crashes instantly, R5G6B5_UNORM_PACK16 not supported,",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -272,7 +272,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Crashes instantly.",
+                "comment": "Crashes instantly, R5G6B5_UNORM_PACK16 not supported.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -320,6 +320,26 @@
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU)",
                 "osVersion": "macOS 12",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010145000": {
+        "name": "Super Smash Bros. U",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 2,
+                "comment": "Segfaults after trying to play the opening video. Removing the video causes a segfault trying to load a battle.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-09-30",
+                "version": "2.0-4",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
@@ -412,7 +432,7 @@
         "tests": [
             {
                 "rating": 2,
-                "comment": "You can get through three prompts, but some characters are missing from the text, and it crashes immediately afterwards. App also crashes when you try to select an item with joystick.",
+                "comment": "You can get through three prompts, but some characters are missing from the text, and it crashes immediately afterwards. App also crashes when you try to select an item with joystick. MTLPixelFormatRGBA32Uint not blendable.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -491,7 +511,7 @@
         "tests": [
             {
                 "rating": 3,
-                "comment": "App seems to be mostly fine, however it crashes if you try to select something with the joystick.",
+                "comment": "App seems to be mostly fine, however it crashes if you try to select something with the joystick. R5G6B5_UNORM_PACK16 not supported.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -623,7 +643,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Runs for a couple frames and then crashes.",
+                "comment": "Runs for a couple frames and then crashes. MTLPixelFormatRGBA32Uint not blendable.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -636,7 +656,7 @@
             },
             {
                 "rating": 1,
-                "comment": "Crashes immediately.",
+                "comment": "Crashes immediately. MTLPixelFormatRGBA32Uint not blendable.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -645,7 +665,7 @@
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
-                "log": "[mvk-info] Created 3 swapchain images with initial size (1280, 720) and contents scale 1.0 for screen Built-in Retina Display.\n[mvk-error] VK_SUCCESS: Found attribute with size (16) larger than it's binding's stride (12). Changing descriptor format from MTLVertexFormatUInt4 to MTLVertexFormatUInt3.\nvalidateWithDevice:4134: failed assertion `Render Pipeline Descriptor Validation\nBlending is enabled for render target 0; however, the pixelformat MTLPixelFormatRGBA32Uint for this render target is not blendable."
+                "log": "[mvk-error] VK_SUCCESS: Found attribute with size (16) larger than it's binding's stride (12). Changing descriptor format from MTLVertexFormatUInt4 to MTLVertexFormatUInt3.\nvalidateWithDevice:4134: failed assertion `Render Pipeline Descriptor Validation\nBlending is enabled for render target 0; however, the pixelformat MTLPixelFormatRGBA32Uint for this render target is not blendable."
             }
         ]
     },
@@ -862,7 +882,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Splash screen, then crashes",
+                "comment": "Splash screen, then crashes.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -882,7 +902,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Infinite black screen",
+                "comment": "Infinite black screen. R5G6B5_UNORM_PACK16 not supported.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -901,7 +921,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Splash screen, crashes",
+                "comment": "Splash screen, crashes. R5G6B5_UNORM_PACK16 not supported.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
                 "author": "Jaimie",
@@ -927,7 +947,7 @@
                 "date": "2022-09-30",
                 "version": "2.0 (3fb4b5e26c0125dda68b3858e8c3d9589244c211)",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
-                "osVersion": "macOS 13.0 beta 9 (22A5352e)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "Bus error: 10!\nError: signal 10:"
             }

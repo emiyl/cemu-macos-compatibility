@@ -63,7 +63,7 @@
             </td>
             <td class="tableMinWidth"><router-link :to="`/titleid/${title.titleID}`">{{title.name}} ({{title.region}})</router-link></td>
             <td v-if="showComments">
-              {{ title.tests[0].comment }}
+              {{ title.tests[0].comment.slice(0,100) }}<router-link v-if="title.tests[0].comment.length > 100" :to="`/titleid/${title.titleID}`"><b>...</b></router-link>
             </td>
             <td class="centerText">{{ratingArr[title.tests[0].rating-1].name}}</td>
           </tr>
