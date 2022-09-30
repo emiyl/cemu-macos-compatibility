@@ -239,7 +239,7 @@
         "tests": [
             {
                 "rating": 3,
-                "comment": "Managed to get through the tutorial and a shop in Inkopolis without crashing. Seems promising - however many rendering issues.",
+                "comment": "Managed to get through the tutorial and a shop in Inkopolis without crashing. Seems promising - however many rendering issues. Network not supported yet so marking this as \"Runs\".,
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
