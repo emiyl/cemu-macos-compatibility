@@ -199,7 +199,7 @@
         "tests": [
             {
                 "rating": 1,
-                "comment": "Runs first few frames, then crashes.",
+                "comment": "Runs first few frames, then crashes. MTLPixelFormatRGBA32Uint not blendable.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
