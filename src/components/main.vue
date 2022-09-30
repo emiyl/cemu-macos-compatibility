@@ -151,6 +151,7 @@
       }
     },
     mounted() {
+      document.title = 'Cemu macOS Compatibility Chart'
       if (window.innerWidth <= 700) this.showComments = false
       window.onresize = () => {
         if (window.innerWidth <= 700) this.showComments = false
