@@ -335,20 +335,20 @@
     "000500301001520a": {
         "name": "Friend List",
         "region": "EUR",
-        "comment": "",
+        "comment": "Must have a online files dumped to run. Network functions are stubbed on non-Windows builds, so this app wouldn't work anyway.",
         "tests": [
             {
-                "rating": 1,
-                "comment": "Loads forever, title does not launch.",
+                "rating": 2,
+                "comment": "You can get through three prompts, but some characters are missing from the text, and it crashes immediately afterwards.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
-                "date": "2022-09-28",
+                "date": "2022-09-30",
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
-                "log": ""
+                "log": "validateWithDevice:4134: failed assertion `Render Pipeline Descriptor Validation\nBlending is enabled for render target 0; however, the pixelformat MTLPixelFormatRGBA32Uint for this render target is not blendable.\n'\nAbort trap: 6!\nError: signal 6:\n0   Cemu_release                        0x00000001053a51dd _Z20handlerDumpingSignali + 93\n1   libsystem_platform.dylib            0x00007ff80321dc1d _sigtramp + 29\n2   ???                                 0x0000000000000001 0x0 + 1\n3   libsystem_c.dylib                   0x00007ff80313cca5 abort + 123\n4   libsystem_c.dylib                   0x00007ff80313bfbe err + 0\n5   Metal                               0x00007ff80cd92f32 _Z13MTLGetEnvCaseI16MTLErrorModeTypeEbPKcRT_RKNSt3__16vectorINS5_4pairIS2_S3_EENS5_9allocatorIS8_EEEE.cold.1 + 0\n6   Metal                               0x00007ff80cd6ddf9 MTLReportFailure + 529\n7   Metal                               0x00007ff80cd622ac _MTLMessageContextEnd + 1278\n8   Metal                               0x00007ff80cd6a571 _ZL18validateWithDevicePU19objcproto9MTLDevice11objc_objectRK34MTLRenderPipelineDescriptorPrivate + 538\n9   Metal                               0x00007ff80cd6a2c9 -[MTLRenderPipelineDescriptorInternal validateWithDevice:error:] + 89\n10  AGXMetal13_3                        0x00007ffa19980e77 AGXMetal13_3 + 4066935\n11  AGXMetal13_3                        0x00007ffa1996d97c AGXMetal13_3 + 3987836\n12  libMoltenVK.dylib                   0x000000011687d885 ___ZN25MVKRenderPipelineCompiler25newMTLRenderPipelineStateEP27MTLRenderPipelineDescriptor_block_invoke + 117\n13  libMoltenVK.dylib                   0x00000001168b6f69 ___ZN16MVKMetalCompiler7compileERNSt3__111unique_lockINS0_5mutexEEEU13block_pointerFvvE_block_invoke + 25\n14  libdispatch.dylib                   0x00007ff8030727fb _dispatch_call_block_and_release + 12\n15  libdispatch.dylib                   0x00007ff803073a44 _dispatch_client_callout + 8\n16  libdispatch.dylib                   0x00007ff8030837f6 _dispatch_root_queue_drain + 683\n17  libdispatch.dylib                   0x00007ff803083e4d _dispatch_worker_thread2 + 160\n18  libsystem_pthread.dylib             0x00007ff8031efc9d _pthread_wqthread + 256\n19  libsystem_pthread.dylib             0x00007ff8031eec67 start_wqthread + 15"
             },
             {
                 "rating": 1,
