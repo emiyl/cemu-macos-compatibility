@@ -44,8 +44,7 @@ jobs:
           cp -r icons dist
           echo 'cemu.emiyl.com' >> dist/CNAME
           echo '' >> dist/.nojekyll
-          cp dist/index.html dist/404.html
-          for n in instructions installation;
+          for n in 404 instructions installation;
           do
             cp dist/index.html dist/$n.html
           done
