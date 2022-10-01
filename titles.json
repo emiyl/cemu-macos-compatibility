@@ -297,6 +297,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 3,
+                "comment": "Runs well, with minor graphical glitches on most levels, except some major graphical glitches on boss fights which make it nearly impossible to beat.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-10-01",
+                "version": "2.0 (9541c8ae8556ffd72aab4e9eb092ec45eeceaf22)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Crashes instantly, R5G6B5_UNORM_PACK16 not supported.",
                 "source": "@emiyl",
