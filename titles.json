@@ -191,6 +191,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 3,
+                "comment": "Runs, but many textures are missing and the game crashes when you play a cutscene. This means you cannot unlock the first tower, which is necessary to complete the game.",
+                "source": "@evelyneee",
+                "sourceURL": "https://github.com/evelyneee",
+                "author": "emiyl",
+                "date": "2022-10-01",
+                "version": "2.0 (9541c8ae8556ffd72aab4e9eb092ec45eeceaf22)",
+                "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Does not run at all.",
                 "source": "Andrew Tsai",
