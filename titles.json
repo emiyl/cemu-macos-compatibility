@@ -480,8 +480,21 @@
     "000500301001520a": {
         "name": "Friend List",
         "region": "EUR",
-        "comment": "Must have a online files dumped to run. Network functions are stubbed on non-Windows builds, so this app wouldn't work anyway.",
+        "comment": "Must have a online files dumped to run. Network functions are stubbed on non-Windows builds, so this app has limited functionality.",
         "tests": [
+            {
+                "rating": 3,
+                "comment": "Rendering issues with text and Miis. Network functions are disabled so you cannot add friends.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-10-01",
+                "version": "2.0 (9541c8ae8556ffd72aab4e9eb092ec45eeceaf22)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
             {
                 "rating": 2,
                 "comment": "You can get through three prompts, but some characters are missing from the text, and it crashes immediately afterwards. App also crashes when you try to select an item with joystick. MTLPixelFormatRGBA32Uint not blendable.",
