@@ -1,17 +1,24 @@
 :root {
     --c-brand: #30bcd5;
     --c-brand-hover: hsl(189, 70%, 40%);
+    --c-navbar-hover: hsl(189, 70%, 50%);
+
     --c-bg: #f6f6f6;
     --c-bg-light: #f3f4f5;
     --c-bg-search: #fff;
     --c-bg-code: #eeeeee;
+    --c-bg-navbar-item: hsl(210, 20%, 93%);
+
     --c-text: #2c3e50;
     --c-text-grey: hsl(210, 25%, 40%);
     --c-text-code: #4e6e8e;
+
     --c-border: #dfe2e5;
     --c-border-dark: #eaecef;
+
     --c-container-bg: #e6edef;
     --c-container-border: var(--c-container-bg);
+    
     --shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
     --navbar-height: 55px;
     --footer-height: 137px;
@@ -26,15 +33,21 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --c-brand-hover: hsl(189, 80%, 35%);
+        --c-navbar-hover: hsl(189, 70%, 65%);
+
         --c-bg: #22272e;
         --c-bg-light: #2b313a;
         --c-bg-search: #22272e;
         --c-bg-code: #262c34;
+        --c-bg-navbar-item: var(--c-bg-light);
+
         --c-text: #adbac7;
         --c-text-grey: hsl(210, 10%, 55%);
         --c-text-code: #8b9eb0;
+
         --c-border: #34404c;
         --c-border-dark: #3e4c5a;
+
         --c-container-bg: #2b313a;
         --c-container-border: var(--c-container-bg);
         --shadow: 0;

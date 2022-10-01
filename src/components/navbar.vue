@@ -3,7 +3,7 @@
         <div
             v-for="navbarItem in navbar"
             :key="navbarItem.label"
-            :class="(this.$route.path == navbarItem.url) ? 'activeItem navbarItem' : 'navbarItem'"
+            :class="(this.$route.path == navbarItem.url) ? 'activeItem' : ''"
         >
             <template v-if="navbarItem.url">
                 <a v-if="navbarItem.url.startsWith('http')" :href="navbarItem.url" target="_blank">
@@ -77,29 +77,21 @@ export default {
     background-color: var(--c-bg);
     border-bottom: 1px solid var(--c-border);
     box-shadow: var(--shadow);
-    height: (var--navbar-height);
+    height: var(--navbar-height);
     width: 100%;
     position: sticky;
     top: 0;
 }
 
 .flexWrapper {
-    padding: 1em;
     display: flex;
-}
-
-.navbarItem {
-    margin-inline: .7em;
-    white-space: nowrap;
+    padding-top: .5em;
+    margin-inline: 1em;
 }
 
 a {
     color: var(--c-text);
     font-weight: 500;
-}
-
-a:hover {
-    color: var(--c-brand-hover);
 }
 
 .activeItem a {
