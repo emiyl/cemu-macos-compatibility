@@ -464,6 +464,19 @@
         "tests": [
             {
                 "rating": 1,
+                "comment": "Segfaults when playing opening cutscene. If you remove the cutscene, the game is playable.",
+                "source": "@jkcoxson",
+                "sourceURL": "https://github.com/jkcoxson",
+                "author": "emiyl",
+                "date": "2022-10-02",
+                "version": "2.0 (9541c8ae8556ffd72aab4e9eb092ec45eeceaf22)",
+                "hardware": "MacBook Air (M1, 7-GPU)",
+                "osVersion": "macOS 12",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
+                "rating": 1,
                 "comment": "Crashes immediately due to unsupported formats in MoltenVK.",
                 "source": "@jkcoxson",
                 "sourceURL": "https://github.com/jkcoxson",
