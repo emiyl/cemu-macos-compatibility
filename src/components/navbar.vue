@@ -37,7 +37,7 @@ export default {
                     }
                 },
                 {
-                    icon: 'far fa-download',
+                    icon: 'fas fa-download',
                     label: 'Installation',
                     url: '/installation',
                     collapse: {
