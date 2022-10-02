@@ -62,6 +62,7 @@
     <p>
         <div><b>Super Smash Bros</b>: <code><a href="/graphicPacks/SuperSmashBros_NoCutscenes.zip">SuperSmashBros_NoCutscenes.zip</a></code></div>
         <div><b>Breath of the Wild</b>: <code><a href="/graphicPacks/BreathOfTheWild_NoCutscenes.zip">BreathOfTheWild_NoCutscenes.zip</a></code></div>
+        <div><b>Pikmin 3</b>: <code><a href="/graphicPacks/Pikmin3_NoCutscenes.zip">Pikmin3_NoCutscenes.zip</a></code></div>
     </p>
 
     <h2 style="margin-bottom: 0;">Troubleshooting</h2>
