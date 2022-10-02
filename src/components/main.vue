@@ -29,18 +29,11 @@
           </template>
         </span>
       </p>
-  
-      <div id="list" class="tableContainer">
-        <table>
-          <tr>
-            <th></th>
-            <th>Name <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'name') ? direction = !direction : sortBy = 'name'" class="fas fa-sort"></i></th>
-            <!--<th>Title ID <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'titleID') ? direction = !direction : sortBy = 'titleID'" class="fas fa-sort"></i></th>
-            <th>Region</th>-->
-            <th v-if="showComments">Comment</th>
-            <th style="min-width: 4.5em;">Rating <i style="float: right; cursor: pointer;" v-on:click="(sortBy == 'rating') ? direction = !direction : sortBy = 'rating'" class="fas fa-sort"></i></th>
-          </tr>
-          <tr v-for="title in compatList.filter(x => 
+
+      <div class="gridWrapper titleGrid">
+        <div
+          class="gridItem"
+          v-for="title in compatList.filter(x => 
             showRegions.find(y => y.region == x.region).show && (
               !searchStr ||
               searchStr == '' ||
@@ -54,21 +47,26 @@
             
             var m = (direction) ? -1 : 1
             return bool ? -1*m : 1*m
-          })" :key="title">
-            <td style="width: 2.4em; padding: 0;">
-              <picture>
+          })"
+          :key="title.titleID"
+        >
+          <div class="gridWrapper iconGrid">
+            <div><router-link :to="`/titleid/${title.titleID}`"><picture>
                   <source :srcset="`icons/${title.titleID}.avif`" type="image/avif">
                   <source :srcset="`icons/${title.titleID}.webp`" type="image/webp">
-                  <img :src="`icons/${title.titleID}.jpeg`" style="width: 2.4em; vertical-align: middle;">
-              </picture>
-            </td>
-            <td class="tableMinWidth"><router-link :to="`/titleid/${title.titleID}`">{{title.name}} ({{title.region}})</router-link></td>
-            <td v-if="showComments">
-              {{ title.tests[0].comment.slice(0,100) }}<router-link v-if="title.tests[0].comment.length > 100" :to="`/titleid/${title.titleID}`"><b>...</b></router-link>
-            </td>
-            <td class="centerText">{{ratingArr[title.tests[0].rating-1].name}}</td>
-          </tr>
-        </table>
+                  <img :src="`icons/${title.titleID}.jpeg`" style="width: 64px; margin: 4px; vertical-align: middle; border-radius: 8px;">
+            </picture></router-link></div>
+            <div>
+              <div style="font-weight: 600;">
+                <i :class="['fas','fa-circle','compatIndicatorGrid',ratingArr[title.tests[0].rating-1].name.toLowerCase()]"></i>
+                <router-link :to="`/titleid/${title.titleID}`" style="color: var(--c-text); margin-left: 4px;">{{title.name}} ({{title.region}})</router-link>
+              </div>
+              <div class="gridComment" :id="`${title.titleID}-comment`">
+                {{ formatComment(title.tests[0].comment) }}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 </template>
 
@@ -149,11 +147,39 @@
     methods: {
       getRatingPercentage(i) {
         return parseInt(this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100)
+      },
+      formatComment(comment) {
+        return comment
       }
     },
     mounted() {
       document.title = 'Cemu macOS Compatibility Chart'
+
+      function getLineCount(e) {
+        const elementHeight = e.clientHeight
+        const lineHeight = parseInt(window.getComputedStyle(e).getPropertyValue('line-height'))
+        return elementHeight / lineHeight
+      }
+
+      const maxLineCount = 2
+
+      for (let titleID of this.compatList.map(x => x.titleID)) {
+        let commentElement = document.getElementById(`${titleID}-comment`)
+        if (getLineCount(commentElement) <= maxLineCount) continue
+
+        commentElement.innerHTML += '...'
+        let commentText = commentElement.innerHTML
+        while (getLineCount(commentElement) > maxLineCount) {
+          commentText = commentText.slice(0,-4)
+          if (commentText[commentText.length-1] == ' ') commentText = commentText.slice(0,-1)
+          commentText += '...'
+          commentElement.innerHTML = commentText
+        }
+      }
+
       if (window.innerWidth <= 700) this.showComments = false
+      else this.showComments = true
+
       window.onresize = () => {
         if (window.innerWidth <= 700) this.showComments = false
         else this.showComments = true
