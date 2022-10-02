@@ -1005,6 +1005,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 4,
+                "comment": "A few rendering errors, but it seemed to run pretty well.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Splash screen, then crashes.",
                 "source": "@JaimieVandenbergh",
