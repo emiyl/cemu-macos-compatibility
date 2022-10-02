@@ -70,24 +70,20 @@ export default {
     data() {
         return {
             cpuType: 'x86',
-            releases: [],
-            latestWorkflow: {}
+            releases: [{
+                overwriteMe: true,
+                label: 'Latest release',
+                version: '',
+                url: 'https://github.com/cemu-project/Cemu/releases/latest',
+                target: '_blank',
+            }],
         }
     },
     async created() {
         document.title = 'macOS Cemu Installation Guide'
 
-        this.releases = [{
-            label: 'Latest release',
-            version: '',
-            url: 'https://github.com/cemu-project/Cemu/releases/latest',
-            target: '_blank',
-        }]
-
-        this.latestWorkflow = await this.getLatestWorkflow()
-
-        let response = await this.getLatestReleases()
-        let releases = []
+        let latestReleases = await this.getLatestReleases()
+        let releases = this.releases
 
         function getRelease(release) {
             let obj = {}
@@ -111,22 +107,24 @@ export default {
             obj.url = macosAsset.browser_download_url
             obj.target = ''
             
+            if (releases[0].overwriteMe) releases = []
             releases.push(obj)
         }
 
-        getRelease(response.filter(x => !x.prerelease)[0])
-        getRelease(response.filter(x => x.prerelease)[0])
+        getRelease(latestReleases.filter(x => !x.prerelease)[0])
+        getRelease(latestReleases.filter(x => x.prerelease)[0])
 
         let latestWorkflow = await this.getLatestWorkflow()
-        if (latestWorkflow) releases.push({
-            label: 'Latest commit',
-            commit: latestWorkflow.head_sha,
-            url: latestWorkflow.html_url,
-            target: '_blank'
-        })
-
-
-        if (releases.length) this.releases = releases
+        if (latestWorkflow) {
+            if (releases[0].overwriteMe) releases = []
+            releases.push({
+                label: 'Latest commit',
+                commit: latestWorkflow.head_sha,
+                url: latestWorkflow.html_url,
+                target: '_blank'
+            })
+        }
+        this.releases = releases
     },
     mounted() {
         window.scrollTo(0, 0)
