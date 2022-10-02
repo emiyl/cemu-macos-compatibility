@@ -169,32 +169,17 @@ ul {
   animation-timing-function: linear;
 }
 
-.regionCheckbox {
-  margin-left: .5em;
+.filterElement {
+  cursor: pointer;
+  margin: auto 1em;
 }
 
-.githubBtn {
-  float: right;
-  line-height: 2rem;
-}
-
-@media (max-width: 690px) {
-  .search {
-    float: right;
+@media (max-width: 700px) {
+  .searchAndFilterWrapper {
+    flex-direction: column;
   }
-  .regionCheckbox, .githubBtn {
-    padding-top: .5em;
-    margin-left: 0;
-    display: block;
-    float: none;
-  }
-}
-
-@media (max-width: 560px) {
-  .search {
-    float: none;
-  }
-  .regionCheckbox {
-    padding-top: 1em;
+  .filterElement {
+    margin: 1em .5em;
+    margin-bottom: 0;
   }
 }

@@ -14,27 +14,45 @@
         </div>
       </div>
   
-      <p>
+      <div class="flexWrapper searchAndFilterWrapper">
         <input 
           class="search"
           type='text'
           placeholder='Search'
           v-model='searchStr'
+          style="flex: 1;"
         />
-        <span class="regionCheckbox">
+        <a class="filterElement" v-on:click="showFilters = !showFilters"><i class="fas fa-filter"></i> <b>Filter</b> <i style="margin-left: 2px;" :class="['fas',showFilters ? 'fa-caret-down' : 'fa-caret-right']"></i></a>
+      </div>
+
+      <ul v-if="showFilters" style="padding-left: 0; list-style: none;">
+        <li class="filterCheckbox">
           <label><b>Regions:</b></label>
           <template v-for="region in Array.from(new Set(compatList.map(x => x.region)))" :key="region">
             <input type="checkbox" v-model="showRegions.find(x => x.region == region).show" :id="`show${region}Checkbox`">
             <label :for="`show${region}Checkbox`">{{region}} ({{compatList.filter(x => x.region == region).length}})</label>
           </template>
-        </span>
-      </p>
+        </li>
+        <li class="filterCheckbox">
+          <label><b>Ratings:</b></label>
+          <template v-for="rating in Array.from(new Set(compatList.map(x => x.tests[0].rating))).sort().reverse()" :key="rating">
+            <input type="checkbox" v-model="showRatings.find(x => x.rating == rating).show" :id="`show${rating}Checkbox`">
+            <label :for="`show${rating}Checkbox`">
+              <template v-if="ratingArr[rating-1]">{{ratingArr[rating-1].name}}</template>
+              <template v-else>{{ rating }}</template>
+              <span> ({{compatList.filter(x => x.tests[0].rating == rating).length}})</span></label>
+          </template>
+        </li>
+      </ul>
+
+      <div style="margin-bottom: 1em;"></div>
 
       <div class="gridWrapper titleGrid">
         <div
           class="gridItem"
           v-for="title in compatList.filter(x => 
-            showRegions.find(y => y.region == x.region).show && (
+            showRegions.find(y => y.region == x.region).show && 
+            showRatings.find(y => y.rating == x.tests[0].rating).show && (
               !searchStr ||
               searchStr == '' ||
               x.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
@@ -110,9 +128,16 @@
     data() {
       return {
         compatList: compatList,
+        showFilters: false,
         showRegions: Array.from(new Set(compatList.map(x => x.region))).map(x => {
           return {
             region: x,
+            show: true
+          }
+        }),
+        showRatings: Array.from(new Set(compatList.map(x => x.tests[0].rating))).map(x => {
+          return {
+            rating: x,
             show: true
           }
         }),
