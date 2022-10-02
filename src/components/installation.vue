@@ -60,6 +60,8 @@
 
     <p><b>No sound:</b> By default, Cemu on macOS sets audio output to 0%. Go into the audio settings and turn up the volume.</p>
     <p><b>Illegal hardware instruction</b>: Make you installed moltenvk as described above. Check graphics settings and ensure the rendering API is set to Vulkan.</p>
+    <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. There is no way to bypass this currently.</p>
+    <p><b>Crashes when playing cutscene</b>: Some games, such as BOTW, Super Smash Bros. and Pikmin 3 crash when loading a cutscene. To bypass this, go into the game's files and rename the cutscenes so the emulator won't try and play them.</p>
 
     <br>
   </div>
