@@ -60,19 +60,35 @@
     }
 
     .container-perfect {
-        background: var(--c-container-bg-perfect);
+        background: var(--c-container-bg-perfect) !important;
     }
     .container-playable {
-        background: var(--c-container-bg-playable);
+        background: var(--c-container-bg-playable) !important;
     }
     .container-runs {
-        background: var(--c-container-bg-runs);
+        background: var(--c-container-bg-runs) !important;
     }
     .container-loads {
-        background: var(--c-container-bg-loads);
+        background: var(--c-container-bg-loads) !important;
     }
     .container-unplayable {
-        background: var(--c-container-bg-unplayable);
+        background: var(--c-container-bg-unplayable) !important;
+    }
+
+    .container-perfect a {
+        color: var(--c-perfect) !important;
+    }
+    .container-playable a {
+        color: var(--c-playable) !important;
+    }
+    .container-runs a {
+        color: var(--c-runs) !important;
+    }
+    .container-loads a {
+        color: var(--c-loads) !important;
+    }
+    .container-unplayable a {
+        color: var(--c-unplayable) !important;
     }
 
     .compatItemHidden {

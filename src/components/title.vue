@@ -14,7 +14,7 @@
             </template>
 
             <template v-for="test in tests" :key="test">
-                <div class="customContainer"><p>
+                <div :class="['customContainer',`container-${ratingArr[parseInt(test.rating)-1].name.toLowerCase()}`]" style="box-shadow: var(--compat-shadow);"><p>
                     <ul style="padding-left: 0; list-style-type: none;">
                         <template v-if="test.rating">
                             <li v-if="parseInt(test.rating) > 0 && parseInt(test.rating) < 6">
