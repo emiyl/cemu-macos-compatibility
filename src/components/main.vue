@@ -25,25 +25,27 @@
         <a class="filterElement" v-on:click="showFilters = !showFilters"><i class="fas fa-filter"></i> <b>Filter</b> <i style="margin-left: 2px;" :class="['fas',showFilters ? 'fa-caret-down' : 'fa-caret-right']"></i></a>
       </div>
 
-      <ul v-if="showFilters" style="padding-left: 0; list-style: none;">
-        <li class="filterCheckbox">
-          <label><b>Regions:</b></label>
-          <template v-for="region in Array.from(new Set(compatList.map(x => x.region)))" :key="region">
-            <input type="checkbox" v-model="showRegions.find(x => x.region == region).show" :id="`show${region}Checkbox`">
-            <label :for="`show${region}Checkbox`">{{region}} ({{compatList.filter(x => x.region == region).length}})</label>
-          </template>
-        </li>
-        <li class="filterCheckbox">
-          <label><b>Ratings:</b></label>
-          <template v-for="rating in Array.from(new Set(compatList.map(x => x.tests[0].rating))).sort().reverse()" :key="rating">
-            <input type="checkbox" v-model="showRatings.find(x => x.rating == rating).show" :id="`show${rating}Checkbox`">
-            <label :for="`show${rating}Checkbox`">
-              <template v-if="ratingArr[rating-1]">{{ratingArr[rating-1].name}}</template>
-              <template v-else>{{ rating }}</template>
-              <span> ({{compatList.filter(x => x.tests[0].rating == rating).length}})</span></label>
-          </template>
-        </li>
-      </ul>
+      <div class="customContainer" v-if="showFilters">
+        <ul style="padding-left: 0; list-style: none;">
+          <li class="filterCheckbox">
+            <label><b>Regions:</b></label>
+            <template v-for="region in Array.from(new Set(compatList.map(x => x.region)))" :key="region">
+              <input type="checkbox" v-model="showRegions.find(x => x.region == region).show" :id="`show${region}Checkbox`">
+              <label :for="`show${region}Checkbox`">{{region}} ({{compatList.filter(x => x.region == region).length}})</label>
+            </template>
+          </li>
+          <li class="filterCheckbox">
+            <label><b>Ratings:</b></label>
+            <template v-for="rating in Array.from(new Set(compatList.map(x => x.tests[0].rating))).sort().reverse()" :key="rating">
+              <input type="checkbox" v-model="showRatings.find(x => x.rating == rating).show" :id="`show${rating}Checkbox`">
+              <label :for="`show${rating}Checkbox`">
+                <template v-if="ratingArr[rating-1]">{{ratingArr[rating-1].name}}</template>
+                <template v-else>{{ rating }}</template>
+                <span> ({{compatList.filter(x => x.tests[0].rating == rating).length}})</span></label>
+            </template>
+          </li>
+        </ul>
+      </div>
 
       <div style="margin-bottom: 1em;"></div>
 
