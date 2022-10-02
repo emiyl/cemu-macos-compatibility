@@ -57,7 +57,7 @@
     <h2 style="margin-bottom: 0;">Graphic Packs</h2>
     <hr>
 
-    <p>Video cutscenes don't work on macOS yet. These graphic packs replace the cutscene files with blank files to skip them. Extract the folder inside the zip to your <code>graphicPacks</code> folder and enable them in Cemu.</p>
+    <p>Video cutscenes don't work on macOS yet, and will cause Cemu to crash. These graphic packs replace the cutscene files with blank files to skip them. Extract the folder inside the zip to your <code>graphicPacks</code> folder and enable them in Cemu.</p>
     
     <p>
         <div><b>Super Smash Bros</b>: <code><a href="/graphicPacks/SuperSmashBros_NoCutscenes.zip">SuperSmashBros_NoCutscenes.zip</a></code></div>
