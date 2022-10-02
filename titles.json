@@ -403,8 +403,21 @@
         "comment": "",
         "tests": [
             {
-                "rating": 2,
-                "comment": "Segfaults after trying to play the opening video. Removing the video causes a segfault trying to load a battle.",
+                "rating": 1,
+                "comment": "Segfaults after trying to play the opening video. Removing the video allows the game to be playable.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-10-02",
+                "version": "2.0 (Cemu-11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
+                "rating": 1,
+                "comment": "Segfaults after trying to play the opening video.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
@@ -423,7 +436,7 @@
         "comment": "",
         "tests": [
             {
-                "rating": 2,
+                "rating": 1,
                 "comment": "Segfaults after trying to play the opening video. Removing the video causes a segfault trying to load a battle.",
                 "source": "@jkcoxson",
                 "sourceURL": "https://github.com/jkcoxson",
