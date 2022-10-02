@@ -15,6 +15,6 @@
   </footer>
 </template>
 
-<style>
-  @import '@/assets/main.scss';
+<style lang="sass">
+@import '@/assets/main.scss'
 </style>

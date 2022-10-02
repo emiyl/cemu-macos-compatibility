@@ -1,106 +1,112 @@
 .tab-container {
 	display: flex;
 	flex-wrap: wrap;
-}
 
-.tab-container section {
-	display: contents;
-}
+	section {
+		display: contents;
 
-.tab-container section > input {
-	display: none;
-}
+		> input {
+			display: none;
+		}
 
-.tab-container section label {
-	border: 1px solid var(--c-border);
-	border-bottom-width: 0;
-	padding: 0.5rem 1rem;
-	transition: 150ms ease;
-	cursor: pointer;
-}
-
-.tab-container .tab {
-	display: none;
-	padding: 1rem 1rem 1rem 1rem;
-	order: 999;
-	width: 100%;
-	border: 1px solid var(--c-border);
-}
-
-@media screen and (min-width: 300px) {
-	.tab-container section html:not([dir=rtl]) & &:not(:first-of-type) .tab-link {
-		border-left-width: 0px;
-	}
-
-	.tab-container section html:not([dir=rtl]) & &:first-of-type .tab-link {
-		border-top-left-radius: 0.25rem;
-	}
-
-	.tab-container section html:not([dir=rtl]) & &:last-of-type .tab-link {
-		border-top-right-radius: 0.25rem;
-	}
-
-	.tab-container section html[dir=rtl] & &:not(:first-of-type) .tab-link {
-		border-right-width: 0px;
-	}
-
-	.tab-container section html[dir=rtl] & &:first-of-type .tab-link {
-		border-top-right-radius: 0.25rem;
-	}
-
-	.tab-container section html[dir=rtl] & &:last-of-type .tab-link {
-		border-top-left-radius: 0.25rem;
-	}
+		.tab-link {
+			border: 1px solid var(--c-border);
+			border-bottom-width: 0;
+			padding: 0.5rem 1rem;
+			transition: 150ms ease;
+			cursor: pointer;
+		}
 	
-	.tab-container .tab {
-		border-radius: 0 0.25rem 0.25rem 0.25rem;
+		@media screen and (min-width: 321px) {
+			html:not([dir=rtl]) & {
+				&:not(:first-of-type) .tab-link {
+					border-left-width: 0px;
+				}
+
+				&:first-of-type .tab-link {
+					border-top-left-radius: 0.25rem;
+				}
+
+				&:last-of-type .tab-link {
+					border-top-right-radius: 0.25rem;
+				}
+			}
+
+			html[dir=rtl] & {
+				&:not(:first-of-type) .tab-link {
+					border-right-width: 0px;
+				}
+
+				&:first-of-type .tab-link {
+					border-top-right-radius: 0.25rem;
+				}
+
+				&:last-of-type .tab-link {
+					border-top-left-radius: 0.25rem;
+				}
+			}
+		}
+
+		@media screen and (max-width: 320px) {
+			.tab-link {
+				width: 100%;
+			}
+
+			&:last-of-type .tab-link  {
+				border-bottom-width: 1px;
+				border-radius: 0 0 0.25rem 0.25rem;
+			}
+
+			&:first-of-type .tab-link {
+				border-radius: 0.25rem 0.25rem 0 0 !important;
+			}
+		}
 	}
 
-	.tab-container .tab html[dir=rtl] & {
-		border-radius: 0.25rem 0 0.25rem 0.25rem;
-	}
-}
-
-@media screen and (max-width: 299px) {
-	.tab-container section .tab-link {
+	.tab {
+		display: none;
+		padding: 1rem 1rem 1rem 1rem;
+		order: 999;
 		width: 100%;
+		border: 1px solid var(--c-border);
+
+		@media screen and (min-width: 321px) {
+			border-radius: 0 0.25rem 0.25rem 0.25rem;
+
+			html[dir=rtl] & {
+				border-radius: 0.25rem 0 0.25rem 0.25rem;
+			}
+		}
+
+		@media screen and (max-width: 320px) {
+			border-radius: 0;
+			border-bottom-width: 0;
+			order: 0;
+		}
 	}
 
-	.tab-container section & &:last-of-type .tab-link {
-		border-bottom-width: 1px;
-		border-radius: 0 0 0.25rem 0.25rem;
+	@media screen and (max-width: 320px) {
+		.tab-last {
+			border-bottom-width: 1px;
+			border-radius: 0 0 0.25rem 0.25rem;
+		}
 	}
 
-	.tab-container section & &:first-of-type .tab-link {
-		border-radius: 0.25rem 0.25rem 0 0 !important;
-	}
-
-	.tab-container .tab {
+	input:checked + .tab-link {
 		border-radius: 0;
-		border-bottom-width: 0;
-		order: 0;
 	}
 
-	.tab-container .tab-last {
-		border-bottom-width: 1px;
-		border-radius: 0 0 0.25rem 0.25rem;
+	input:checked + .tab-link + .tab {
+		display: block;
 	}
-}
 
-.tab-container input:checked + label {
-	border-radius: 0;
-}
+	input:checked + .tab-link:not(:hover):not(:active):not(:focus) {
+		background-color: var(--c-border);
+		border-color: var(--c-border);
+	}
 
-.tab-container input:checked + label + .tab {
-	display: block;
-}
-
-.tab-container input:checked + label:not(:hover):not(:active):not(:focus) {
-	background-color: var(--c-border);
-	border-color: var(--c-border);
-}
-
-.tab-container label:hover, label:active, label:focus {
-	background-color: var(--c-border-dark);
-	border-color: var(--c-border-dark);
+	.tab-link:hover, .tab-link:active, .tab-link:focus {
+		background-color: var(--c-border-dark);
+		border-color: var(--c-border-dark);
+	}
 }

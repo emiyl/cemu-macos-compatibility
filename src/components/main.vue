@@ -77,7 +77,7 @@
                 <router-link :to="`/titleid/${title.titleID}`" style="color: var(--c-text); margin-left: 4px;">{{title.name}} ({{title.region}})</router-link>
               </div>
               <div class="gridComment" :id="`${title.titleID}-comment`">
-                {{ formatComment(title.tests[0].comment) }}
+                {{ title.tests[0].adjustedComment ? title.tests[0].adjustedComment : title.tests[0].comment }}
               </div>
             </div>
           </div>
@@ -170,9 +170,6 @@
     methods: {
       getRatingPercentage(i) {
         return parseInt(this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100)
-      },
-      formatComment(comment) {
-        return comment
       }
     },
     mounted() {
@@ -188,6 +185,7 @@
 
       for (let titleID of this.compatList.map(x => x.titleID)) {
         let commentElement = document.getElementById(`${titleID}-comment`)
+        this.compatList.find(x => x.titleID).tests[0].adjustedComment = commentElement.innerHTML
         if (getLineCount(commentElement) <= maxLineCount) continue
 
         commentElement.innerHTML += '...'
@@ -198,6 +196,8 @@
           commentText += '...'
           commentElement.innerHTML = commentText
         }
+        commentElement.innerHTML = this.compatList.find(y => y.titleID == titleID).tests[0].comment
+        this.compatList.find(y => y.titleID == titleID).tests[0].adjustedComment = commentText
       }
 
       if (window.innerWidth <= 700) this.showComments = false

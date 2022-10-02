@@ -1,22 +1,36 @@
+$brand: #30bcd5;
+$background: #f6f6f6;
+$dm-background: #22272e;
+$text: #2c3e50;
+$dm-text: #adbac7;
+$container-background: #e6edef;
+$dm-container-background: #2b313a;
+
+$perfect: #4caf50;
+$playable: #039be5;
+$runs: #fbc02d;
+$loads: #ab47bc;
+$unplayable: #f44336;
+
 :root {
-    --c-brand: #30bcd5;
-    --c-brand-hover: hsl(189, 70%, 40%);
-    --c-navbar-hover: hsl(189, 70%, 50%);
+    --c-brand: #{$brand};
+    --c-brand-hover: #{mix($brand, black, 80%)};
+    --c-navbar-hover: #{mix($brand, black, 80%)};
 
-    --c-bg: #f6f6f6;
-    --c-bg-light: #f3f4f5;
-    --c-bg-search: #fff;
-    --c-bg-code: #eeeeee;
-    --c-bg-navbar-item: hsl(210, 20%, 93%);
+    --c-bg: #{$background};
+    --c-bg-light: #{mix($background, black, 99%)};
+    --c-bg-search: #{mix($background, white, 20%)};
+    --c-bg-code: #{mix($background, black, 97%)};
+    --c-bg-navbar-item: #{mix($background, black, 96%)};
 
-    --c-text: #2c3e50;
-    --c-text-grey: hsl(210, 25%, 40%);
-    --c-text-code: #4e6e8e;
+    --c-text: #{$text};
+    --c-text-grey: #{mix($text, white, 80%)};
+    --c-text-code: var(--c-text-grey);
 
-    --c-border: #dfe2e5;
-    --c-border-dark: #eaecef;
+    --c-border: #{mix($text, white, 15%)};
+    --c-border-dark: #{mix($text, white, 10%)};
 
-    --c-container-bg: #e6edef;
+    --c-container-bg: #{$container-background};
     --c-container-border: var(--c-container-bg);
     
     --shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
@@ -24,46 +38,46 @@
     --navbar-height: 55px;
     --footer-height: 137px;
 
-    --c-perfect: #4caf50;
-    --c-playable: #039be5;
-    --c-runs: #fbc02d;
-    --c-loads: #ab47bc;
-    --c-unplayable: #f44336;
+    --c-perfect: #{$perfect};
+    --c-playable: #{$playable};
+    --c-runs: #{$runs};
+    --c-loads: #{$loads};
+    --c-unplayable: #{$unplayable};
 
-    --c-container-bg-perfect: rgba(76, 175, 80, .2);
-    --c-container-bg-playable: rgba(3, 155, 229, .2);
-    --c-container-bg-runs: rgba(251, 192, 45, .2);
-    --c-container-bg-loads: rgba(171, 71, 188, .2);
-    --c-container-bg-unplayable: rgba(244, 67, 54, .2);
+    --c-container-bg-perfect: #{rgba($perfect, .2)};
+    --c-container-bg-playable: #{rgba($playable, .2)};
+    --c-container-bg-runs: #{rgba($runs, .2)};
+    --c-container-bg-loads: #{rgba($loads, .2)};
+    --c-container-bg-unplayable: #{rgba($unplayable, .2)};
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --c-brand-hover: hsl(189, 80%, 35%);
         --c-navbar-hover: hsl(189, 70%, 65%);
 
-        --c-bg: #22272e;
-        --c-bg-light: #2b313a;
-        --c-bg-search: #22272e;
-        --c-bg-code: #262c34;
-        --c-bg-navbar-item: var(--c-bg-light);
+        --c-bg: #{$dm-background};
+        --c-bg-light: #{mix($dm-background, black, 99%)};
+        --c-bg-lighter: #{mix($dm-container-background, white, 96.5%)};
+        --c-bg-search: var(--c-bg-code);
+        --c-bg-code: #{mix($dm-background, black, 97%)};
+        --c-bg-navbar-item: #{mix($dm-background, white, 96%)};
 
-        --c-text: #adbac7;
-        --c-text-grey: hsl(210, 10%, 55%);
-        --c-text-code: #8b9eb0;
+        --c-text: #{$dm-text};
+        --c-text-grey: #{mix($dm-text, black, 75%)};
+        --c-text-code: var(--c-text-grey);
 
-        --c-border: #34404c;
-        --c-border-dark: #3e4c5a;
+        --c-border: #{mix($text, white, 98%)};
+        --c-border-dark: #{mix($text, white, 90%)};
 
-        --c-container-bg: #2b313a;
+        --c-container-bg: #{$dm-container-background};
         --c-container-border: var(--c-container-bg);
         --shadow: 0;
         --compat-shadow: 0;
 
-        --c-container-bg-perfect: rgba(76, 175, 80, .6);
-        --c-container-bg-playable: rgba(3, 155, 229, .6);
-        --c-container-bg-runs: rgba(251, 192, 45, .6);
-        --c-container-bg-loads: rgba(171, 71, 188, .6);
-        --c-container-bg-unplayable: rgba(244, 67, 54, .6);
+        --c-container-bg-perfect: #{rgba($perfect, .6)};
+        --c-container-bg-playable: #{rgba($playable, .6)};
+        --c-container-bg-runs: #{rgba($runs, .6)};
+        --c-container-bg-loads: #{rgba($loads, .6)};
+        --c-container-bg-unplayable: #{rgba($unplayable, .6)};
     }
 }

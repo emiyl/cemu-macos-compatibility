@@ -100,8 +100,13 @@
 @media (prefers-color-scheme: dark) {
     .compatItem {
         background-color: var(--c-container-bg);
+        transition: background-color 150ms;
         border: 2px solid rgba(0,0,0,0);
     }
+    .compatItem:hover {
+        background-color: var(--c-bg-lighter);
+    }
+
     .container-perfect {
         border: 2px solid var(--c-container-bg-perfect);
     }
