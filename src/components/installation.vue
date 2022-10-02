@@ -54,6 +54,15 @@
 
     <p>I recommend that you move the Cemu binary into a folder of its own, as it will then generate a bunch of extra folders and files necessary for Cemu.</p>
 
+    <h2 style="margin-bottom: 0;">Graphic Packs</h2>
+    <hr>
+
+    <p>Video cutscenes don't work on macOS yet. These graphic packs replace the cutscene files with blank files to skip them. Extract the folder inside the zip to your <code>graphicPacks</code> folder and enable them in Cemu.</p>
+    
+    <p>
+        <div><b>Super Smash Bros</b>: <code><a href="/graphicPacks/SuperSmashBros_NoCutscenes.zip">SuperSmashBros_NoCutscenes.zip</a></code></div>
+        <div><b>Breath of the Wild</b>: <code><a href="/graphicPacks/BreathOfTheWild_NoCutscenes.zip">BreathOfTheWild_NoCutscenes.zip</a></code></div>
+    </p>
 
     <h2 style="margin-bottom: 0;">Troubleshooting</h2>
     <hr>
@@ -61,7 +70,6 @@
     <p><b>No sound:</b> By default, Cemu on macOS sets audio output to 0%. Go into the audio settings and turn up the volume.</p>
     <p><b>Illegal hardware instruction</b>: Make you installed moltenvk as described above. Check graphics settings and ensure the rendering API is set to Vulkan.</p>
     <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. There is no way to bypass this currently.</p>
-    <p><b>Crashes when playing cutscene</b>: Some games, such as BOTW, Super Smash Bros. and Pikmin 3 crash when loading a cutscene. To bypass this, go into the game's files and rename the cutscenes so the emulator won't try and play them.</p>
 
     <br>
   </div>
