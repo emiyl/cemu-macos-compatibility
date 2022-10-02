@@ -1167,5 +1167,45 @@
                 "log": "Bus error: 10!\nError: signal 10:"
             }
         ]
+    },
+    "000500001010F600": {
+        "name": "Assassin´s Creed® III",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 4,
+                "comment": "ingame 20FPS and lots of graphic glitch",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 11f6e2b7ee7af5327527301b6612dd520f7eb67d",
+                "hardware": "Mac Studio (2022) (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010149100": {
+        "name": "Angry Birds Star Wars",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 5,
+                "comment": "Runs perfectly",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 11f6e2b7ee7af5327527301b6612dd520f7eb67d",
+                "hardware": "Mac Studio (2022) (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
     }
 }
