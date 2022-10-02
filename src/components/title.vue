@@ -84,24 +84,24 @@ export default {
             tests: [],
             ratingArr: [
                 {
-                name: 'Unplayable',
-                description: 'Crashes when booting/infinite black screen'
+                    name: 'Unplayable',
+                    description: 'Title crashes or does not boot'
                 },
                 {
-                name: 'Loads',
-                description: 'Title loads, but crashes in title screen/menu/in-game'
+                    name: 'Loads',
+                    description: 'Title loads but crashes in title screen or menu'
                 },
                 {
-                name: 'Runs',
-                description: 'Starts, maybe runs well, but major glitches/issues prevent game from being completed'
+                    name: 'Runs',
+                    description: 'Major issues prevent title from being completed'
                 },
                 {
-                name: 'Playable',
-                description: 'Title can be played through with minor audio or graphical glitches'
+                    name: 'Playable',
+                    description: 'Minor audio or graphical glitches'
                 },
                 {
-                name: 'Perfect',
-                description: 'Title can be played with no issues'
+                    name: 'Perfect',
+                    description: 'Title can be played with no issues'
                 }
             ]
         }
