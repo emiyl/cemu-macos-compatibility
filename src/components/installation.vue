@@ -2,6 +2,18 @@
   <div class="smallerMain">
     <h1>Installing Cemu (macOS)</h1>
 
+    <h5>Downloads</h5>
+    <ul>
+        <li v-for="release in releases.filter(x => x.url)" :key="release">
+            <a :href="release.url" :target="release.target">
+                {{ release.label }}
+            </a>
+            <template v-if="release.version"> (<code style="padding-inline: 4px;"><a :href="`https://github.com/cemu-project/Cemu/releases/tag/${release.version}`" target="_blank">{{ release.version }}</a></code>)</template>
+            <template v-if="release.commit"> (<code style="padding-inline: 4px;"><a :href="`https://github.com/cemu-project/Cemu/commit/${release.commit}`" target="_blank">{{release.commit.slice(0,7)}}</a></code>)</template>
+        </li>
+    </ul>
+
+    <h5>Instructions</h5>
     <div class="tab-container">
         <section>
             <input id="x86" type="radio" :checked="cpuType == 'x86'">
@@ -10,7 +22,7 @@
             </label>
             <div class="tab" style="overflow-x: scroll;">
                 <ol>
-                    <li>Download the <a :href="latestReleaseUrl" :target="dlLinkTarget">latest release of Cemu</a></li>
+                    <li>Download Cemu from above</li>
                     <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install brew (if you haven't already) by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
@@ -28,7 +40,7 @@
             <div class="tab tab-last" style="overflow-x: scroll;">
                 <p style="margin-top: .5em;">To install Cemu on macOS, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This installation of brew will not conflict with a pre-existing ARM brew installation.</p>
                 <ol>
-                    <li>Download the <a :href="latestReleaseUrl" :target="dlLinkTarget">latest release of Cemu</a></li>
+                    <li>Download Cemu from above</li>
                     <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
                     <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
                     <li>Install the x86 version of brew by running <code>arch --x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
@@ -58,34 +70,85 @@ export default {
     data() {
         return {
             cpuType: 'x86',
-            latestReleaseUrl: 'https://github.com/cemu-project/Cemu/releases',
-            dlLinkTarget: '_blank'
+            releases: [],
+            latestWorkflow: {}
         }
     },
     async created() {
         document.title = 'macOS Cemu Installation Guide'
 
-        let response = await this.getLatestRelease()
-        if (response[0]) this.latestReleaseUrl = response[0].html_url
-        else return
+        this.releases = [{
+            label: 'Latest release',
+            version: '',
+            url: 'https://github.com/cemu-project/Cemu/releases/latest',
+            target: '_blank',
+        }]
 
-        let macosAsset = response[0].assets.find(x => x.name.includes('macos'))
-        if (!macosAsset) return
-        
-        this.latestReleaseUrl = macosAsset.browser_download_url
-        this.dlLinkTarget = ''
+        this.latestWorkflow = await this.getLatestWorkflow()
+
+        let response = await this.getLatestReleases()
+        let releases = []
+
+        function getRelease(release) {
+            let obj = {}
+
+            if (release) {
+                obj = {
+                    label: `Latest ${release.prerelease ? 'pre-' : ''}release`,
+                    version: release.tag_name,
+                    ghurl: release.html_url,
+                    ghtarget: '_blank'
+                }
+            }
+            else return
+
+            let macosAsset = release.assets.find(x => x.name.includes('macos'))
+            if (!macosAsset) {
+                releases.push(obj)
+                return
+            }
+
+            obj.url = macosAsset.browser_download_url
+            obj.target = ''
+            
+            releases.push(obj)
+        }
+
+        getRelease(response.filter(x => !x.prerelease)[0])
+        getRelease(response.filter(x => x.prerelease)[0])
+
+        let latestWorkflow = await this.getLatestWorkflow()
+        if (latestWorkflow) releases.push({
+            label: 'Latest commit',
+            commit: latestWorkflow.head_sha,
+            url: latestWorkflow.html_url,
+            target: '_blank'
+        })
+
+
+        if (releases.length) this.releases = releases
     },
     mounted() {
         window.scrollTo(0, 0)
         document.title = 'macOS Cemu Installation Guide'
     },
     methods: {
-        getLatestRelease() {
+        getLatestReleases() {
             const url = 'https://api.github.com/repos/cemu-project/Cemu/releases'
 
             return fetch(url, { method: 'GET', headers: { 'Content-Type': 'application/json' } })
             .then((response) => response.text())
-            .then((response) => JSON.parse(response))
+            .then((response) => JSON.parse(response).filter(x => x.assets))
+        },
+        async getLatestWorkflow() {
+            return fetch('https://api.github.com/repos/cemu-project/Cemu/commits', { method: 'GET', headers: { 'Content-Type': 'application/json' } })
+            .then((response) => response.text())
+            .then((response) => JSON.parse(response)[0])
+            .then((commit) => {
+                return fetch('https://api.github.com/repos/cemu-project/Cemu/actions/runs', { method: 'GET', headers: { 'Content-Type': 'application/json' } })
+                .then((response) => response.text())
+                .then((response) => JSON.parse(response).workflow_runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033))
+            })
         }
     }
 }
