@@ -1109,6 +1109,19 @@
         "region": "EUR",
         "tests": [
             {
+                "rating": 4,
+                "comment": "Performs nearly perfectly except an audio bug which makes it sound muffled sometimes.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-10-02",
+                "version": "2.0 (fb5ecca1577c06d853f71b311bca5165eae9ff31)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Crashes instantly. vkCmdClearColorImage(): Format VK_FORMAT_D32_SFLOAT cannot be cleared on this device.",
                 "source": "@emiyl",
