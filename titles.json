@@ -970,6 +970,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 2,
+                "comment": "Runs with minor graphical glitches but segfaults in the first level.",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": "Segmentation fault: 11!\nError: signal 11:\n0   Cemu-bc162                          0x00000001016e6c0d _Z20handlerDumpingSignali + 93\n1   libsystem_platform.dylib            0x00007ff8107edc1d _sigtramp + 29\n2   ???                                 0x0000600002feb4e0 0x0 + 105553166513376\n3   libdispatch.dylib                   0x00007ff810662c79 _dispatch_event_loop_poke + 374\n4   Metal                               0x00007ff81a2477af -[_MTLCommandQueue commitCommandBuffer:wake:] + 245\n5   IOGPU                               0x00007ff82d10a431 -[IOGPUMetalCommandBuffer commit] + 200\n6   AGXMetal13_3                        0x00007ffa26df55a5 AGXMetal13_3 + 2643365\n7   ???                                 0x00007fa7b78991c8 0x0 + 140358315512264"
+            },
+            {
                 "rating": 1,
                 "comment": "Splash screen, then either infinite white or plays banana animation but never progresses.",
                 "source": "@JaimieVandenbergh",
