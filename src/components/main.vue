@@ -16,6 +16,8 @@
           </div>
         </div>
       </div>
+
+      <h5>Titles</h5>
   
       <div class="flexWrapper searchAndFilterWrapper">
         <input 
@@ -25,10 +27,10 @@
           v-model='searchStr'
           style="flex: 1;"
         />
-        <a class="filterElement" v-on:click="showFilters = !showFilters"><i class="fas fa-filter"></i> <b>Filter</b> <i style="margin-left: 2px;" :class="['fas',showFilters ? 'fa-caret-down' : 'fa-caret-right']"></i></a>
+        <!--<a class="filterElement" v-on:click="showFilters = !showFilters"><i class="fas fa-filter"></i> <b>Filter</b> <i style="margin-left: 2px;" :class="['fas',showFilters ? 'fa-caret-down' : 'fa-caret-right']"></i></a>-->
       </div>
 
-      <div class="customContainer" v-if="showFilters">
+      <!--<div class="customContainer" v-if="showFilters">
         <ul style="padding-left: 0; list-style: none;">
           <li class="filterCheckbox">
             <label><b>Regions:</b></label>
@@ -38,7 +40,7 @@
             </template>
           </li>
         </ul>
-      </div>
+      </div>-->
 
       <div style="margin-bottom: 1em;"></div>
 
@@ -46,11 +48,11 @@
         <div
           class="gridItem"
           v-for="title in compatList.filter(x => 
-            showRegions.find(y => y.region == x.region).show && 
+            //showRegions.find(y => y.region == x.region).show && 
             showRatings.find(y => y.rating == x.tests[0].rating).show && (
               !searchStr ||
               searchStr == '' ||
-              x.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
+              `${x.name} (${x.region})`.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
               x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
             )
           ).sort(function(a,b) {
@@ -123,13 +125,13 @@
     data() {
       return {
         compatList: compatList,
-        showFilters: false,
+        /*showFilters: false,
         showRegions: Array.from(new Set(compatList.map(x => x.region))).map(x => {
           return {
             region: x,
             show: true
           }
-        }),
+        }),*/
         showRatings: Array.from(new Set(compatList.map(x => x.tests[0].rating))).map(x => {
           return {
             rating: x,
