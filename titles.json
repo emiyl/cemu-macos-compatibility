@@ -924,6 +924,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 5,
+                "comment": "Seems to be perfect, albeit a little slow.",
+                "source": "@JaimieVandenbergh",
+                "sourceURL": "",
+                "author": "Jaimie",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Splash screen loads, fades to infinite white screen.",
                 "source": "@JaimieVandenbergh",
