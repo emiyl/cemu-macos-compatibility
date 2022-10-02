@@ -20,6 +20,7 @@
     --c-container-border: var(--c-container-bg);
     
     --shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    --compat-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
     --navbar-height: 55px;
     --footer-height: 137px;
 
@@ -28,6 +29,12 @@
     --c-runs: #fbc02d;
     --c-loads: #ab47bc;
     --c-unplayable: #f44336;
+
+    --c-container-bg-perfect: rgba(76, 175, 80, .2);
+    --c-container-bg-playable: rgba(3, 155, 229, .2);
+    --c-container-bg-runs: rgba(251, 192, 45, .2);
+    --c-container-bg-loads: rgba(171, 71, 188, .2);
+    --c-container-bg-unplayable: rgba(244, 67, 54, .2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,5 +58,12 @@
         --c-container-bg: #2b313a;
         --c-container-border: var(--c-container-bg);
         --shadow: 0;
+        --compat-shadow: 0;
+
+        --c-container-bg-perfect: rgba(76, 175, 80, .6);
+        --c-container-bg-playable: rgba(3, 155, 229, .6);
+        --c-container-bg-runs: rgba(251, 192, 45, .6);
+        --c-container-bg-loads: rgba(171, 71, 188, .6);
+        --c-container-bg-unplayable: rgba(244, 67, 54, .6);
     }
 }

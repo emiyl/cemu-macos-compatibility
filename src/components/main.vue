@@ -2,11 +2,14 @@
       <h1>Cemu macOS Compatibility</h1>
       <p>Unofficial list of compatibility with the macOS builds of Cemu. <b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
       <p>To run Cemu on macOS, I recommend you follow my <router-link to="/installation">installation guide</router-link>. To discuss macOS Cemu development, there is a dedicated macOS thread on the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a> under #cemu_dev_public.</p>
-  
       <h5>Ratings</h5>
       <div class="flexWrapper compatWrapper">
-        <div v-for="i in 5" :key="i" class="flexWrapper flexItem" style="flex: 1 1 100%">
-          <i :class="['fas','fa-circle','compatIndicator',ratingArr[5-i].name.toLowerCase()]"></i>
+        <div
+          v-for="i in 5" :key="i"
+          :class="['flexWrapper','flexItem','compatItem',showRatings.find(x => x.rating == 6-i).show ? `container-${ratingArr[5-i].name.toLowerCase()}` : [`container-${ratingArr[5-i].name.toLowerCase()}-hidden`,'compatItemHidden']]"
+          style="flex: 1 1 100%"
+          v-on:click="showRatings.find(x => x.rating == 6-i).show = !showRatings.find(x => x.rating == 6-i).show"
+        >
           <div>
             <b>{{ ratingArr[5-i].name }}</b><br>
             <span style="color: var(--c-text-grey)">{{ ratingArr[5-i].description }} - {{getRatingPercentage(6-i)}}%</span>
@@ -32,16 +35,6 @@
             <template v-for="region in Array.from(new Set(compatList.map(x => x.region)))" :key="region">
               <input type="checkbox" v-model="showRegions.find(x => x.region == region).show" :id="`show${region}Checkbox`">
               <label :for="`show${region}Checkbox`">{{region}} ({{compatList.filter(x => x.region == region).length}})</label>
-            </template>
-          </li>
-          <li class="filterCheckbox">
-            <label><b>Ratings:</b></label>
-            <template v-for="rating in Array.from(new Set(compatList.map(x => x.tests[0].rating))).sort().reverse()" :key="rating">
-              <input type="checkbox" v-model="showRatings.find(x => x.rating == rating).show" :id="`show${rating}Checkbox`">
-              <label :for="`show${rating}Checkbox`">
-                <template v-if="ratingArr[rating-1]">{{ratingArr[rating-1].name}}</template>
-                <template v-else>{{ rating }}</template>
-                <span> ({{compatList.filter(x => x.tests[0].rating == rating).length}})</span></label>
             </template>
           </li>
         </ul>
@@ -147,6 +140,7 @@
         direction: true,
         showComments: true,
         searchStr: '',
+        out: 'asdasd',
         ratingArr: [
           {
             name: 'Unplayable',
