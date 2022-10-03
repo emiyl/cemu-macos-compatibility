@@ -1,7 +1,7 @@
 <template>
   <div class="smallerMain">
     <h1>Installing Cemu (macOS)</h1>
-    
+
     <h5>Downloads <i v-if="loading" class="fas fa-spinner spin" style="margin-left: 4px;"></i></h5>
     <ul>
         <li v-for="release in releases.filter(x => x.url)" :key="release">
@@ -61,7 +61,7 @@
     
     <p>
         <div><b>Super Smash Bros</b>: <code><a href="/graphicPacks/SuperSmashBros_NoCutscenes.zip">SuperSmashBros_NoCutscenes.zip</a></code></div>
-        <div><b>Breath of the Wild</b>: <code><a href="/graphicPacks/BreathOfTheWild_NoCutscenes.zip">BreathOfTheWild_NoCutscenes.zip</a></code></div>
+        <!--<div><b>Breath of the Wild</b>: <code><a href="/graphicPacks/BreathOfTheWild_NoCutscenes.zip">BreathOfTheWild_NoCutscenes.zip</a></code></div>-->
         <div><b>Pikmin 3</b>: <code><a href="/graphicPacks/Pikmin3_NoCutscenes.zip">Pikmin3_NoCutscenes.zip</a></code></div>
     </p>
 
