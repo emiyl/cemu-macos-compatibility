@@ -54,7 +54,7 @@
 
     <p>I recommend that you move the Cemu binary into a folder of its own, as it will then generate a bunch of extra folders and files necessary for Cemu.</p>
 
-    <h2 style="margin-bottom: 0;">Graphic Packs</h2>
+    <h2 style="margin-bottom: 0;">Video cutscenes</h2>
     <hr>
 
     <p>Video cutscenes don't work on macOS yet, and will cause Cemu to crash. These graphic packs replace the cutscene files with blank files to skip them. Extract the folder inside the zip to your <code>graphicPacks</code> folder and enable them in Cemu.</p>
