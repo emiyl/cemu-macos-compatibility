@@ -57,7 +57,7 @@ $unplayable: #f44336;
 
         --c-bg: #{$dm-background};
         --c-bg-light: #{mix($dm-background, black, 99%)};
-        --c-bg-lighter: #{mix($dm-container-background, white, 96.5%)};
+        --c-bg-lighter: #{mix($dm-container-background, white, 98%)};
         --c-bg-search: var(--c-bg-code);
         --c-bg-code: #{mix($dm-background, black, 97%)};
         --c-bg-navbar-item: #{mix($dm-background, white, 96%)};
