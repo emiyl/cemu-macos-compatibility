@@ -185,7 +185,7 @@
 
       for (let titleID of this.compatList.map(x => x.titleID)) {
         let commentElement = document.getElementById(`${titleID}-comment`)
-        this.compatList.find(x => x.titleID).tests[0].adjustedComment = commentElement.innerHTML
+        this.compatList.find(x => x.titleID == titleID).tests[0].adjustedComment = commentElement.innerHTML
         if (getLineCount(commentElement) <= maxLineCount) continue
 
         commentElement.innerHTML += '...'
