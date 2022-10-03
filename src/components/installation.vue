@@ -2,7 +2,7 @@
   <div class="smallerMain">
     <h1>Installing Cemu (macOS)</h1>
 
-    <h5>Downloads</h5>
+    <h5>Downloads <i v-if="loading" class="far fa-spinner spin" style="margin-left: 4px;"></i></h5>
     <ul>
         <li v-for="release in releases.filter(x => x.url)" :key="release">
             <a :href="release.url" :target="release.target">
@@ -76,6 +76,21 @@
   </div>
 </template>
 
+<style scoped>
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+</style>
+
 <script>
 import cachedReleases from '../../cachedReleases.json'
 
@@ -84,6 +99,7 @@ export default {
         return {
             cpuType: 'x86',
             releases: cachedReleases,
+            loading: true
         }
     },
     async created() {
@@ -132,6 +148,7 @@ export default {
             })
         }
         this.releases = releases
+        this.loading = false
     },
     mounted() {
         window.scrollTo(0, 0)
