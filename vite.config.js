@@ -8,6 +8,7 @@ import path from 'path'
 import fs from 'fs'
 import sharp from 'sharp'
 import tga2png from 'tga2png'
+import request from 'sync-request'
 
 if (!fs.existsSync('./icons')) fs.mkdirSync('./icons')
 
@@ -65,6 +66,86 @@ for (const titleid of pngArr) for (const format of ['jpeg','png','webp','avif'])
     format
   )
 }
+
+function getLatestReleases() {
+  return JSON.parse(request('GET','https://api.github.com/repos/cemu-project/Cemu/releases', { headers: { 'Content-Type': 'application/json', 'User-Agent': 'emiyl' } }).getBody())
+}
+
+async function getLatestWorkflow() {
+  let ret
+
+  let commits = JSON.parse(request('GET','https://api.github.com/repos/cemu-project/Cemu/commits', { headers: { 'Content-Type': 'application/json', 'User-Agent': 'emiyl' } }).getBody())
+  let runs = JSON.parse(request('GET','https://api.github.com/repos/cemu-project/Cemu/actions/runs', { headers: { 'Content-Type': 'application/json', 'User-Agent': 'emiyl' } }).getBody())
+  
+  let i = -1
+  while (!ret) {
+      i++
+      const commit = commits[i]
+      const run = runs.workflow_runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033)
+      if (run) ret = run
+  }
+
+  return ret
+}
+
+async function getCachedEntries() {
+  let latestReleases = await getLatestReleases()
+  let releases = [{
+      overwriteMe: true,
+      label: 'Latest release',
+      version: '',
+      url: 'https://github.com/cemu-project/Cemu/releases/latest',
+      target: '_blank',
+  }]
+
+  function getRelease(release) {
+      let obj = {}
+
+      if (release) {
+          obj = {
+              label: `Latest ${release.prerelease ? 'pre-' : ''}release`,
+              version: release.tag_name,
+              ghurl: release.html_url,
+              ghtarget: '_blank'
+          }
+      }
+      else return
+
+      let macosAsset = release.assets.find(x => x.name.includes('macos'))
+      if (!macosAsset) {
+          releases.push(obj)
+          return
+      }
+
+      obj.url = macosAsset.browser_download_url
+      obj.target = ''
+      
+      if (releases[0].overwriteMe) releases = []
+      releases.push(obj)
+  }
+
+  getRelease(latestReleases.filter(x => !x.prerelease)[0])
+  getRelease(latestReleases.filter(x => x.prerelease)[0])
+
+  let latestWorkflow = await getLatestWorkflow()
+  if (latestWorkflow) {
+      if (releases[0].overwriteMe) releases = []
+      releases.push({
+          label: 'Latest commit',
+          commit: latestWorkflow.head_sha,
+          url: latestWorkflow.html_url,
+          target: '_blank'
+      })
+  }
+
+  if (releases) fs.writeFile('./cachedReleases.json', JSON.stringify(releases.map(x => {
+    x.overwriteMe = true
+    return x
+  })), err => { if (err) console.log(err) })
+  else console.log(releases)
+}
+
+getCachedEntries()
 
 export default defineConfig({
   plugins: [vue(), vueJsx()],

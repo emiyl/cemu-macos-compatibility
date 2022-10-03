@@ -77,17 +77,13 @@
 </template>
 
 <script>
+import cachedReleases from '../../cachedReleases.json'
+
 export default {
     data() {
         return {
             cpuType: 'x86',
-            releases: [{
-                overwriteMe: true,
-                label: 'Latest release',
-                version: '',
-                url: 'https://github.com/cemu-project/Cemu/releases/latest',
-                target: '_blank',
-            }],
+            releases: cachedReleases,
         }
     },
     async created() {
