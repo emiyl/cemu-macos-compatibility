@@ -59,12 +59,12 @@ $unplayable: #f44336;
         --c-bg-light: #{mix($dm-background, black, 99%)};
         --c-bg-lighter: #{mix($dm-container-background, white, 98%)};
         --c-bg-search: var(--c-bg-code);
-        --c-bg-code: #{mix($dm-background, black, 97%)};
+        --c-bg-code: #{mix($dm-background, white, 97%)};
         --c-bg-navbar-item: #{mix($dm-background, white, 96%)};
 
         --c-text: #{$dm-text};
         --c-text-grey: #{mix($dm-text, black, 75%)};
-        --c-text-code: var(--c-text-grey);
+        --c-text-code: #{mix($dm-text, black, 85%)};
 
         --c-border: #{mix($text, white, 98%)};
         --c-border-dark: #{mix($text, white, 90%)};

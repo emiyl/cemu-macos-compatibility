@@ -1,7 +1,7 @@
 <template>
   <div class="smallerMain">
     <h1>Installing Cemu (macOS)</h1>
-
+    
     <h5>Downloads <i v-if="loading" class="fas fa-spinner spin" style="margin-left: 4px;"></i></h5>
     <ul>
         <li v-for="release in releases.filter(x => x.url)" :key="release">
