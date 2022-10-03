@@ -150,14 +150,25 @@ export default {
             .then((response) => JSON.parse(response).filter(x => x.assets))
         },
         async getLatestWorkflow() {
-            return fetch('https://api.github.com/repos/cemu-project/Cemu/commits', { method: 'GET', headers: { 'Content-Type': 'application/json' } })
+            let ret
+
+            let commits = await fetch('https://api.github.com/repos/cemu-project/Cemu/commits', { method: 'GET', headers: { 'Content-Type': 'application/json' } })
             .then((response) => response.text())
-            .then((response) => JSON.parse(response)[0])
-            .then((commit) => {
-                return fetch('https://api.github.com/repos/cemu-project/Cemu/actions/runs', { method: 'GET', headers: { 'Content-Type': 'application/json' } })
-                .then((response) => response.text())
-                .then((response) => JSON.parse(response).workflow_runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033))
-            })
+            .then((response) => JSON.parse(response))
+
+            let runs = await fetch('https://api.github.com/repos/cemu-project/Cemu/actions/runs', { method: 'GET', headers: { 'Content-Type': 'application/json' } })
+            .then((response) => response.text())
+            .then((response) => JSON.parse(response))
+            
+            let i = -1
+            while (!ret) {
+                i++
+                const commit = commits[i]
+                const run = runs.workflow_runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033)
+                if (run) ret = run
+            }
+
+            return ret
         }
     }
 }
