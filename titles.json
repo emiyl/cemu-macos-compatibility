@@ -55,8 +55,21 @@
     "0005000010101d00": {
         "name": "New Super Mario Bros U",
         "region": "USA",
-        "comment": "",
+        "comment": "If you don't have online files dumped, you must enable the \"Crash Fix\" graphic pack, else the game will crash.",
         "tests": [
+            {
+                "rating": 5,
+                "comment": "Runs great, 30-40FPS in game on M1 Macbook Air.",
+                "source": "BJS1206",
+                "sourceURL": "https://github.com/BJS1206",
+                "author": "BJS1206",
+                "date": "2022-10-3",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "MacBook Air (M1, base model)",
+                "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
             {
                 "rating": 2,
                 "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.",
@@ -68,7 +81,7 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
-                "log": ""
+                "log": ""  
             }
         ]
     },
