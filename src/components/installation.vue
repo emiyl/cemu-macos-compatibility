@@ -178,7 +178,7 @@ export default {
                 i++
                 const commit = commits[i]
                 const run = runs.workflow_runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033)
-                if (run) ret = run
+                if (run && run.conclusion == 'success') ret = run
             }
 
             return ret
