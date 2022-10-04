@@ -55,11 +55,11 @@
     "0005000010101d00": {
         "name": "New Super Mario Bros U",
         "region": "USA",
-        "comment": "",
+        "comment": "If you don't have online files dumped, you must enable the \"Crash Fix\" graphic pack, else the game will crash.",
         "tests": [
             {
                 "rating": 5,
-                "comment": "Runs great, 30-40FPS in game on M1 Macbook Air. Game will crash at first menus if you don't add [these files](http://www.mediafire.com/file/x4cfbtc7foy54nf/NSMBU_Files.zip/file) to (Cemu Directory)->mlc01/sys/title/0005001b/1005c000",
+                "comment": "Runs great, 30-40FPS in game on M1 Macbook Air.",
                 "source": "BJS1206",
                 "sourceURL": "https://github.com/BJS1206",
                 "author": "BJS1206",
@@ -71,7 +71,7 @@
                 "log": ""
             },
             {
-              "rating": 2,
+                "rating": 2,
                 "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.",
                 "source": "Andrew Tsai",
                 "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
