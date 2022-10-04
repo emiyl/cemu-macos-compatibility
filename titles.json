@@ -65,7 +65,7 @@
                 "author": "BJS1206",
                 "date": "2022-10-3",
                 "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
-                "hardware": "MacBook Air (M1, base model)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
