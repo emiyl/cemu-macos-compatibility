@@ -951,6 +951,19 @@
         "tests": [
             {
                 "rating": 5,
+                "comment": "Works perfectly, 60 FPS on M1 Max.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
+                "rating": 5,
                 "comment": "Seems to run perfectly.",
                 "source": "@JaimieVandenbergh",
                 "sourceURL": "",
@@ -1168,6 +1181,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 5,
+                "comment": "FPS down only if Shader construct and at fight with multiple opponents // too bright during the day",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Crashes immediately, bus error.",
                 "source": "@JaimieVandenbergh",
@@ -1254,6 +1280,166 @@
                 "version": "2.0 (3fb4b5e26c0125dda68b3858e8c3d9589244c211)",
                 "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
                 "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": "Bus error: 10!\nError: signal 10:"
+            }
+        ]
+    },
+    "0005000c101d7500": {
+        "name": "Minecraft: Wii U Edition",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 5,
+                "comment": "Runs perfect.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "000500001f600b00": {
+        "name": "PAPER MARIO Color Splash",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Crash after pressing A.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": "Trace/BPT trap: 5!\nError: signal 5:"
+            }
+        ]
+    },
+    "000500001010F500": {
+        "name": "Mass Effect™ 3 Special Edition",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 4,
+                "comment": "Graphical glitches and black textures.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "000500001010F600": {
+        "name": "Assassin´s Creed® III",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 3,
+                "comment": "In-game 20FPS and lots of graphical glitches.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "000500001012B200": {
+        "name": "DEUS EX: HUMAN REV. DIRECTOR`S CUT",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Crashes.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": "Trace/BPT trap: 5!\nError: signal 5:"
+            }
+        ]
+    },
+    "0005000010113700": {
+        "name": "Call of Duty: Black Ops II",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Not loading.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010149100": {
+        "name": "Angry Birds Star Wars",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 5,
+                "comment": "Runs perfectly.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010156100": {
+        "name": "Call of Duty: Ghosts",
+        "region": "EUR",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 1,
+                "comment": "Crashes.",
+                "source": "@DarkUser89",
+                "sourceURL": "",
+                "author": "DarkUser89",
+                "date": "2022-10-02",
+                "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+                "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+                "osVersion": "macOS 12.6 (21G115)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": "Bus error: 10!\nError: signal 10:"
             }
