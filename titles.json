@@ -1325,7 +1325,7 @@
             }
         ]
     },
-    "000500001010F500": {
+    "000500001010f500": {
         "name": "Mass Effect™ 3 Special Edition",
         "region": "EUR",
         "comment": "",
@@ -1345,8 +1345,8 @@
             }
         ]
     },
-    "000500001010F600": {
-        "name": "Assassin´s Creed® III",
+    "000500001010f600": {
+        "name": "Assassin's Creed® III",
         "region": "EUR",
         "comment": "",
         "tests": [
@@ -1366,7 +1366,7 @@
         ]
     },
     "000500001012B200": {
-        "name": "DEUS EX: HUMAN REV. DIRECTOR`S CUT",
+        "name": "DEUS EX: HUMAN REV. DIRECTOR'S CUT",
         "region": "EUR",
         "comment": "",
         "tests": [
