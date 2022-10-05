@@ -344,7 +344,7 @@
         "tests": [
             {
                 "rating": 3,
-                "comment": "Runs well, with minor graphical glitches on most levels, except some major graphical glitches on boss fights which make it nearly impossible to beat.",
+                "comment": "Runs well, with minor graphical glitches on most levels, except some major graphical glitches on boss fights which make it nearly impossible to beat. Hidden Luigi sprites are not rendered due to missing R5G5B5A1_UNORM decoder.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
