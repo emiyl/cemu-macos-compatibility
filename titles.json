@@ -1149,7 +1149,7 @@
         "tests": [
             {
                 "rating": 4,
-                "comment": "A few rendering errors, but it seemed to run pretty well.",
+                "comment": "A few rendering errors, but it seemed to run pretty well. Rupee counter is invisible due to no R4G4 decoder support.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
