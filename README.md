@@ -1,6 +1,6 @@
 # Cemu macOS Compatibility
 
-Unofficial list of compatibility with the macOS builds of Cemu. You can view this list at [cemu.emiyl.com](https://cemu.emiyl.com/)
+Unofficial list of compatibility with the macOS builds of [Cemu](https://github.com/cemu-project/Cemu). You can view this list at [cemu.emiyl.com](https://cemu.emiyl.com/)
 
 ## Contributing
 
