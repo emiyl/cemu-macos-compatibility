@@ -1478,7 +1478,7 @@
         "tests": [
             {
                 "rating": 2,
-                "comment": "Title screen loads, but starting a new game makes the title load indefinitely.",
+                "comment": "Title screen *sometimes* loads, but starting a new game makes the title load indefinitely.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
