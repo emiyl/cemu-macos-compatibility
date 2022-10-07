@@ -173,3 +173,11 @@ ul {
     margin-bottom: 0;
   }
 }
+
+blockquote {
+  color: var(--c-text-grey);
+  font-style: italic;
+  border-left: 4px solid var(--c-border);
+  margin-left: 0;
+  padding-left: .75em;
+}

@@ -4,6 +4,7 @@ import App from './App.vue'
 import main from './components/main.vue'
 import title from './components/title.vue'
 import installation from './components/installation.vue'
+import latestCommit from './components/latestCommit.vue'
 
 import navbar from './components/navbar.vue'
 import navbarLabel from './components/navbarLabel.vue'
@@ -18,6 +19,10 @@ const router = createRouter({
     {
       path: '/installation',
       component: installation
+    },
+    {
+      path: '/latest',
+      component: latestCommit
     },
     {
       path: '/instructions',
