@@ -54,6 +54,13 @@
 
     <p>I recommend that you move the Cemu binary into a folder of its own, as it will then generate a bunch of extra folders and files necessary for Cemu.</p>
 
+    <h2 style="margin-bottom: 0;">Troubleshooting</h2>
+    <hr>
+
+    <p><b>No sound:</b> By default, Cemu on macOS sets audio output to 0%. Go into the audio settings and turn up the volume.</p>
+    <p><b>Illegal hardware instruction</b>: Make you installed moltenvk as described above. Check graphics settings and ensure the rendering API is set to Vulkan.</p>
+    <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. There is no way to bypass this currently.</p>
+
     <h2 style="margin-bottom: 0;">Video cutscenes</h2>
     <hr>
 
@@ -66,13 +73,6 @@
     </p>
 
     <p>Zeroing out the cutscenes does not seem to work with BOTW. <a href="https://twitter.com/shadowmarth_jtw" target="_blank">@ShadowMarth_JTW</a> suggested to remove the cutscenes via event editing, but I'm not too familiar with BOTW modding. If you have experience with this, please contact me on Discord @Emma#1024.</p>
-
-    <h2 style="margin-bottom: 0;">Troubleshooting</h2>
-    <hr>
-
-    <p><b>No sound:</b> By default, Cemu on macOS sets audio output to 0%. Go into the audio settings and turn up the volume.</p>
-    <p><b>Illegal hardware instruction</b>: Make you installed moltenvk as described above. Check graphics settings and ensure the rendering API is set to Vulkan.</p>
-    <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. There is no way to bypass this currently.</p>
 
     <br>
   </div>
