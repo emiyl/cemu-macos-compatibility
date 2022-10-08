@@ -69,6 +69,7 @@
     <p>
         <div><b>Super Smash Bros</b>: <code><a href="/graphicPacks/SuperSmashBros_NoCutscenes.zip">SuperSmashBros_NoCutscenes.zip</a></code></div>
         <div><b>Pikmin 3</b>: <code><a href="/graphicPacks/Pikmin3_NoCutscenes.zip">Pikmin3_NoCutscenes.zip</a></code></div>
+        <div><b>Paper Mario Color Splash</b>: <code><a href="/graphicPacks/ColorSplash_NoCutscenes.zip">ColorSplash_NoCutscenes.zip</a></code></div>
         <div><b>Breath of the Wild</b>: N/A</div>
     </p>
 
