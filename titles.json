@@ -191,6 +191,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 4,
+                "comment": "Runs, but many textures are missing (chests and some enemies are invisible). Average 12 FPS on M1. Cutscenes now render, meaning you can unlock the first tower, which is necessary to complete the game.",
+                "source": "@xepo99",
+                "sourceURL": "https://github.com/xepo99",
+                "author": "xepo",
+                "date": "2022-10-09",
+                "version": "2.0 (0c9fb3143f491d60959b3f2ca0aa8a04ab38b47c)",
+                "hardware": "MacBook Air (M1, 7-GPU, 16GB)",
+                "osVersion": "macOS 12.6",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 3,
                 "comment": "Runs, but many textures are missing and the game crashes when you play a cutscene. This means you cannot unlock the first tower, which is necessary to complete the game.",
                 "source": "@emiyl",
