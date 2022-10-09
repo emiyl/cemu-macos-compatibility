@@ -429,6 +429,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 5,
+                "comment": "Cutscenes now work on this build, game seems flawless to me.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-10-09",
+                "version": "2.0 (Cemu-0c9fb3143f491d60959b3f2ca0aa8a04ab38b47c)",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 beta 10 (22A5365d)",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Segfaults after trying to play the opening video. Removing the video allows the game to be playable.",
                 "source": "@emiyl",

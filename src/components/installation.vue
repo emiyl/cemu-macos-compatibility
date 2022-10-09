@@ -61,20 +61,6 @@
     <p><b>Illegal hardware instruction</b>: Make you installed moltenvk as described above. Check graphics settings and ensure the rendering API is set to Vulkan.</p>
     <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. There is no way to bypass this currently.</p>
 
-    <h2 style="margin-bottom: 0;">Video cutscenes</h2>
-    <hr>
-
-    <p>Video cutscenes don't work on macOS yet, and will cause Cemu to crash. These graphic packs replace the cutscene files with blank files to skip them. Extract the folder inside the zip to your <code>graphicPacks</code> folder and enable them in Cemu.</p>
-    
-    <p>
-        <div><b>Super Smash Bros</b>: <code><a href="/graphicPacks/SuperSmashBros_NoCutscenes.zip">SuperSmashBros_NoCutscenes.zip</a></code></div>
-        <div><b>Pikmin 3</b>: <code><a href="/graphicPacks/Pikmin3_NoCutscenes.zip">Pikmin3_NoCutscenes.zip</a></code></div>
-        <div><b>Paper Mario Color Splash</b>: <code><a href="/graphicPacks/ColorSplash_NoCutscenes.zip">ColorSplash_NoCutscenes.zip</a></code></div>
-        <div><b>Breath of the Wild</b>: N/A</div>
-    </p>
-
-    <p>Zeroing out the cutscenes does not seem to work with BOTW. <a href="https://twitter.com/shadowmarth_jtw" target="_blank">@ShadowMarth_JTW</a> suggested to remove the cutscenes via event editing, but I'm not too familiar with BOTW modding. If you have experience with this, please contact me on Discord @Emma#1024.</p>
-
     <br>
   </div>
 </template>
