@@ -192,7 +192,7 @@
         "tests": [
             {
                 "rating": 4,
-                "comment": "Runs, but many textures are missing (chests and some enemies are invisible). Average 12 FPS. This means you can unlock the first tower, which is necessary to complete the game.",
+                "comment": "Runs, but many textures are missing (chests and some enemies are invisible). Average 12 FPS on M1. Cutscenes now render, meaning you can unlock the first tower, which is necessary to complete the game.",
                 "source": "@xepo99",
                 "sourceURL": "https://github.com/xepo99",
                 "author": "xepo",
