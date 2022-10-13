@@ -24,7 +24,7 @@
                 <ol>
                     <li>Download Cemu from above</li>
                     <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
-                    <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
+                    <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code>, where Cemu is the file to be executed</li>
                     <li>Install brew (if you haven't already) by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
                     <li>Install moltenvk by running <code>brew install molten-vk</code></li>
                     <li>Right click the Cemu executable and click "Open"</li>
@@ -42,7 +42,7 @@
                 <ol>
                     <li>Download Cemu from above</li>
                     <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
-                    <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code></li>
+                    <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code>, where Cemu is the file to be executed</li>
                     <li>Install the x86 version of brew by running <code>arch --x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
                     <li>Install the x86 version of moltenvk by running <code>arch --x86_64 /usr/local/Homebrew/bin/brew install molten-vk</code></li>
                     <li>Right click the Cemu executable and click "Open"</li>
