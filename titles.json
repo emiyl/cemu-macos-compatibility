@@ -435,8 +435,8 @@
         "comment": "",
         "tests": [
             {
-                "rating": 1,
-                "comment": "Freezes on loading black screen (doesn't even show the splash screen).",
+                "rating": 4,
+                "comment": "Identical to Windows/Linux, weird graphical glitches in cutouts",
                 "source": "@jkcoxson",
                 "sourceURL": "https://github.com/jkcoxson",
                 "author": "emiyl",
