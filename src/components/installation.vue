@@ -20,7 +20,7 @@
             <label for="x86" class="tab-link" v-on:click="cpuType = 'x86'">
                 Intel (x86)
             </label>
-            <div class="tab" style="overflow-x: scroll;">
+            <div class="tab" style="overflow-x: auto;">
                 <ol>
                     <li>Download Cemu from above</li>
                     <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
