@@ -166,6 +166,7 @@ export default {
             while (!ret) {
                 i++
                 const commit = commits[i]
+                if (!commit) break
                 const run = runs.workflow_runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033)
                 if (run && run.conclusion == 'success') ret = run
             }
