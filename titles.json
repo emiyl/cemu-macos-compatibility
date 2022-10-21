@@ -435,6 +435,19 @@
         "comment": "",
         "tests": [
             {
+                "rating": 4,
+                "comment": "Identical to Windows/Linux, weird graphical glitches in cutouts",
+                "source": "@jkcoxson",
+                "sourceURL": "https://github.com/jkcoxson",
+                "author": "jkcoxson",
+                "date": "2022-10-21",
+                "version": "2.0-7",
+                "hardware": "MacBook Air (M1, 7-GPU)",
+                "osVersion": "macOS 12",
+                "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            },
+            {
                 "rating": 1,
                 "comment": "Freezes on loading black screen (doesn't even show the splash screen).",
                 "source": "@jkcoxson",
