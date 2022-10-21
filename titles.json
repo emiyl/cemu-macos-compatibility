@@ -1614,5 +1614,24 @@
                 "log": ""
             }
         ]
-    }
+    },
+    "00050000-10137F00": {
+        "name": "Donkey Kong Country Tropical Freeze",
+        "region": "USA",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 5,
+                "comment": "Runs extremely well, around 60 FPS on M1 Mac Mini. Only played through the first level, further testing may be needed.",
+                "source": "@aaSchcolnik",
+                "sourceURL": "https://github.com/aaSchcolnik",
+                "author": "Aaron",
+                "date": "2022-10-21",
+                "version": "2.0-999999 (experimental)",
+                "hardware": "Mac Mini (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 12.5",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            }
+        ]
 }
