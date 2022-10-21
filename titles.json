@@ -1627,7 +1627,7 @@
                 "sourceURL": "https://github.com/aaSchcolnik",
                 "author": "Aaron",
                 "date": "2022-10-21",
-                "version": "2.0-999999 (experimental)",
+                "version": "2.0-7",
                 "hardware": "Mac Mini (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 12.5",
                 "renderingApi": "Vulkan on MoltenVK v1.2",
