@@ -81,7 +81,7 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
-                "log": ""  
+                "log": ""
             }
         ]
     },
@@ -1634,4 +1634,5 @@
                 "log": ""
             }
         ]
+    }
 }
