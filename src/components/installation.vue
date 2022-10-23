@@ -13,7 +13,16 @@
         </li>
     </ul>
 
-    <h5>Instructions</h5>
+    <p>To install, simply open the <code>.dmg</code> file, and drag and drop the Cemu application into your Applications folder.</p>
+    <p>On first launch, you will need to right-click on the Cemu application in Finder and click "Open". When prompted, hit "Open" again. This is not needed for subsequent launches.</p>
+
+    <h2 style="margin-bottom: 0;">Updating MoltenVK</h2>
+    <hr>
+
+    <p>Cemu is now bundled with the latest version MoltenVK included, so an installation of the library is not required. This does not automatically update however, and you would otherwise need to wait for a new Cemu release to get the latest version.</p>
+
+    <p>If your Cemu application is stored anywhere other that <code>/Applications/Cemu.app</code>, please replace that path with whichever path your bundle is stored at instead in the commands below.</p>
+
     <div class="tab-container">
         <section>
             <input id="x86" type="radio" :checked="cpuType == 'x86'">
@@ -22,13 +31,12 @@
             </label>
             <div class="tab" style="overflow-x: auto;">
                 <ol>
-                    <li>Download Cemu from above</li>
-                    <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
-                    <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code>, where Cemu is the file to be executed</li>
+                    <li>Open the Terminal application</li>
                     <li>Install brew (if you haven't already) by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
                     <li>Install moltenvk by running <code>brew install molten-vk</code></li>
-                    <li>Right click the Cemu executable and click "Open"</li>
-                    <ul><li>This is only necessary on first launch, on subsequent launches you can just double click the executable</li></ul>
+                    <ul><li>Run <code>brew install molten-vk --HEAD</code> to grab the latest commit, but note that this may be unstable</li></ul>
+                    <li>Run <code>mv /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib.bak</code></li>
+                    <li>Run <code>cp /usr/local/lib/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib</code></li>
                 </ol>
             </div>
         </section>
@@ -38,21 +46,18 @@
                 Apple (ARM)
             </label>
             <div class="tab tab-last" style="overflow-x: auto;">
-                <p style="margin-top: .5em;">To install Cemu on macOS, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This installation of brew will not conflict with a pre-existing ARM brew installation.</p>
+                <p style="margin-top: .5em;">To update Cemu's MoltenVK, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This installation of brew will not conflict with a pre-existing ARM brew installation.</p>
                 <ol>
-                    <li>Download Cemu from above</li>
-                    <li>Extract the contents of the <code>.zip</code> file to its own folder</li>
-                    <li>Open a terminal and run <code>chmod +x /path/to/Cemu</code>, where Cemu is the file to be executed</li>
-                    <li>Install the x86 version of brew by running <code>arch --x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
-                    <li>Install the x86 version of moltenvk by running <code>arch --x86_64 /usr/local/Homebrew/bin/brew install molten-vk</code></li>
-                    <li>Right click the Cemu executable and click "Open"</li>
-                    <ul><li>This is only necessary on first launch, on subsequent launches you can just double click the executable</li></ul>
+                    <li>Open the Terminal application and run <code>arch --x86_64 zsh</code> to enter an x86 shell</li>
+                    <li>Install the x86 version of brew by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
+                    <li>Install the x86 version of moltenvk by running <code>/usr/local/Homebrew/bin/brew install molten-vk</code></li>
+                    <ul><li>Run <code>/usr/local/Homebrew/bin/brew install molten-vk --HEAD</code> to grab the latest commit, but note that this may be unstable</li></ul>
+                    <li>Run <code>mv /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib.bak</code></li>
+                    <li>Run <code>cp /usr/local/lib/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib</code></li>
                 </ol>
             </div>
         </section>
     </div>
-
-    <p>I recommend that you move the Cemu binary into a folder of its own, as it will then generate a bunch of extra folders and files necessary for Cemu.</p>
 
     <h2 style="margin-bottom: 0;">Troubleshooting</h2>
     <hr>
