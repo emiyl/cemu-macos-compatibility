@@ -64,9 +64,9 @@
             return bool ? -1*m : 1*m
           })"
           :key="title.titleID"
-        >
+        ><router-link :to="`/titleid/${title.titleID}`">
           <div class="gridWrapper iconGrid">
-            <div><router-link :to="`/titleid/${title.titleID}`"><picture>
+            <div><picture>
                   <source :srcset="`icons/${title.titleID}.avif`" type="image/avif">
                   <source :srcset="`icons/${title.titleID}.webp`" type="image/webp">
                   <img :src="`icons/${title.titleID}.jpeg`" :style="{
@@ -76,7 +76,7 @@
                     'border-radius': '8px',
                     'filter': `grayscale(${title.outdated ? '100%' : '0%'})`
                   }">
-            </picture></router-link></div>
+            </picture></div>
             <div>
               <div style="font-weight: 600;">
                 <i :class="[
@@ -87,17 +87,17 @@
                 ]" :style="{
                   'filter': `grayscale(${title.outdated ? '80%' : '0%'})`
                 }"></i>
-                <router-link :to="`/titleid/${title.titleID}`" :style="{
+                <span :style="{
                   'color': `${title.outdated ? 'var(--c-text-grey)' : 'var(--c-text)'}`,
                   'margin-left': '4px',
-                }">{{title.name}} ({{title.region}})</router-link>
+                }">{{title.name}} ({{title.region}})</span>
               </div>
               <div class="gridComment" :id="`${title.titleID}-comment`">
                 {{ title.tests[0].adjustedComment ? title.tests[0].adjustedComment : title.tests[0].setComment }}
               </div>
             </div>
           </div>
-        </div>
+        </router-link></div>
       </div>
 </template>
 
