@@ -69,15 +69,31 @@
             <div><router-link :to="`/titleid/${title.titleID}`"><picture>
                   <source :srcset="`icons/${title.titleID}.avif`" type="image/avif">
                   <source :srcset="`icons/${title.titleID}.webp`" type="image/webp">
-                  <img :src="`icons/${title.titleID}.jpeg`" style="width: 64px; margin: 4px; vertical-align: middle; border-radius: 8px;">
+                  <img :src="`icons/${title.titleID}.jpeg`" :style="{
+                    'width': '64px',
+                    'margin': '4px',
+                    'vertical-align': 'middle',
+                    'border-radius': '8px',
+                    'filter': `grayscale(${title.outdated ? '100%' : '0%'})`
+                  }">
             </picture></router-link></div>
             <div>
               <div style="font-weight: 600;">
-                <i :class="['fas','fa-circle','compatIndicatorGrid',ratingArr[title.tests[0].rating-1].name.toLowerCase()]"></i>
-                <router-link :to="`/titleid/${title.titleID}`" style="color: var(--c-text); margin-left: 4px;">{{title.name}} ({{title.region}})</router-link>
+                <i :class="[
+                  'fas',
+                  'fa-circle',
+                  'compatIndicatorGrid',
+                  ratingArr[title.tests[0].rating-1].name.toLowerCase()
+                ]" :style="{
+                  'filter': `grayscale(${title.outdated ? '80%' : '0%'})`
+                }"></i>
+                <router-link :to="`/titleid/${title.titleID}`" :style="{
+                  'color': `${title.outdated ? 'var(--c-text-grey)' : 'var(--c-text)'}`,
+                  'margin-left': '4px',
+                }">{{title.name}} ({{title.region}})</router-link>
               </div>
               <div class="gridComment" :id="`${title.titleID}-comment`">
-                {{ title.tests[0].adjustedComment ? title.tests[0].adjustedComment : title.tests[0].comment }}
+                {{ title.tests[0].adjustedComment ? title.tests[0].adjustedComment : title.tests[0].setComment }}
               </div>
             </div>
           </div>
@@ -114,6 +130,10 @@
       comment: 'Unknown',
       fakeEntry: true
     }
+
+    if (x.outdated) x.tests[0].setComment = 'This listing has been marked as outdated and requires updating.'
+    else x.tests[0].setComment = x.tests[0].comment
+
     return x
   }).sort((a,b) => {
     if (a.name > b.name) return -1
@@ -196,7 +216,7 @@
           commentText += '...'
           commentElement.innerHTML = commentText
         }
-        commentElement.innerHTML = this.compatList.find(y => y.titleID == titleID).tests[0].comment
+        commentElement.innerHTML = this.compatList.find(y => y.titleID == titleID).tests[0].setComment
         this.compatList.find(y => y.titleID == titleID).tests[0].adjustedComment = commentText
       }
 

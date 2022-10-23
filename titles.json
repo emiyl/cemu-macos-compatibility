@@ -109,6 +109,7 @@
         "name": "Bayonetta 2",
         "region": "USA",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 2,
@@ -129,6 +130,7 @@
         "name": "Kirby and the Rainbow Curse",
         "region": "USA",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 2,
@@ -327,6 +329,7 @@
         "name": "Mario Kart 8",
         "region": "USA",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 1,
@@ -413,6 +416,7 @@
         "name": "Super Mario 3D World",
         "region": "USA",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 1,
@@ -512,6 +516,7 @@
         "name": "Super Smash Bros. U",
         "region": "USA",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 1,
@@ -532,6 +537,7 @@
         "name": "Nintendo Land",
         "region": "USA",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 1,
@@ -552,6 +558,7 @@
         "name": "Pikmin 3",
         "region": "USA",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 1,
@@ -585,6 +592,7 @@
         "name": "Pikmin 3",
         "region": "EUR",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 1,
@@ -1085,6 +1093,7 @@
         "name": "DKC Tropical Freeze",
         "region": "EUR",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 2,
@@ -1426,6 +1435,7 @@
         "name": "PAPER MARIO Color Splash",
         "region": "EUR",
         "comment": "",
+        "outdated": true,
         "tests": [
             {
                 "rating": 1,
@@ -1629,7 +1639,7 @@
         ]
     },
     "0005000010137f00": {
-        "name": "Donkey Kong Country Tropical Freeze",
+        "name": "DKC Tropical Freeze",
         "region": "USA",
         "comment": "",
         "tests": [
