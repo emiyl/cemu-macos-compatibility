@@ -161,13 +161,14 @@ export default {
             let runs = await fetch('https://api.github.com/repos/cemu-project/Cemu/actions/runs', { method: 'GET', headers: { 'Content-Type': 'application/json' } })
             .then((response) => response.text())
             .then((response) => JSON.parse(response))
+            .then((response) => response.workflow_runs)
             
             let i = -1
             while (!ret) {
                 i++
                 const commit = commits[i]
                 if (!commit) break
-                const run = runs.workflow_runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033)
+                const run = runs.find(x => x.head_sha == commit.sha && x.workflow_id == 34555033)
                 if (run && run.conclusion == 'success') ret = run
             }
 
