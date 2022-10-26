@@ -189,7 +189,7 @@
     },
     methods: {
       getRatingPercentage(i) {
-        return parseInt(this.compatList.filter(x => x.tests[0].rating == i).length / this.compatList.length * 100)
+        return parseInt(this.compatList.filter(x => !x.outdated && x.tests[0].rating == i).length / this.compatList.filter(x => !x.outdated).length * 100)
       }
     },
     mounted() {
