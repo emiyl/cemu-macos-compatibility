@@ -273,7 +273,7 @@
         "tests": [
             {
                 "rating": 4,
-                "comment": "Seems to work fine but there are a lot of graphical issues.",
+                "comment": "Seems to work fine but there are a lot of graphical issues. Can be fixed by setting environment variable MVK_CONFIG_FAST_MATH_ENABLED=0.",
                 "source": "@emiyl",
                 "sourceURL": "https://github.com/emiyl",
                 "author": "emiyl",
