@@ -59,6 +59,19 @@
         "tests": [
             {
                 "rating": 5,
+                "comment": "Runs great, 60FPS locked on entry-level M1 Macbook Air.",
+                "source": "Nabrious",
+                "sourceURL": "https://github.com/nabriouso",
+                "author": "Nabrious",
+                "date": "2022-11-01",
+                "version": "2.0-999999",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 (22A380)",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            },
+            {
+                "rating": 5,
                 "comment": "Runs great, 30-40FPS in game on M1 Macbook Air.",
                 "source": "BJS1206",
                 "sourceURL": "https://github.com/BJS1206",
