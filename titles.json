@@ -263,6 +263,18 @@
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
+
+                "rating": 4,
+                "comment": "Game runs fine with FPS++ on with the cap at 30FPS.Game does have some graphical glitches such as missing eyes , hair , invisible chests , enemies or switches for shrine puzzles. But game is playable.",
+                "source": "@Sushitrash #2496",
+                "sourceURL": "https://youtu.be/j0pX4I9yDJc",
+                "author": "emiyl",
+                "date": "2022-10-30",
+                "version": "2.0-10",
+                "hardware": "MacBook Pro (M1 2020)",
+                "osVersion": "macOS 13.0 ((22A380)",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
             }
         ]
     },
@@ -340,7 +352,7 @@
                 "date": "2022-09-25",
                 "version": "2.0-4",
                 "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
-                "osVersion": "macOS 12.6 (21G115)",
+                "osVersion": "macOS 12.6(21G115)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
                 "log": ""
             }
