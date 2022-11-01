@@ -15,7 +15,8 @@
 
     <p>To install, simply open the <code>.dmg</code> file, and drag and drop the Cemu application into your Applications folder.</p>
     <p>On first launch, you will need to right-click on the Cemu application in Finder and click "Open". When prompted, hit "Open" again. This is not needed for subsequent launches.</p>
-    <p>If you have any issues during installation, please ask in the #troubleshooting channel in the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a>.</p>
+    <p>Once Cemu is installed, you can follow my <a href="https://cemu.cfw.guide" target="_blank">setup guide</a> to install your games and to optimise Cemu.</p>
+    <p class="customContainer" style="padding-block: 1em; box-shadow: var(--compat-shadow);">If you have any issues during installation, please ask in the #troubleshooting channel in the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a>.</p>
 
     <h2 style="margin-bottom: 0;">Troubleshooting</h2>
     <hr>
