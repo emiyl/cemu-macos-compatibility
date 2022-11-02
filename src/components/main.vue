@@ -3,7 +3,7 @@
   <p>Unofficial list of compatibility with the macOS builds of Cemu. <b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
   <p>To run Cemu on macOS, I recommend you follow my <router-link to="/installation">installation guide</router-link>. For troubleshooting and support, please use the #troubleshooting channel on the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a>. To discuss macOS Cemu development, there is a dedicated macOS thread under the #cemu_dev_public channel.</p>
   <h5>Ratings</h5>
-  <div class="flexWrapper compatWrapper">
+  <div class="flexWrapper compatWrapper" style="margin-bottom: 1em;">
     <div
       v-for="i in 5" :key="i"
       :class="['flexWrapper','flexItem','compatItem',showRatings.find(x => x.rating == 6-i).show ? `container-${ratingArr[5-i].name.toLowerCase()}` : [`container-${ratingArr[5-i].name.toLowerCase()}-hidden`,'compatItemHidden']]"
@@ -12,9 +12,23 @@
     >
       <div>
         <b>{{ ratingArr[5-i].name }}</b><br>
-        <span style="color: var(--c-text-grey)">{{ ratingArr[5-i].description }} - {{getRatingPercentage(6-i)}}%</span>
+        <span style="color: var(--c-text-grey)">{{ ratingArr[5-i].description }}</span>
       </div>
     </div>
+  </div>
+
+  <div v-if="showRatings.filter(x => x.show).length > 0">
+    <template v-for="(i, index) in 5" :key="i">
+      <div
+        :style="{
+          'width': getRatingPercentage(6-i, showRatings.filter(x => !x.show).map(x => x.rating)) * 100 + '%',
+          'height': '1em',
+          'display': 'inline-block',
+          'border-radius': index == 0 ? '4px 0px 0px 4px' : (index == 4 ? '0px 4px 4px 0px' : '')
+        }"
+        :class="ratingArr[5-i].name.toLowerCase() + 'Bg'"
+      />
+    </template>
   </div>
 
   <template v-for="gridList in [compatList.filter(x => 
@@ -185,8 +199,8 @@
       }
     },
     methods: {
-      getRatingPercentage(i) {
-        return parseInt(this.compatList.filter(x => !x.outdated && x.tests[0].rating == i).length / this.compatList.filter(x => !x.outdated).length * 100)
+      getRatingPercentage(i, excludedRatings) {
+        return this.compatList.filter(x => !x.outdated && !excludedRatings.includes(x.tests[0].rating) &&  x.tests[0].rating == i).length / this.compatList.filter(x => !x.outdated && !excludedRatings.includes(x.tests[0].rating)).length
       }
     },
     mounted() {

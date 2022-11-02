@@ -59,6 +59,22 @@
     color: var(--c-unplayable);
 }
 
+.perfectBg {
+    background: mix($perfect, $background);
+}
+.playableBg {
+    background: mix($playable, $background);
+}
+.runsBg {
+    background: mix($runs, $background);
+}
+.loadsBg {
+    background: mix($loads, $background);
+}
+.unplayableBg {
+    background: mix($unplayable, $background);
+}
+
 @media (prefers-color-scheme: light) {
     .compatItem {
         border: 2px solid rgba(0,0,0,0);
@@ -125,6 +141,22 @@
     }
     .container-unplayable {
         border: 2px solid var(--c-container-bg-unplayable);
+    }
+
+    .perfectBg {
+        background: mix($perfect, $dm-background, 70%);
+    }
+    .playableBg {
+        background: mix($playable, $dm-background, 70%);
+    }
+    .runsBg {
+        background: mix($runs, $dm-background, 70%);
+    }
+    .loadsBg {
+        background: mix($loads, $dm-background, 70%);
+    }
+    .unplayableBg {
+        background: mix($unplayable, $dm-background, 70%);
     }
 
     .compatItemHidden {
