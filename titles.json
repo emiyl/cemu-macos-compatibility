@@ -193,7 +193,20 @@
         "comment": "",
         "tests": [
             {
-                "rating": 4,
+                "rating": 3,
+                "comment": "Runs, but many graphical issues as some chests and enemies are invisible. This includes some progression-necessary items, making the game impossible to finish. Average 26-28 FPS on M1 in overworld, 40-50 FPS in shrines.",
+                "source": "@emiyl",
+                "sourceURL": "https://github.com/emiyl",
+                "author": "emiyl",
+                "date": "2022-11-02",
+                "version": "2.0-10",
+                "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+                "osVersion": "macOS 13.0 (22A380)",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            },
+            {
+                "rating": 3,
                 "comment": "Runs, but many textures are missing (chests and some enemies are invisible). Average 12 FPS on M1. Cutscenes now render, meaning you can unlock the first tower, which is necessary to complete the game.",
                 "source": "@xepo99",
                 "sourceURL": "https://github.com/xepo99",
