@@ -1,24 +1,41 @@
 <template>
-      <h1>Cemu macOS Compatibility</h1>
-      <p>Unofficial list of compatibility with the macOS builds of Cemu. <b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
-      <p>To run Cemu on macOS, I recommend you follow my <router-link to="/installation">installation guide</router-link>. For troubleshooting and support, please use the #troubleshooting channel on the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a>. To discuss macOS Cemu development, there is a dedicated macOS thread under the #cemu_dev_public channel.</p>
-      <h5>Ratings</h5>
-      <div class="flexWrapper compatWrapper">
-        <div
-          v-for="i in 5" :key="i"
-          :class="['flexWrapper','flexItem','compatItem',showRatings.find(x => x.rating == 6-i).show ? `container-${ratingArr[5-i].name.toLowerCase()}` : [`container-${ratingArr[5-i].name.toLowerCase()}-hidden`,'compatItemHidden']]"
-          style="flex: 1 1 100%"
-          v-on:click="showRatings.find(x => x.rating == 6-i).show = !showRatings.find(x => x.rating == 6-i).show"
-        >
-          <div>
-            <b>{{ ratingArr[5-i].name }}</b><br>
-            <span style="color: var(--c-text-grey)">{{ ratingArr[5-i].description }} - {{getRatingPercentage(6-i)}}%</span>
-          </div>
-        </div>
+  <h1>Cemu macOS Compatibility</h1>
+  <p>Unofficial list of compatibility with the macOS builds of Cemu. <b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/blob/main/titles.json" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
+  <p>To run Cemu on macOS, I recommend you follow my <router-link to="/installation">installation guide</router-link>. For troubleshooting and support, please use the #troubleshooting channel on the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a>. To discuss macOS Cemu development, there is a dedicated macOS thread under the #cemu_dev_public channel.</p>
+  <h5>Ratings</h5>
+  <div class="flexWrapper compatWrapper">
+    <div
+      v-for="i in 5" :key="i"
+      :class="['flexWrapper','flexItem','compatItem',showRatings.find(x => x.rating == 6-i).show ? `container-${ratingArr[5-i].name.toLowerCase()}` : [`container-${ratingArr[5-i].name.toLowerCase()}-hidden`,'compatItemHidden']]"
+      style="flex: 1 1 100%"
+      v-on:click="showRatings.find(x => x.rating == 6-i).show = !showRatings.find(x => x.rating == 6-i).show"
+    >
+      <div>
+        <b>{{ ratingArr[5-i].name }}</b><br>
+        <span style="color: var(--c-text-grey)">{{ ratingArr[5-i].description }} - {{getRatingPercentage(6-i)}}%</span>
       </div>
+    </div>
+  </div>
 
+  <template v-for="gridList in [compatList.filter(x => 
+      //showRegions.find(y => y.region == x.region).show && 
+      showRatings.find(y => y.rating == x.tests[0].rating).show && (
+        !searchStr ||
+        searchStr == '' ||
+        `${x.name} (${x.region})`.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
+        x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
+      )
+    ).sort(function(a,b) {
+      let bool = false
+      if (a.hasOwnProperty(sortBy) && b.hasOwnProperty) bool = a[sortBy] < b[sortBy]
+      else if (a.tests[0].hasOwnProperty(sortBy) && b.tests[0].hasOwnProperty(sortBy)) bool = a.tests[0][sortBy] < b.tests[0][sortBy]
+      
+      var m = (direction) ? -1 : 1
+      return bool ? -1*m : 1*m
+    })]" :key="gridList">
+    <template v-if="gridList.length > 0">
       <h5>Titles</h5>
-  
+
       <div class="flexWrapper searchAndFilterWrapper">
         <input 
           class="search"
@@ -45,60 +62,36 @@
       <div style="margin-bottom: 1em;"></div>
 
       <div class="gridWrapper titleGrid">
-        <div
-          class="gridItem"
-          v-for="title in compatList.filter(x => 
-            //showRegions.find(y => y.region == x.region).show && 
-            showRatings.find(y => y.rating == x.tests[0].rating).show && (
-              !searchStr ||
-              searchStr == '' ||
-              `${x.name} (${x.region})`.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
-              x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
-            )
-          ).sort(function(a,b) {
-            let bool = false
-            if (a.hasOwnProperty(sortBy) && b.hasOwnProperty) bool = a[sortBy] < b[sortBy]
-            else if (a.tests[0].hasOwnProperty(sortBy) && b.tests[0].hasOwnProperty(sortBy)) bool = a.tests[0][sortBy] < b.tests[0][sortBy]
-            
-            var m = (direction) ? -1 : 1
-            return bool ? -1*m : 1*m
-          })"
+        <template 
+          v-for="title in gridList.filter(x => !x.outdated)"
           :key="title.titleID"
-        ><router-link :to="`/titleid/${title.titleID}`">
-          <div class="gridWrapper iconGrid">
-            <div><picture>
-                  <source :srcset="`icons/${title.titleID}.avif`" type="image/avif">
-                  <source :srcset="`icons/${title.titleID}.webp`" type="image/webp">
-                  <img :src="`icons/${title.titleID}.jpeg`" :style="{
-                    'width': '64px',
-                    'margin': '4px',
-                    'vertical-align': 'middle',
-                    'border-radius': '8px',
-                    'filter': `grayscale(${title.outdated ? '100%' : '0%'})`
-                  }">
-            </picture></div>
-            <div>
-              <div style="font-weight: 600;">
-                <i :class="[
-                  'fas',
-                  'fa-circle',
-                  'compatIndicatorGrid',
-                  ratingArr[title.tests[0].rating-1].name.toLowerCase()
-                ]" :style="{
-                  'filter': `grayscale(${title.outdated ? '80%' : '0%'})`
-                }"></i>
-                <span :style="{
-                  'color': `${title.outdated ? 'var(--c-text-grey)' : 'var(--c-text)'}`,
-                  'margin-left': '4px',
-                }">{{title.name}} ({{title.region}})</span>
-              </div>
-              <div class="gridComment" :id="`${title.titleID}-comment`">
-                {{ title.tests[0].adjustedComment ? title.tests[0].adjustedComment : title.tests[0].setComment }}
-              </div>
-            </div>
-          </div>
-        </router-link></div>
+        >
+          <gridItem
+            :title="title"
+            :ratingArr="ratingArr"
+          />
+        </template>
       </div>
+
+      <template v-if="gridList.filter(x => x.outdated).length > 0">
+        <h5>Outdated listings</h5>
+
+        <p class="customContainer textBox">These listings have been marked as outdated and need updating.</p>
+
+        <div class="gridWrapper titleGrid">
+          <template 
+            v-for="title in gridList.filter(x => x.outdated)"
+            :key="title.titleID"
+          >
+            <gridItem
+              :title="title"
+              :ratingArr="ratingArr"
+            />
+          </template>
+        </div>
+      </template>
+    </template>
+  </template>
 </template>
 
 <script>
@@ -131,8 +124,8 @@
       fakeEntry: true
     }
 
-    if (x.outdated) x.tests[0].setComment = 'This listing has been marked as outdated and requires updating.'
-    else x.tests[0].setComment = x.tests[0].comment
+    /*if (x.outdated) x.tests[0].setComment = 'This listing has been marked as outdated and requires updating.'
+    else */x.tests[0].setComment = x.tests[0].comment
 
     return x
   }).sort((a,b) => {
@@ -205,6 +198,7 @@
 
       for (let titleID of this.compatList.map(x => x.titleID)) {
         let commentElement = document.getElementById(`${titleID}-comment`)
+        if (!commentElement) continue
         this.compatList.find(x => x.titleID == titleID).tests[0].adjustedComment = commentElement.innerHTML
         if (getLineCount(commentElement) <= maxLineCount) continue
 

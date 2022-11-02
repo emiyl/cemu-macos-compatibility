@@ -7,6 +7,7 @@ import installation from './components/installation.vue'
 import changelog from './components/changelog.vue'
 import latestCommit from './components/latestCommit.vue'
 
+import gridItem from './components/gridItem.vue'
 import navbar from './components/navbar.vue'
 import navbarLabel from './components/navbarLabel.vue'
 
@@ -46,4 +47,5 @@ app
 .use(router)
 .component('navbar', navbar)
 .component('navbarLabel', navbarLabel)
+.component('gridItem', gridItem)
 .mount('#app')
