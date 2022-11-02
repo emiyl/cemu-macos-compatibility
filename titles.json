@@ -240,6 +240,19 @@
         "tests": [
             {
                 "rating": 3,
+                "comment": "Runs very well. Guardians, divine beasts, chests, and others are not being rendered, making them invisible. So you can't finish the game. Also sometimes the game will not boot unless you delete the shaders cache.",
+                "source": "@Durocks",
+                "sourceURL": "https://github.com/evelyneee",
+                "author": "Durocks",
+                "date": "2022-11-02",
+                "version": "2.0-999999 (Commit c3182ae)",
+                "hardware": "MacBook Pro (M1 Pro, 14-GPU, 16GB)",
+                "osVersion": "macOS 13.0 (22A380)",
+                "renderingApi": "Vulkan on MoltenVK v1.2.0",
+                "log": ""
+            },
+            {
+                "rating": 3,
                 "comment": "Runs, but many textures are missing and the game crashes when you play a cutscene. This means you cannot unlock the first tower, which is necessary to complete the game.",
                 "source": "@evelyneee",
                 "sourceURL": "https://github.com/evelyneee",
@@ -262,6 +275,26 @@
                 "hardware": "MacBook Pro (M1 Max)",
                 "osVersion": "macOS 12.5.1 (21G83)",
                 "renderingApi": "Vulkan on MoltenVK v1.1.11",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010178f00": {
+        "name": "Mario Tennis: Ultra Smash",
+        "region": "USA",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 3,
+                "comment": "It runs, but it is definitely not playable. The screen is cut off diagonally, with the diagonal half top right of the game showing only static shapes.",
+                "source": "@Durocks",
+                "sourceURL": "https://github.com/evelyneee",
+                "author": "Durocks",
+                "date": "2022-11-02",
+                "version": "2.0-999999 (Commit c3182ae)",
+                "hardware": "MacBook Pro (M1 Pro, 14-GPU, 16GB)",
+                "osVersion": "macOS 13.0 (22A380)",
+                "renderingApi": "Vulkan on MoltenVK v1.2.0",
                 "log": ""
             }
         ]
