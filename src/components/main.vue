@@ -66,10 +66,12 @@
           v-for="title in gridList.filter(x => !x.outdated)"
           :key="title.titleID"
         >
-          <gridItem
-            :title="title"
-            :ratingArr="ratingArr"
-          />
+          <router-link :to="`/titleid/${title.titleID}`">
+            <gridItem
+              :title="title"
+              :ratingArr="ratingArr"
+            />
+          </router-link>
         </template>
       </div>
 
@@ -83,10 +85,12 @@
             v-for="title in gridList.filter(x => x.outdated)"
             :key="title.titleID"
           >
-            <gridItem
-              :title="title"
-              :ratingArr="ratingArr"
-            />
+            <router-link :to="`/titleid/${title.titleID}`">
+              <gridItem
+                :title="title"
+                :ratingArr="ratingArr"
+              />
+            </router-link>
           </template>
         </div>
       </template>

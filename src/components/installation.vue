@@ -3,22 +3,31 @@
     <h1>Installing Cemu (macOS)</h1>
 
     <h5>Downloads <i v-if="loading" class="fas fa-spinner spin" style="margin-left: 4px;"></i></h5>
-    <ul>
-        <li
-            v-for="(release, index) in releases.filter(x => x.url)"
-            :key="release"
+    <div class="gridWrapper titleGrid">
+        <template 
+            v-for="title in releases.filter(x => x.url).map((x, index) => {
+                return {
+                    titleID: 'cemu',
+                    name: ['Cemu', x.version ? x.version : x.commit.slice(0,7)].join(' (') + ')',
+                    url: x.url,
+                    target: x.target,
+                    tests: [
+                        {
+                            comment: x.label + '<br>' + (index == 0 ? 'Recommended' : 'Experimental')
+                        }
+                    ]
+                }
+            })"
+            :key="title.titleID"
         >
-            <a
-                :href="release.url"
-                :target="release.target"
-                :style="{'font-weight': index == 0 ? '600' : ''}"
-            >
-                {{ release.label }}
+            <a :href="title.url" :target="title.target">
+                <gridItem
+                    :title="title"
+                    :ratingBool="false"
+                />
             </a>
-            <template v-if="release.version"> (<code style="padding-inline: 4px;"><a :href="`https://github.com/cemu-project/Cemu/releases/tag/${release.version}`" target="_blank">{{ release.version }}</a></code>)</template>
-            <template v-if="release.commit"> (<code style="padding-inline: 4px;"><a :href="`https://github.com/cemu-project/Cemu/commit/${release.commit}`" target="_blank">{{release.commit.slice(0,7)}}</a></code>)</template>
-        </li>
-    </ul>
+        </template>
+    </div>
 
     <p>To install, simply open the <code>.dmg</code> file, and drag and drop the Cemu application into your Applications folder.</p>
     <p>On first launch, you will need to right-click on the Cemu application in Finder and click "Open". When prompted, hit "Open" again. This is not needed for subsequent launches.</p>

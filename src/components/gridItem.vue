@@ -1,7 +1,7 @@
 <template>
     <div
         class="gridItem"
-    ><router-link :to="`/titleid/${title.titleID}`">
+    >
         <div class="gridWrapper iconGrid">
         <div><picture>
                 <source :srcset="`icons/${title.titleID}.avif`" type="image/avif">
@@ -16,32 +16,36 @@
         </picture></div>
         <div>
             <div style="font-weight: 600;">
-            <i :class="[
-                'fas',
-                'fa-circle',
-                'compatIndicatorGrid',
-                ratingArr[title.tests[0].rating-1].name.toLowerCase()
-            ]" :style="{
-                'filter': `grayscale(${title.outdated ? '80%' : '0%'})`
-            }"></i>
+            <i 
+                :class="[
+                    'fas',
+                    'fa-circle',
+                    'compatIndicatorGrid',
+                    ratingArr[title.tests[0].rating-1].name.toLowerCase()
+                ]"
+                :style="{ 'filter': `grayscale(${title.outdated ? '80%' : '0%'})` }"
+                v-if="ratingBool"
+            ></i>
             <span :style="{
                 'color': `${title.outdated ? 'var(--c-text-grey)' : 'var(--c-text)'}`,
-                'margin-left': '4px',
-            }">{{title.name}} ({{title.region}})</span>
+                'margin-left': ratingBool ? '4px' : '0',
+            }">{{title.name}}<template v-if="title.region"> ({{title.region}})</template></span>
             </div>
-            <div class="gridComment" :id="`${title.titleID}-comment`">
-            {{ title.tests[0].adjustedComment ? title.tests[0].adjustedComment : title.tests[0].setComment }}
-            </div>
+            <div class="gridComment" :id="`${title.titleID}-comment`" v-html="title.tests[0].adjustedComment ? title.tests[0].adjustedComment : ( title.tests[0].setComment ? title.tests[0].setComment : title.tests[0].comment )"/>
         </div>
         </div>
-    </router-link></div>
+    </div>
 </template>
 
 <script>
 export default {
     props: {
         title: Object,
-        ratingArr: Array
+        ratingArr: Array,
+        ratingBool: {
+            type: Boolean,
+            default: true
+        }
     }
 }
 </script>
