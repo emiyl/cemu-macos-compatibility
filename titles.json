@@ -1716,5 +1716,25 @@
                 "log": ""
             }
         ]
+    },
+    "00050000101e0100": {
+        "name": "Minecraft: Story Mode",
+        "region": "USA",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 0,
+                "comment": "Everything but the menus are black.",
+                "source": "Aem#1268.",
+                "sourceURL": "https://github.com/aem111607",
+                "author": "aem",
+                "date": "2022-11-01",
+                "version": "2.0-9",
+                "hardware": "MacBook Air (M1, 8-GPU, 16GB)",
+                "osVersion": "macOS 13.0 (22A380)",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            }
+        ]
     }
 }
