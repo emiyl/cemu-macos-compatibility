@@ -4,8 +4,15 @@
 
     <h5>Downloads <i v-if="loading" class="fas fa-spinner spin" style="margin-left: 4px;"></i></h5>
     <ul>
-        <li v-for="release in releases.filter(x => x.url)" :key="release">
-            <a :href="release.url" :target="release.target">
+        <li
+            v-for="(release, index) in releases.filter(x => x.url)"
+            :key="release"
+        >
+            <a
+                :href="release.url"
+                :target="release.target"
+                :style="{'font-weight': index == 0 ? '600' : ''}"
+            >
                 {{ release.label }}
             </a>
             <template v-if="release.version"> (<code style="padding-inline: 4px;"><a :href="`https://github.com/cemu-project/Cemu/releases/tag/${release.version}`" target="_blank">{{ release.version }}</a></code>)</template>
