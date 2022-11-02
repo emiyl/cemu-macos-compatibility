@@ -1723,7 +1723,7 @@
         "comment": "",
         "tests": [
             {
-                "rating": 1,
+                "rating": 2,
                 "comment": "Everything but the menus are black.",
                 "source": "Aem#1268.",
                 "sourceURL": "https://github.com/aem111607",
