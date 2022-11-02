@@ -12,7 +12,6 @@
     margin-block: .1em;
     margin-left: -.4em;
     border-radius: 14px;
-    width: calc(100% - 1.5em);
 
     &:nth-child(odd) {
         padding-right: 1em;
@@ -20,6 +19,12 @@
 
     &:hover {
         background: var(--c-bg-navbar-item);
+    }
+}
+
+@media (min-width: 701px) {
+    .gridItem:nth-child(odd) {
+        width: calc(100% - 1.5em);
     }
 }
 
