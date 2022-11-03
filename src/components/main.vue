@@ -17,19 +17,19 @@
     </div>
   </div>
 
-  <div v-if="showRatings.filter(x => x.show).length > 0">
-    <template v-for="(i, index) in 5" :key="i">
+  <template v-for="shownRatings in [showRatings.filter(x => x.show).sort((a,b) => b.rating - a.rating)]" :key="shownRatings"><div v-if="shownRatings.length > 0">
+    <template v-for="i in shownRatings" :key="i">
       <div
         :style="{
-          'width': getRatingPercentage(6-i, showRatings.filter(x => !x.show).map(x => x.rating)) * 100 + '%',
+          'width': getRatingPercentage(i.rating, showRatings.filter(x => !x.show).map(x => x.rating)) * 100 + '%',
           'height': '1em',
           'display': 'inline-block',
-          'border-radius': index == 0 ? '4px 0px 0px 4px' : (index == 4 ? '0px 4px 4px 0px' : '')
+          'border-radius': shownRatings.length == 1 ? '4px' : i.rating == shownRatings[0].rating ? '4px 0px 0px 4px' : (i.rating == shownRatings[shownRatings.length-1].rating ? '0px 4px 4px 0px' : '')
         }"
-        :class="ratingArr[5-i].name.toLowerCase() + 'Bg'"
+        :class="ratingArr[i.rating-1].name.toLowerCase() + 'Bg'"
       />
     </template>
-  </div>
+  </div></template>
 
   <template v-for="gridList in [compatList.filter(x => 
       //showRegions.find(y => y.region == x.region).show && 
