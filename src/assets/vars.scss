@@ -40,7 +40,7 @@ $unplayable: #f44336;
     --c-container-bg: #{$container-background};
     --c-container-border: var(--c-container-bg);
     
-    --shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    --shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3);
     --compat-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
     --navbar-height: 55px;
     --footer-height: 137px;
@@ -51,11 +51,11 @@ $unplayable: #f44336;
     --c-loads: #{$loads};
     --c-unplayable: #{$unplayable};
 
-    --c-container-bg-perfect: #{rgba($perfect, .2)};
-    --c-container-bg-playable: #{rgba($playable, .2)};
-    --c-container-bg-runs: #{rgba($runs, .2)};
-    --c-container-bg-loads: #{rgba($loads, .2)};
-    --c-container-bg-unplayable: #{rgba($unplayable, .2)};
+    --c-container-bg-perfect: #{rgba($perfect, .3)};
+    --c-container-bg-playable: #{rgba($playable, .3)};
+    --c-container-bg-runs: #{rgba($runs, .3)};
+    --c-container-bg-loads: #{rgba($loads, .3)};
+    --c-container-bg-unplayable: #{rgba($unplayable, .3)};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,7 +63,7 @@ $unplayable: #f44336;
         --c-navbar-hover: hsl(189, 70%, 65%);
 
         --c-bg: #{$dm-background};
-        --c-bg-rgb: #{$dm-background-rgb};
+        --c-bg-rgb: #{$dm-background-rgb}
         --c-bg-light: #{mix($dm-background, black, 99%)};
         --c-bg-lighter: #{mix($dm-container-background, white, 98%)};
         --c-bg-search: var(--c-bg-code);
