@@ -7,7 +7,7 @@
         <template 
             v-for="title in releases.filter(x => x.url).map((x, index) => {
                 return {
-                    titleID: 'cemu',
+                    titleID: x.commit ? 'cemubeta' : 'cemu',
                     name: ['Cemu', x.version ? x.version : x.commit.slice(0,7)].join(' (') + ')',
                     url: x.url,
                     target: x.target,
