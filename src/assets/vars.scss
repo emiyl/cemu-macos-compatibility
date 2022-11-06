@@ -31,7 +31,7 @@ $unplayable: #f44336;
     --c-bg-navbar-item: #{mix($background, black, 96%)};
 
     --c-text: #{$text};
-    --c-text-grey: #{mix($text, white, 80%)};
+    --c-text-grey: #{rgba($text, .8)};
     --c-text-code: var(--c-text-grey);
 
     --c-border: #{mix($text, white, 15%)};
@@ -63,7 +63,7 @@ $unplayable: #f44336;
         --c-navbar-hover: hsl(189, 70%, 65%);
 
         --c-bg: #{$dm-background};
-        --c-bg-rgb: #{$dm-background-rgb}
+        --c-bg-rgb: #{$dm-background-rgb};
         --c-bg-light: #{mix($dm-background, black, 99%)};
         --c-bg-lighter: #{mix($dm-container-background, white, 98%)};
         --c-bg-search: var(--c-bg-code);
@@ -71,7 +71,7 @@ $unplayable: #f44336;
         --c-bg-navbar-item: #{mix($dm-background, white, 96%)};
 
         --c-text: #{$dm-text};
-        --c-text-grey: #{mix($dm-text, black, 75%)};
+        --c-text-grey: #{rgba($dm-text, .75)};
         --c-text-code: #{mix($dm-text, black, 85%)};
 
         --c-border: #{mix($dm-container-background, white, 92%)};
