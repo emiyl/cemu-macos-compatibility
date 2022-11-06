@@ -73,16 +73,6 @@ export default {
 </script>
 
 <style scoped>
-.navbarWrapper {
-    background-color: var(--c-bg);
-    box-shadow: var(--shadow);
-    height: var(--navbar-height);
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
-
 @media (prefers-color-scheme: dark) {
     .navbarWrapper {
         border-bottom: 1px solid var(--c-border);

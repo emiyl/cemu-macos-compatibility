@@ -1,6 +1,12 @@
+@function hexToRGB($hex) {
+    @return red($hex), green($hex), blue($hex);
+}
+
 $brand: #30bcd5;
 $background: #f6f6f6;
+$background-rgb: hexToRGB($background);
 $dm-background: #22272e;
+$dm-background-rgb: hexToRGB($dm-background);
 $text: #2c3e50;
 $dm-text: #adbac7;
 $container-background: #e6edef;
@@ -18,6 +24,7 @@ $unplayable: #f44336;
     --c-navbar-hover: #{mix($brand, black, 80%)};
 
     --c-bg: #{$background};
+    --c-bg-rgb: #{$background-rgb};
     --c-bg-light: #{mix($background, black, 99%)};
     --c-bg-search: #{mix($background, white, 20%)};
     --c-bg-code: #{mix($background, black, 97%)};
@@ -56,6 +63,7 @@ $unplayable: #f44336;
         --c-navbar-hover: hsl(189, 70%, 65%);
 
         --c-bg: #{$dm-background};
+        --c-bg-rgb: #{$dm-background-rgb}
         --c-bg-light: #{mix($dm-background, black, 99%)};
         --c-bg-lighter: #{mix($dm-container-background, white, 98%)};
         --c-bg-search: var(--c-bg-code);
