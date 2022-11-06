@@ -33,12 +33,7 @@
 
   <template v-for="gridList in [compatList.filter(x => 
       //showRegions.find(y => y.region == x.region).show && 
-      showRatings.find(y => y.rating == x.tests[0].rating).show && (
-        !searchStr ||
-        searchStr == '' ||
-        `${x.name} (${x.region})`.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
-        x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
-      )
+      showRatings.find(y => y.rating == x.tests[0].rating).show 
     ).sort(function(a,b) {
       let bool = false
       if (a.hasOwnProperty(sortBy) && b.hasOwnProperty) bool = a[sortBy] < b[sortBy]
@@ -77,7 +72,14 @@
 
       <div class="gridWrapper titleGrid">
         <template 
-          v-for="title in gridList.filter(x => !x.outdated)"
+          v-for="title in gridList.filter(x => 
+            !x.outdated && (
+              !searchStr ||
+              searchStr == '' ||
+              `${x.name} (${x.region})`.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
+              x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
+            )
+          )"
           :key="title.titleID"
         >
           <router-link :to="`/titleid/${title.titleID}`">
@@ -89,14 +91,28 @@
         </template>
       </div>
 
-      <template v-if="gridList.filter(x => x.outdated).length > 0">
+      <template v-if="gridList.filter(x =>
+          x.outdated && (
+            !searchStr ||
+            searchStr == '' ||
+            `${x.name} (${x.region})`.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
+            x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
+          )
+        ).length > 0">
         <h5>Outdated listings</h5>
 
         <p class="customContainer textBox">These listings have been marked as outdated and need updating.</p>
 
         <div class="gridWrapper titleGrid">
           <template 
-            v-for="title in gridList.filter(x => x.outdated)"
+            v-for="title in gridList.filter(x => 
+              x.outdated && (
+                !searchStr ||
+                searchStr == '' ||
+                `${x.name} (${x.region})`.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, '')) ||
+                x.titleID.toLowerCase().replace(/[^a-z0-9]/g, '').includes(searchStr.toLowerCase().replace(/[^a-z0-9]/g, ''))
+              )
+            )"
             :key="title.titleID"
           >
             <router-link :to="`/titleid/${title.titleID}`">
