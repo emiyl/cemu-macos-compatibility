@@ -266,12 +266,12 @@
         "tests": [
             {
                 "rating": 3,
-                "comment": "Runs very well. Guardians, divine beasts, chests, and others are not being rendered, making them invisible. So you can't finish the game. Also sometimes the game will not boot unless you delete the shaders cache.",
+                "comment": "Runs very well at average 34 frames per second with my current hardware and settings. Some textures are deformed including guardians, divine beasts, and a few more; but everything else works perfectly. The main story can probably not be completed because you can't see the divine beasts properly (Which you need to fight), but everything else including side stories and exploring works just fine, so you can still have a ton of fun while you wait for those few bugs to be fixed. Keep in mind often the game will not boot unless you delete the vulkan shaders cache.",
                 "source": "@Durocks",
                 "sourceURL": "https://github.com/Durocks",
                 "author": "Durocks",
-                "date": "2022-11-02",
-                "version": "2.0 (c3182aedd9895cd8cde0d02440a22bd5a060b7d4)",
+                "date": "2022-11-08",
+                "version": "2.0(5adb1e9)",
                 "hardware": "MacBook Pro (M1 Pro, 14-GPU, 16GB)",
                 "osVersion": "macOS 13.0 (22A380)",
                 "renderingApi": "Vulkan on MoltenVK v1.2",
