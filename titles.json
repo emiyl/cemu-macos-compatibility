@@ -131,7 +131,7 @@
                 "author": "PekaPete",
                 "date": "2022-11-09",
                 "version": "2.0-14",
-                "hardware": "MacBook Pro (16-inch MBP, M1 Pro 16GB)",
+                "hardware": "MacBook Pro (M1 Pro, 16GB)",
                 "osVersion": "macOS 13.0",
                 "renderingApi": "Vulkan on MoltenVK v1.2",
                 "log": ""
