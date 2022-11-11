@@ -122,8 +122,20 @@
         "name": "Bayonetta 2",
         "region": "USA",
         "comment": "",
-        "outdated": true,
         "tests": [
+            {
+                "rating": 5,
+                "comment": "Runs very well at 1440p, 60fps. Rendering issues resolved by applying fix.",
+                "source": "PekaPete",
+                "sourceURL": "https://github.com/PekaPete",
+                "author": "PekaPete",
+                "date": "2022-11-09",
+                "version": "2.0-14",
+                "hardware": "MacBook Pro (M1 Pro, 16GB)",
+                "osVersion": "macOS 13.0",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            },
             {
                 "rating": 2,
                 "comment": "Gets to the first menus and loading screens, but then crashes.",
