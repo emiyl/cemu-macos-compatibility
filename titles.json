@@ -1722,6 +1722,26 @@
             }
         ]
     },
+    "000500001017d800": {
+        "name": "Hyrule Warriors",
+        "region": "USA",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 4,
+                "comment": "Runs well at 1440p, 30fps. Local co-op works but runs mostly at 15 - 25fps. Played for 3+ hours without issues.",
+                "source": "PekaPete",
+                "sourceURL": "https://github.com/PekaPete",
+                "author": "PekaPete",
+                "date": "2022-11-14",
+                "version": "2.0-14",
+                "hardware": "MacBook Pro (M1 Pro, 16GB)",
+                "osVersion": "macOS 13.0",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            }
+        ]
+    },
     "0005000010137f00": {
         "name": "DKC Tropical Freeze",
         "region": "USA",
@@ -1757,6 +1777,46 @@
                 "version": "2.0-9",
                 "hardware": "MacBook Air (M1, 8-GPU, 16GB)",
                 "osVersion": "macOS 13.0 (22A380)",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            }
+        ]
+    },
+    "0005000010110a00": {
+        "name": "Ninja Gaiden 3: Razor's Edge",
+        "region": "USA",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 3,
+                "comment": "It runs but it is not playable. Major rendering issue with diagonal half of screen glitching/ static black image. Other half displays the game normally. Only played for a few minutes. Runs 45 - 60fps",
+                "source": "PekaPete",
+                "sourceURL": "https://github.com/PekaPete",
+                "author": "PekaPete",
+                "date": "2022-11-14",
+                "version": "2.0-15",
+                "hardware": "MacBook Pro (M1 Pro, 16GB)",
+                "osVersion": "macOS 13.0",
+                "renderingApi": "Vulkan on MoltenVK v1.2",
+                "log": ""
+            }
+        ]
+    },
+    "00050000101ed800": {
+        "name": "Tokyo Mirage Sessions #FE",
+        "region": "USA",
+        "comment": "",
+        "tests": [
+            {
+                "rating": 3,
+                "comment": "It runs but it is not playable. Major rendering issue with diagonal half of screen obscured by a bright blue tint. Other half displays the game normally",
+                "source": "PekaPete",
+                "sourceURL": "https://github.com/PekaPete",
+                "author": "PekaPete",
+                "date": "2022-11-14",
+                "version": "2.0-15",
+                "hardware": "MacBook Pro (M1 Pro, 16GB)",
+                "osVersion": "macOS 13.0",
                 "renderingApi": "Vulkan on MoltenVK v1.2",
                 "log": ""
             }
