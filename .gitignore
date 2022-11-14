@@ -2,5 +2,5 @@ node_modules
 yarn.lock
 dist
 .DS_Store
-icons
+/icons
 cachedReleases.json
