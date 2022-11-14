@@ -2,7 +2,7 @@
     @return red($hex), green($hex), blue($hex);
 }
 
-$brand: #30bcd5;
+$brand: hsl(189, 80%, 45%);;
 $background: #f6f6f6;
 $background-rgb: hexToRGB($background);
 $dm-background: #22272e;

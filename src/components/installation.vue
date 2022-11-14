@@ -2,7 +2,7 @@
   <div class="smallerMain">
     <h1>Installing Cemu (macOS)</h1>
 
-    <h5>Downloads <i v-if="loading" class="fas fa-spinner spin" style="margin-left: 4px;"></i></h5>
+    <h5 style="margin-bottom: 1em;">Downloads <i v-if="loading" class="fas fa-spinner spin" style="margin-left: 6px;"></i></h5>
     <div class="gridWrapper titleGrid">
         <template 
             v-for="title in releases.filter(x => x.url).map((x, index) => {
@@ -34,19 +34,28 @@
     <p>Once Cemu is installed, you can follow my <a href="https://cemu.cfw.guide" target="_blank">setup guide</a> to install your games and to optimise Cemu.</p>
     <p class="customContainer textBox">If you have any issues during installation, please ask in the #troubleshooting channel in the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a>.</p>
 
-    <h2 style="margin-bottom: 0;">Troubleshooting</h2>
-    <hr>
+    <h1>Troubleshooting</h1>
 
-    <p><b>Flickering or invisible textures:</b> In some games, such as Mario Kart 8 and Bayonetta 2, some textures appear to flicker or not appear. This can be fixed by setting the environment variable <code>MVK_CONFIG_FAST_MATH_ENABLED=0</code> in exchange for a 5-10% performance hit. This does <i>not</i> fix graphical issues in BOTW.</p>
+    <p><b>Flickering or invisible textures:</b> In some games, such as Mario Kart 8 and Bayonetta 2, some textures appear to flicker or not appear. This can be fixed by setting the environment variable <code>MVK_CONFIG_FAST_MATH_ENABLED=0</code> in exchange for a 5-10% performance hit.</p>
+    <p><b>Pipeline failure</b>: Cemu can sometimes fail to create or compile a pipeine cache when using MoltenVK. The best solution to this currently is to delete your existing shader cache, located at <code>~/Library/Caches/Cemu/shaderCache</code>.</p>
+    <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. One implementation is available (<a href="https://github.com/cemu-project/Cemu/pull/486" target="blank">#486</a>), however is has not yet been merged to the main branch.</p>
     <p><b>No sound:</b> By default, Cemu on macOS sets audio output to 0%, with no audio device set. Go into the audio settings, select an audio device, and turn up the volume.</p>
-    <p><b>Illegal hardware instruction</b>: Make you installed moltenvk as described above. Check graphics settings and ensure the rendering API is set to Vulkan.</p>
-    <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. There is no way to bypass this currently.</p>
 
-    <h2 style="margin-bottom: 0;">Updating MoltenVK</h2>
-    <hr>
+    <h1>Non-portable paths</h1>
+
+    <p>Unlike Windows, the macOS release of Cemu uses a non-portable installation. This means that all games, user data, and caches are stored elsewhere on the system, rather than in the same directory as the executable.</p>
+
+    <ul style="padding-left: 0; list-style: none; line-height: 1.7em;">
+        <li><b>Config and user data:</b> <code>~/Library/Application Support/Cemu</code></li>
+        <li><b>Shader and pipeline caches:</b> <code>~/Library/Caches/Cemu</code></li>
+        <li><b>Language and default profiles:</b> <code>Cemu.app/Contents/SharedSupport</code></li>
+    </ul>
+
+    <p>For more info, and Linux paths, view <a href="https://github.com/cemu-project/Cemu/pull/316" target="_blank">#316</a>.</p>
+
+    <h1>Updating MoltenVK</h1>
 
     <p>Cemu is now bundled with the latest version MoltenVK included, so an installation of the library is not required. This does not automatically update however, and you would otherwise need to wait for a new Cemu release to get the latest version.</p>
-
     <p>If your Cemu application is stored anywhere other that <code>/Applications/Cemu.app</code>, please replace that path with whichever path your bundle is stored at instead in the commands below.</p>
 
     <div class="tab-container">
