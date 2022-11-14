@@ -39,11 +39,11 @@ function outputSharpImage(inputPath, outputPath, outputFormat) {
   })
 }
 
-const tgaArr = getImages('./srcIcons','tga')
-const pngArr = getImages('./srcIcons','png').filter(x => !tgaArr.includes(x))
+const tgaArr = getImages('./src/icons','tga')
+const pngArr = getImages('./src/icons','png').filter(x => !tgaArr.includes(x))
 
 for (const titleid of tgaArr) {
-  const tgaPath = `./srcIcons/${titleid}.tga`
+  const tgaPath = `./src/icons/${titleid}.tga`
   const pngPath = `./icons/${titleid}.png`
 
   tga2png(tgaPath, pngPath).then(buf=> {
@@ -61,7 +61,7 @@ for (const titleid of tgaArr) {
 
 for (const titleid of pngArr) for (const format of ['jpeg','png','webp','avif']) {
   outputSharpImage(
-    `./srcIcons/${titleid}.png`,
+    `./src/icons/${titleid}.png`,
     `./icons/${titleid}.${format}`,
     format
   )
