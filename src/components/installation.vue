@@ -38,7 +38,6 @@
 
     <p><b>Flickering or invisible textures:</b> In some games, such as Mario Kart 8 and Bayonetta 2, some textures appear to flicker or not appear. This can be fixed by setting the environment variable <code>MVK_CONFIG_FAST_MATH_ENABLED=0</code> in exchange for a 5-10% performance hit.</p>
     <p><b>Pipeline failure</b>: Cemu can sometimes fail to create or compile a pipeine cache when using MoltenVK. The best solution to this currently is to delete your existing shader cache, located at <code>~/Library/Caches/Cemu/shaderCache</code>.</p>
-    <p><b>No internet</b>: Network functions are disabled on non-Windows builds as the implementation is not compatible with macOS or Linux. One implementation is available (<a href="https://github.com/cemu-project/Cemu/pull/486" target="blank">#486</a>), however is has not yet been merged to the main branch.</p>
     <p><b>No sound:</b> By default, Cemu on macOS sets audio output to 0%, with no audio device set. Go into the audio settings, select an audio device, and turn up the volume.</p>
 
     <h1>Non-portable paths</h1>
