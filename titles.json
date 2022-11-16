@@ -434,6 +434,7 @@
         "name": "Splatoon",
         "region": "EUR",
         "comment": "",
+        "oudated": true,
         "tests": [
             {
                 "rating": 3,
@@ -965,7 +966,7 @@
     "000500301001220a": {
         "name": "Internet Browser",
         "region": "EUR",
-        "comment": "Network functions are stubbed on non-Windows builds, so you cannot access the internet.",
+        "oudated": true,
         "tests": [
             {
                 "rating": 3,
@@ -1044,7 +1045,8 @@
     "000500301001420a": {
         "name": "Nintendo eShop",
         "region": "EUR",
-        "comment": "Must have a online files dumped to run. Network functions are stubbed on non-Windows builds, so you cannot access the eShop.",
+        "comment": "Must have a online files dumped to run.",
+        "oudated": true,
         "tests": [
             {
                 "rating": 3,
