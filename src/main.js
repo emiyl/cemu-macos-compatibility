@@ -4,7 +4,6 @@ import App from './App.vue'
 import main from './components/main.vue'
 import title from './components/title.vue'
 import installation from './components/installation.vue'
-import changelog from './components/changelog.vue'
 import latestCommit from './components/latestCommit.vue'
 
 import gridItem from './components/gridItem.vue'
