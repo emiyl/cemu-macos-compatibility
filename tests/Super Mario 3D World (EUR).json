@@ -1,0 +1,33 @@
+{
+    "name": "Super Mario 3D World",
+    "region": "EUR",
+    "titleID": "0005000010145d00",
+    "tests": [
+        {
+            "rating": 3,
+            "comment": "Runs well, with minor graphical glitches on most levels, except some major graphical glitches on boss fights which make it nearly impossible to beat. Hidden Luigi sprites are not rendered due to missing R5G5B5A1_UNORM decoder.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-01",
+            "version": "2.0 (9541c8ae8556ffd72aab4e9eb092ec45eeceaf22)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Crashes instantly, R5G6B5_UNORM_PACK16 not supported.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-30",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCmdCopyBufferToImage(): The image is using Metal format MTLPixelFormatInvalid as a substitute for Vulkan format VK_FORMAT_R5G6B5_UNORM_PACK16. Since the pixel size is different, content for the image cannot be copied to or from a buffer.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\nlibc++abi: terminating with uncaught exception of type std::runtime_error: failed to submit command buffer. Error -11\nAbort trap: 6!\nError: signal 6:\n0   Cemu_release                        0x00000001052d71dd _Z20handlerDumpingSignali + 93\n1   libsystem_platform.dylib            0x00007ff80321dc1d _sigtramp + 29\n2   ???                                 0x0000000000000000 0x0 + 0\n3   libsystem_c.dylib                   0x00007ff80313cca5 abort + 123\n4   libc++abi.dylib                     0x00007ff8031ad082 abort_message + 241\n5   libc++abi.dylib                     0x00007ff80319e225 _ZL28demangling_terminate_handlerv + 242\n6   libobjc.A.dylib                     0x00007ff802e9d258 _ZL15_objc_terminatev + 104\n7   libc++abi.dylib                     0x00007ff8031ac4a5 _ZSt11__terminatePFvvE + 8\n8   libc++abi.dylib                     0x00007ff8031aed05 __cxa_get_exception_ptr + 0\n9   libc++abi.dylib                     0x00007ff8031aeccc _ZN10__cxxabiv1L22exception_cleanup_funcE19_Unwind_Reason_CodeP17_Unwind_Exception + 0\n10  Cemu_release                        0x0000000105032aaa _ZN14VulkanRenderer19SubmitCommandBufferEPP13VkSemaphore_TS2_ + 1418\n11  Cemu_release                        0x000000010503a52b _ZN14VulkanRenderer11SwapBuffersEbb + 27\n12  Cemu_release                        0x0000000104f79b10 _Z25LatteCP_ProcessRingbufferv + 6304\n13  Cemu_release                        0x0000000104fa4327 _Z17Latte_ThreadEntryv + 743\n14  Cemu_release                        0x0000000104f17d0c _ZNSt3__114__thread_proxyINS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEPFivEEEEEEPvSA_ + 44\n15  libsystem_pthread.dylib             0x00007ff8031f3259 _pthread_start + 125\n16  libsystem_pthread.dylib             0x00007ff8031eec7b thread_start + 15"
+        }
+    ]
+}

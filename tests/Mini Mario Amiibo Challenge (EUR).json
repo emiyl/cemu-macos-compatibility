@@ -1,0 +1,20 @@
+{
+    "name": "Mini Mario Amiibo Challenge",
+    "region": "EUR",
+    "titleID": "00050000101c6300",
+    "tests": [
+        {
+            "rating": 3,
+            "comment": "Launches, serious visual issues (half screen black triangle), animates, doesn’t seem to acknowledge amiibo bin files so can’t proceed.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "Cemu-101ff77[44262:1217876] +[CATransaction synchronize] called within transaction"
+        }
+    ]
+}

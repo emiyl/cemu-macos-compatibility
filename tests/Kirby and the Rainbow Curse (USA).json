@@ -1,0 +1,21 @@
+{
+    "name": "Kirby and the Rainbow Curse",
+    "region": "USA",
+    "titleID": "00050000101abc00",
+    "outdated": true,
+    "tests": [
+        {
+            "rating": 2,
+            "comment": "Gets to the first menus and loading screens, but then crashes.",
+            "source": "Andrew Tsai",
+            "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
+            "author": "emiyl",
+            "date": "2022-09-23",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro (M1 Max)",
+            "osVersion": "macOS 12.5.1 (21G83)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

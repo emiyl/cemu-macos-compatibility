@@ -1,0 +1,46 @@
+{
+    "name": "Xenoblade Chronicles X",
+    "region": "EUR",
+    "titleID": "00050000101c4c00",
+    "tests": [
+        {
+            "rating": 5,
+            "comment": "FPS down only if Shader construct and at fight with multiple opponents // too bright during the day",
+            "source": "@DarkUser89",
+            "sourceURL": "",
+            "author": "DarkUser89",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+            "osVersion": "macOS 12.6 (21G115)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Crashes immediately, bus error.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "Bus error: 10!\nError: signal 10:"
+        },
+        {
+            "rating": 1,
+            "comment": "Infinite black screen. R5G6B5_UNORM_PACK16 not supported.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "[mvk-error] VK_ERROR_INITIALIZATION_FAILED: Render pipeline compile failed (Error code 3): Fragment input(s) `user(locn0)` mismatching vertex shader output type(s) or not written by vertex shader.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat VK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCreateRenderPass(): Attachment format VK_FORMAT_R5G6B5_UNORM_PACK16 on this device does not support the VkFormat attachment capabilities required by the subpass at index 0.\nlibc++abi: terminating with uncaught exception of type std::runtime_error: failed to create render pass!"
+        }
+    ]
+}

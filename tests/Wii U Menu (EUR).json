@@ -1,0 +1,59 @@
+{
+    "name": "Wii U Menu",
+    "region": "EUR",
+    "titleID": "0005001010040200",
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Stuck on black screen.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-07",
+            "version": "2.0 (551f82110974b515f07c58130dd29447e305e1b1)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 10 (22A5365d)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Stuck on black screen.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Stuck on black screen.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-30",
+            "version": "2.0 (3fb4b5e26c0125dda68b3858e8c3d9589244c211)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Stuck on black screen.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

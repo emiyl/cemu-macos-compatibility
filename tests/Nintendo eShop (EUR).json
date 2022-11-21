@@ -1,0 +1,34 @@
+{
+    "name": "Nintendo eShop",
+    "region": "EUR",
+    "titleID": "000500301001420a",
+    "comment": "You must have online files dumped for this to run.",
+    "tests": [
+        {
+            "rating": 3,
+            "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 3,
+            "comment": "Splash screen goes to popup 'Error code 111-1006 Could not display page', goes to background and no progress.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

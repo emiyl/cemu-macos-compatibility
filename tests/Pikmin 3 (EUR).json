@@ -1,0 +1,34 @@
+{
+    "name": "Pikmin 3",
+    "region": "EUR",
+    "titleID": "000500001012be00",
+    "outdated": true,
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Segfaults when playing opening cutscene. If you remove the cutscene, the game is playable.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "Segmentation fault: 11!\nError: signal 11:"
+        },
+        {
+            "rating": 1,
+            "comment": "Splash screen, then crashes.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "[22:07:32.608] Unrecoverable error in Vulkan on MoltenVK v1.1.11 renderer\n[22:07:32.608] Msg: failed to submit command buffer. Error -11"
+        }
+    ]
+}

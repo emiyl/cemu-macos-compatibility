@@ -1,0 +1,47 @@
+{
+    "name": "New Super Mario Bros U",
+    "region": "USA",
+    "titleID": "0005000010101d00",
+    "comment": "You must have online files dumped for this to run.",
+    "tests": [
+        {
+            "rating": 5,
+            "comment": "Runs great, 60FPS locked on entry-level M1 Macbook Air.",
+            "source": "Nabrious",
+            "sourceURL": "https://github.com/nabriouso",
+            "author": "Nabrious",
+            "date": "2022-11-01",
+            "version": "2.0-10",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 (22A380)",
+            "renderingApi": "Vulkan on MoltenVK v1.2",
+            "log": ""
+        },
+        {
+            "rating": 5,
+            "comment": "Runs great, 30-40FPS in game on M1 Macbook Air.",
+            "source": "BJS1206",
+            "sourceURL": "https://github.com/BJS1206",
+            "author": "BJS1206",
+            "date": "2022-10-3",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 2,
+            "comment": "Gets to the first menus and you can watch the opening cutscene, but then crashes.",
+            "source": "Andrew Tsai",
+            "sourceURL": "https://www.youtube.com/watch?v=4YoHFRIHrTw",
+            "author": "emiyl",
+            "date": "2022-09-23",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro (M1 Max)",
+            "osVersion": "macOS 12.5.1 (21G83)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

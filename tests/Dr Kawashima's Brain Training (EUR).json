@@ -1,0 +1,33 @@
+{
+    "name": "Dr Kawashima's Brain Training",
+    "region": "EUR",
+    "titleID": "0005000010179c00",
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Crashes instantly.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-04",
+            "version": "2.0 (551f82110974b515f07c58130dd29447e305e1b1)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 10 (22A5365d)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "Bus error: 10!\nError: signal 10:"
+        },
+        {
+            "rating": 1,
+            "comment": "Crashes instantly.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-30",
+            "version": "2.0 (3fb4b5e26c0125dda68b3858e8c3d9589244c211)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "Bus error: 10!\nError: signal 10:"
+        }
+    ]
+}

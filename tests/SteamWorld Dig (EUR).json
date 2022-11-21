@@ -1,0 +1,33 @@
+{
+    "name": "SteamWorld Dig",
+    "region": "EUR",
+    "titleID": "000500001018d800",
+    "tests": [
+        {
+            "rating": 2,
+            "comment": "Title screen *sometimes* loads, but starting a new game makes the title load indefinitely.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-07",
+            "version": "2.0 (551f82110974b515f07c58130dd29447e305e1b1)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 10 (22A5365d)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Stuck on white screen.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-04",
+            "version": "2.0 (fb5ecca1577c06d853f71b311bca5165eae9ff31)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

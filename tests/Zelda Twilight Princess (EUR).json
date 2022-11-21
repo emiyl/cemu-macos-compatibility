@@ -1,0 +1,46 @@
+{
+    "name": "Zelda Twilight Princess",
+    "region": "EUR",
+    "titleID": "000500001019e600",
+    "tests": [
+        {
+            "rating": 4,
+            "comment": "A few rendering errors, but it seemed to run pretty well. Only half the map is visible due to lack of geometry shader support.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-07",
+            "version": "2.0 (551f82110974b515f07c58130dd29447e305e1b1)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 4,
+            "comment": "A few rendering errors, but it seemed to run pretty well. Rupee counter is invisible due to no R4G4 decoder support. Only half the map is visible due to lack of geometry shader support.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Splash screen, then crashes.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkPrimitiveTopology value 5 is not supported for rendering.\n[mvk-error] VK_ERROR_FEATURE_NOT_PRESENT: Metal does not support triangle fans."
+        }
+    ]
+}

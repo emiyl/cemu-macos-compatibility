@@ -1,0 +1,33 @@
+{
+    "name": "Paper Mario Color Splash",
+    "region": "USA",
+    "titleID": "000500001f600a00",
+    "tests": [
+        {
+            "rating": 4,
+            "comment": "Identical to Windows/Linux, weird graphical glitches in cutouts",
+            "source": "@jkcoxson",
+            "sourceURL": "https://github.com/jkcoxson",
+            "author": "jkcoxson",
+            "date": "2022-10-21",
+            "version": "2.0 (e88d20cbfbada6b1d144c4944f080f70299c1506)",
+            "hardware": "MacBook Air (M1, 7-GPU)",
+            "osVersion": "macOS 12",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Freezes on loading black screen (doesn't even show the splash screen).",
+            "source": "@jkcoxson",
+            "sourceURL": "https://github.com/jkcoxson",
+            "author": "emiyl",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU)",
+            "osVersion": "macOS 12",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

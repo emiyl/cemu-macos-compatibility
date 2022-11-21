@@ -1,0 +1,20 @@
+{
+    "name": "DEUS EX: HUMAN REV. DIRECTOR'S CUT",
+    "region": "EUR",
+    "titleID": "000500001012b200",
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Crashes.",
+            "source": "@DarkUser89",
+            "sourceURL": "",
+            "author": "DarkUser89",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+            "osVersion": "macOS 12.6 (21G115)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "Trace/BPT trap: 5!\nError: signal 5:"
+        }
+    ]
+}
