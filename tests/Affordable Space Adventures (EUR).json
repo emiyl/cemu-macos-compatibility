@@ -1,0 +1,20 @@
+{
+    "name": "Affordable Space Adventures",
+    "region": "EUR",
+    "titleID": "00050000101a1200",
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Loads splash screen, never progresses, spinner when closing Cemu.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

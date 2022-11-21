@@ -1,0 +1,21 @@
+{
+    "name": "Super Mario 3D World",
+    "region": "USA",
+    "titleID": "0005000010145c00",
+    "outdated": true,
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Crashes on startup.",
+            "source": "@jkcoxson",
+            "sourceURL": "https://github.com/jkcoxson",
+            "author": "emiyl",
+            "date": "2022-09-27",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU)",
+            "osVersion": "macOS 12",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

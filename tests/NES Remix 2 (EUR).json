@@ -1,0 +1,33 @@
+{
+    "name": "NES Remix 2",
+    "region": "EUR",
+    "titleID": "0005000010162600",
+    "tests": [
+        {
+            "rating": 4,
+            "comment": "Works fine, with some minor gfx glitches - just sprite flicker.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 3,
+            "comment": "Runs, stable, but timer speeds are wrong so 60 second game completes in one second so cannot play. Luigi Bros plays at about 30% speed.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

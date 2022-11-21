@@ -1,0 +1,33 @@
+{
+    "name": "Internet Browser",
+    "region": "EUR",
+    "titleID": "000500301001220a",
+    "tests": [
+        {
+            "rating": 3,
+            "comment": "Timing bug has been fixed and clock now works normally. You can't view any web pages as network functions are disabled.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-30",
+            "version": "2.0 (3fb4b5e26c0125dda68b3858e8c3d9589244c211)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 3,
+            "comment": "Timing bug causes the clock to move extremely fast. You can't view any web pages as network functions are disabled.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "name": "Zelda Breath of The Wild",
+    "region": "EUR",
+    "titleID": "00050000101c9500",
+    "tests": [
+        {
+            "rating": 3,
+            "comment": "Runs, but many graphical issues as some chests and enemies are invisible. This includes some progression-necessary items, making the game impossible to finish. Average 26-28 FPS on M1 in overworld, 40-50 FPS in shrines.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-11-02",
+            "version": "2.0-10",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 (22A380)",
+            "renderingApi": "Vulkan on MoltenVK v1.2",
+            "log": ""
+        },
+        {
+            "rating": 3,
+            "comment": "Runs, but many textures are missing (chests and some enemies are invisible). Average 12 FPS on M1. Cutscenes now render, meaning you can unlock the first tower, which is necessary to complete the game.",
+            "source": "@xepo99",
+            "sourceURL": "https://github.com/xepo99",
+            "author": "xepo",
+            "date": "2022-10-09",
+            "version": "2.0 (0c9fb3143f491d60959b3f2ca0aa8a04ab38b47c)",
+            "hardware": "MacBook Air (M1, 7-GPU, 16GB)",
+            "osVersion": "macOS 12.6",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 3,
+            "comment": "Runs, but many textures are missing and the game crashes when you play a cutscene. This means you cannot unlock the first tower, which is necessary to complete the game.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-10-1",
+            "version": "2.0 (9541c8ae8556ffd72aab4e9eb092ec45eeceaf22)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "Trace/BPT trap: 5!\nError: signal 5:"
+        },
+        {
+            "rating": 1,
+            "comment": "Crashes instantly, R5G6B5_UNORM_PACK16 not supported.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-30",
+            "version": "2.0 (3fb4b5e26c0125dda68b3858e8c3d9589244c211)",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": "[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat \nVK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat \nVK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat \nVK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat \nVK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat \nVK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat \nVK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: vkCmdCopyBufferToImage(): The \nimage is using Metal format MTLPixelFormatInvalid as a substitute for \nVulkan format VK_FORMAT_R5G6B5_UNORM_PACK16. Since the pixel size is \ndifferent, content for the image cannot be copied to or from a buffer.\n[mvk-error] VK_ERROR_FORMAT_NOT_SUPPORTED: VkFormat \nVK_FORMAT_R5G6B5_UNORM_PACK16 is not supported on this device.\nlibc++abi: terminating with uncaught exception of type std::runtime_error: \nfailed to submit command buffer. Error -11\nAbort trap: 6!\nError: signal 6:\n0   Cemu_release                        0x000000010117b1dd \n_Z20handlerDumpingSignali + 93\n1   libsystem_platform.dylib            0x00007ff80321dc1d _sigtramp + 29\n2   ???                                 0x0000000000000000 0x0 + 0\n3   libsystem_c.dylib                   0x00007ff80313cca5 abort + 123\n4   libc++abi.dylib                     0x00007ff8031ad082 abort_message + \n241\n5   libc++abi.dylib                     0x00007ff80319e225 \n_ZL28demangling_terminate_handlerv + 242\n6   libobjc.A.dylib                     0x00007ff802e9d258 \n_ZL15_objc_terminatev + 104\n7   libc++abi.dylib                     0x00007ff8031ac4a5 \n_ZSt11__terminatePFvvE + 8\n8   libc++abi.dylib                     0x00007ff8031aed05 \n__cxa_get_exception_ptr + 0\n9   libc++abi.dylib                     0x00007ff8031aeccc \n_ZN10__cxxabiv1L22exception_cleanup_funcE19_Unwind_Reason_CodeP17_Unwind_Exception \n+ 0\n10  Cemu_release                        0x0000000100ed6aaa \n_ZN14VulkanRenderer19SubmitCommandBufferEPP13VkSemaphore_TS2_ + 1418\n11  Cemu_release                        0x0000000100e2c5cc \n_Z34LatteRenderTarget_copyToBackbufferP16LatteTextureViewb + 108\n12  Cemu_release                        0x0000000100e1d914 \n_Z25LatteCP_ProcessRingbufferv + 5796\n13  Cemu_release                        0x0000000100e48327 \n_Z17Latte_ThreadEntryv + 743\n14  Cemu_release                        0x0000000100dbbd0c \n_ZNSt3__114__thread_proxyINS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEPFivEEEEEEPvSA_ \n+ 44\n15  libsystem_pthread.dylib             0x00007ff8031f3259 _pthread_start \n+ 125\n16  libsystem_pthread.dylib             0x00007ff8031eec7b thread_start + \n15"
+        }
+    ]
+}

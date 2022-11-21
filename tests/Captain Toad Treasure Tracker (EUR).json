@@ -1,0 +1,46 @@
+{
+    "name": "Captain Toad Treasure Tracker",
+    "region": "EUR",
+    "titleID": "0005000010180700",
+    "tests": [
+        {
+            "rating": 5,
+            "comment": "Works perfectly, 60 FPS on M1 Max.",
+            "source": "@DarkUser89",
+            "sourceURL": "",
+            "author": "DarkUser89",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+            "osVersion": "macOS 12.6 (21G115)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 5,
+            "comment": "Seems to run perfectly.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 9 (22A5358e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 1,
+            "comment": "Splash screen loads, fades to infinite white screen.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "DKC Tropical Freeze",
+    "region": "USA",
+    "titleID": "0005000010137f00",
+    "tests": [
+        {
+            "rating": 5,
+            "comment": "Runs extremely well, around 60 FPS on M1 Mac Mini. Only played through the first level, further testing may be needed.",
+            "source": "@aaSchcolnik",
+            "sourceURL": "https://github.com/aaSchcolnik",
+            "author": "Aaron",
+            "date": "2022-10-21",
+            "version": "2.0-7",
+            "hardware": "Mac Mini (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 12.5",
+            "renderingApi": "Vulkan on MoltenVK v1.2",
+            "log": ""
+        }
+    ]
+}

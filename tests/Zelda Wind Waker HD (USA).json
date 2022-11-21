@@ -1,0 +1,20 @@
+{
+    "name": "Zelda Wind Waker HD",
+    "region": "USA",
+    "titleID": "0005000010143500",
+    "tests": [
+        {
+            "rating": 5,
+            "comment": "Runs great, 40-60FPS in game on M2. No major issues noticed.",
+            "source": "@evelyneee",
+            "sourceURL": "https://github.com/evelyneee",
+            "author": "emiyl",
+            "date": "2022-09-25",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
+            "osVersion": "macOS 12.6 (21G115)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

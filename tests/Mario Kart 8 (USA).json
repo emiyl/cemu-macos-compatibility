@@ -1,0 +1,21 @@
+{
+    "name": "Mario Kart 8",
+    "region": "USA",
+    "titleID": "000500001010ec00",
+    "outdated": true,
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Does not run at all.",
+            "source": "@evelyneee",
+            "sourceURL": "https://github.com/evelyneee",
+            "author": "emiyl",
+            "date": "2022-09-25",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M2, 8-GPU, 16GB)",
+            "osVersion": "macOS 12.6 (21G115)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

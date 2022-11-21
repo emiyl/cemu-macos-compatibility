@@ -1,0 +1,20 @@
+{
+    "name": "Minecraft: Wii U Edition",
+    "region": "EUR",
+    "titleID": "0005000c101d7500",
+    "tests": [
+        {
+            "rating": 5,
+            "comment": "Runs perfect.",
+            "source": "@DarkUser89",
+            "sourceURL": "",
+            "author": "DarkUser89",
+            "date": "2022-10-02",
+            "version": "2.0 (11f6e2b7ee7af5327527301b6612dd520f7eb67d)",
+            "hardware": "Mac Studio (M1 Max, 32 GPU, 32 GB)",
+            "osVersion": "macOS 12.6 (21G115)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

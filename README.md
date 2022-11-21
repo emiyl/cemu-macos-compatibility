@@ -4,25 +4,25 @@ Unofficial list of compatibility with the macOS builds of [Cemu](https://github.
 
 ## Contributing
 
-You can contribute by submitting a PR to edit the `titles.json` file. Each title uses the following format:
+You can contribute by submitting a PR to edit a `.json` file in the `tests/` direction. Each title uses the following format:
 
 ```js
+
 {
-  "0005000010143600": {             // Title ID
-    "name": "Zelda Wind Waker HD",  // Title name
-    "region": "EUR",                // Title region
-    "comment": "Note on any requirements or recommendations to run this title"
-    "tests": [                      // Compatibility test array (this is covered below)
-      {
-        "rating": 4.5,
-        "comment": "...",
-        ...
-      },
-      {
-        ...
-      }
-    ]
-  }
+  "name": "Zelda Wind Waker HD",  // Title name
+  "region": "EUR",                // Title region
+  "titleID": "0005000010143600"   // Title ID
+  "comment": "Note on any requirements or recommendations to run this title"
+  "tests": [                      // Compatibility test array (this is covered below)
+    {
+      "rating": 4.5,
+      "comment": "...",
+      ...
+    },
+    {
+      ...
+    }
+  ]
 }
 ```
 

@@ -148,6 +148,35 @@ async function getCachedEntries() {
 
 getCachedEntries()
 
+function getAllFiles(dirPath, arrayOfFiles) {
+  files = fs.readdirSync(dirPath)
+
+  arrayOfFiles = arrayOfFiles || []
+
+  files.forEach(function(file) {
+    if (fs.statSync(dirPath + "/" + file).isDirectory()) {
+      arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles)
+    } else {
+      arrayOfFiles.push(path.join(dirPath, "/", file))
+    }
+  })
+
+  return arrayOfFiles
+}
+
+const titles = getAllFiles('./tests')
+.filter(file => file.endsWith('.json'))
+.map(x => require(`./${x}`))
+
+let titleObj = {}
+for (const title of titles) {
+  const tid = title.titleID
+  delete title.titleID
+
+  titleObj[tid] = title
+}
+fs.writeFileSync('./titles.json', JSON.stringify(titleObj))
+
 export default defineConfig({
   plugins: [vue(), vueJsx()],
   resolve: {

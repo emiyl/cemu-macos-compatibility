@@ -1,0 +1,20 @@
+{
+    "name": "Mario Tennis: Ultra Smash",
+    "region": "USA",
+    "titleID": "00050000101a3500",
+    "tests": [
+        {
+            "rating": 3,
+            "comment": "It runs, but it is definitely not playable. The screen is cut off diagonally, with the diagonal half top right of the game showing only static shapes.",
+            "source": "@Durocks",
+            "sourceURL": "https://github.com/Durocks",
+            "author": "Durocks",
+            "date": "2022-11-02",
+            "version": "2.0 (c3182aedd9895cd8cde0d02440a22bd5a060b7d4)",
+            "hardware": "MacBook Pro (M1 Pro, 14-GPU, 16GB)",
+            "osVersion": "macOS 13.0 (22A380)",
+            "renderingApi": "Vulkan on MoltenVK v1.2",
+            "log": ""
+        }
+    ]
+}

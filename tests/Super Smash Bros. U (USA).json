@@ -1,0 +1,21 @@
+{
+    "name": "Super Smash Bros. U",
+    "region": "USA",
+    "titleID": "0005000010144f00",
+    "outdated": true,
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Segfaults after trying to play the opening video. Removing the video causes a segfault trying to load a battle.",
+            "source": "@jkcoxson",
+            "sourceURL": "https://github.com/jkcoxson",
+            "author": "emiyl",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU)",
+            "osVersion": "macOS 12",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}

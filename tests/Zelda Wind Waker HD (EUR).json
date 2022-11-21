@@ -1,0 +1,33 @@
+{
+    "name": "Zelda Wind Waker HD",
+    "region": "EUR",
+    "titleID": "0005000010143600",
+    "tests": [
+        {
+            "rating": 5,
+            "comment": "Runs perfectly, no major issues noticed. 20-25FPS in game on M1. Only tested the first 5 minutes of the game but it seems very promising.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-09-25",
+            "version": "2.0-4",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        },
+        {
+            "rating": 5,
+            "comment": "Runs great, 20-30FPS in game on M1. No major issues noticed.",
+            "source": "@JaimieVandenbergh",
+            "sourceURL": "",
+            "author": "Jaimie",
+            "date": "2022-09-28",
+            "version": "2.0-4",
+            "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.0 beta 8 (22A5352e)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}
