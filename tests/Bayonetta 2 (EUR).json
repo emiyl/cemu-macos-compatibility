@@ -2,6 +2,7 @@
     "name": "Bayonetta 2",
     "region": "EUR",
     "titleID": "0005000010172700",
+    "outdated": true,
     "tests": [
         {
             "rating": 4,
