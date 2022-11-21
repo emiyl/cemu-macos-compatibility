@@ -23,10 +23,6 @@ const router = createRouter({
       component: installation
     },
     {
-      path: '/changelog',
-      component: changelog
-    },
-    {
       path: '/latest',
       component: latestCommit
     },

@@ -3,4 +3,5 @@ yarn.lock
 dist
 .DS_Store
 /icons
-cachedReleases.json
+/cachedReleases.json
+/titles.json
