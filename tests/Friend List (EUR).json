@@ -2,6 +2,7 @@
     "name": "Friend List",
     "region": "EUR",
     "titleID": "000500301001520a",
+    "outdated": true,
     "comment": "You must have online files dumped for this to run.",
     "tests": [
         {

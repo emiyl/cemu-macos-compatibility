@@ -2,6 +2,7 @@
     "name": "Internet Browser",
     "region": "EUR",
     "titleID": "000500301001220a",
+    "outdated": true,
     "tests": [
         {
             "rating": 3,

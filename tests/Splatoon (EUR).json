@@ -2,6 +2,7 @@
     "name": "Splatoon",
     "region": "EUR",
     "titleID": "0005000010176a00",
+    "outdated": true,
     "tests": [
         {
             "rating": 3,
