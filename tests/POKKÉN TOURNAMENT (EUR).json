@@ -1,0 +1,20 @@
+{
+    "name": "POKKÉN TOURNAMENT",
+    "region": "EUR",
+    "titleID": "0005000E101DF500",
+    "tests": [
+        {
+            "rating": 1,
+            "comment": "Crashes Instantly",
+            "source": "@wiIIie",
+            "sourceURL": "https://github.com/wiIIie",
+            "author": "wiIIie",
+            "date": "2022-11-26",
+            "version": "2.0-18",
+            "hardware": "Macbook Air (M2, 8GPU, 8GB)",
+            "osVersion": "macOS 13.0.1 (22A400)",
+            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "log": ""
+        }
+    ]
+}
