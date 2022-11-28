@@ -2,6 +2,9 @@
   <h1>Cemu macOS Compatibility</h1>
   <p>Unofficial list of compatibility with the macOS builds of Cemu. <b>Want to contribute?</b> Make a pull request on the <a href="https://github.com/emiyl/cemu-macos-compatibility/tree/main/tests" target="_blank">GitHub repository</a> or contact me on Discord @Emma#1024.</p>
   <p>To run Cemu on macOS, I recommend you follow my <router-link to="/installation">installation guide</router-link>. For troubleshooting and support, please use the #macos channel on the <a href="https://discord.gg/5psYsup" target="_blank">Cemu Discord Server</a>. To discuss macOS Cemu development, there is a dedicated macOS thread under the #cemu_dev_public channel.</p>
+
+  <latestRelease title="Downloads"/>
+
   <h5>Ratings</h5>
   <div class="flexWrapper compatWrapper" style="margin-bottom: 1em;">
     <div

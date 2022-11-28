@@ -9,6 +9,7 @@ import latestCommit from './components/latestCommit.vue'
 import gridItem from './components/gridItem.vue'
 import navbar from './components/navbar.vue'
 import navbarLabel from './components/navbarLabel.vue'
+import latestRelease from './components/latestRelease.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -43,4 +44,5 @@ app
 .component('navbar', navbar)
 .component('navbarLabel', navbarLabel)
 .component('gridItem', gridItem)
+.component('latestRelease', latestRelease)
 .mount('#app')
