@@ -2,8 +2,20 @@
     "name": "Splatoon",
     "region": "EUR",
     "titleID": "0005000010176a00",
-    "outdated": true,
     "tests": [
+        {
+            "rating": 3,
+            "comment": "Significantly less rendering issues than previous test, however I couldn't get online to work.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-11-30",
+            "version": "2.0-a3476c7",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 (22A380)",
+            "renderingApi": "Vulkan on MoltenVK v1.2.0",
+            "log": ""
+        },
         {
             "rating": 3,
             "comment": "Managed to get through the tutorial and a shop in Inkopolis without crashing. Seems promising - however many rendering issues. Network not supported yet so marking this as \"Runs\".",
