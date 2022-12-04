@@ -2,8 +2,20 @@
     "name": "Internet Browser",
     "region": "EUR",
     "titleID": "000500301001220a",
-    "outdated": true,
     "tests": [
+        {
+            "rating": 5,
+            "comment": "Seems to work fine, managed to load Google.",
+            "source": "@emiyl",
+            "sourceURL": "https://github.com/emiyl",
+            "author": "emiyl",
+            "date": "2022-12-04",
+            "version": "2.0-19",
+            "hardware": "MacBook Air (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0 (22A380)",
+            "renderingApi": "Vulkan on MoltenVK v1.2.0",
+            "log": ""
+        },
         {
             "rating": 3,
             "comment": "Timing bug has been fixed and clock now works normally. You can't view any web pages as network functions are disabled.",
