@@ -13,7 +13,7 @@
             "version": "2.0-18",
             "hardware": "Macbook Air (M2, 8GPU, 8GB)",
             "osVersion": "macOS 13.0.1 (22A400)",
-            "renderingApi": "Vulkan on MoltenVK v1.1.11",
+            "renderingApi": "Vulkan on MoltenVK v1.2.0",
             "log": ""
         }
     ]
