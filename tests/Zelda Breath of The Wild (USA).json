@@ -17,6 +17,19 @@
             "log": ""
         },
         {
+            "rating": 4,
+            "comment": "Runs very well at average 32 frames per second with my current hardware and settings. Some few textures are deformed including guardians, divine beasts, and a few others. Everything else works just fine, so you can still beat the game and have a ton of fun. Keep in mind often the game will not boot unless you delete the vulkan shaders cache.",
+            "source": "@Durocks",
+            "sourceURL": "https://github.com/Durocks",
+            "author": "Durocks",
+            "date": "2022-11-22",
+            "version": "2.0-c170973",
+            "hardware": "MacBook Pro (M1 Pro, 14-GPU, 16GB)",
+            "osVersion": "macOS 13.0 (22A380)",
+            "renderingApi": "Vulkan on MoltenVK v1.2",
+            "log": ""
+        },
+        {
             "rating": 3,
             "comment": "Runs very well at average 34 frames per second with my current hardware and settings. Some textures are deformed including guardians, divine beasts, and a few more. Everything else works just fine, so you can still have a ton of fun while you wait for those few bugs to be fixed. Keep in mind often the game will not boot unless you delete the vulkan shaders cache.",
             "source": "@Durocks",
