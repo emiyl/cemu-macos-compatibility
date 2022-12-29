@@ -13,9 +13,9 @@
             "version": "2.0-19",
             "hardware": "MacBook Air 2020 (M1, 7-GPU, 8GB)",
             "osVersion": "macOS 13.0.1",
-            "renderingApi": "Vulkan on MoltenVK v1.2"
+            "renderingApi": "Vulkan on MoltenVK v1.2",
             "log": ""
-        }
+        },
         {
             "rating": 5,
             "comment": "Runs perfectly, no major issues noticed. 20-25FPS in game on M1. Only tested the first 5 minutes of the game but it seems very promising.",
