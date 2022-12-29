@@ -4,6 +4,19 @@
     "titleID": "0005000010143600",
     "tests": [
         {
+            "rating": 3,
+            "comment": "Great start with 20-30FPS, but as soon as any kind of atmospheric event happens, it drops to <10FPS. First noticed with the ashy wind on Dragon Roost Island",
+            "source": "neumotora",
+            "sourceURL": "",
+            "author": "neumotora",
+            "date": "2022-12-11",
+            "version": "2.0-19",
+            "hardware": "MacBook Air 2020 (M1, 7-GPU, 8GB)",
+            "osVersion": "macOS 13.0.1",
+            "renderingApi": "Vulkan on MoltenVK v1.2"
+            "log": ""
+        }
+        {
             "rating": 5,
             "comment": "Runs perfectly, no major issues noticed. 20-25FPS in game on M1. Only tested the first 5 minutes of the game but it seems very promising.",
             "source": "@emiyl",
@@ -27,19 +40,6 @@
             "hardware": "MacBook Pro 13 (M1, 8-GPU, 16GB)",
             "osVersion": "macOS 13.0 beta 8 (22A5352e)",
             "renderingApi": "Vulkan on MoltenVK v1.1.11",
-            "log": ""
-        },
-        {
-            "rating": 3,
-            "comment": "Great start with 20-30FPS, but as soon as any kind of atmospheric event happens, it drops to <10FPS. First noticed with the ashy wind on Dragon Roost Island",
-            "source": "",
-            "sourceURL": "",
-            "author": "neumotora",
-            "date": "2022-12-11",
-            "version": "2.0-19",
-            "hardware": "MacBook Air 2020 (M1, 7-GPU, 8GB)",
-            "osVersion": "macOS 13.0.1",
-            "renderingApi": "Vulkan on MoltenVK v1.2"
             "log": ""
         }
     ]
