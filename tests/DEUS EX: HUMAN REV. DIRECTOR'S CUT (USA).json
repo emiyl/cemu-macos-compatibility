@@ -1,0 +1,20 @@
+{
+    "name": "DEUS EX: HUMAN REV. DIRECTOR'S CUT",
+    "region": "USA",
+    "titleID": "000500001012ba00",
+    "tests": [
+        {
+            "rating": 4,
+            "comment": "Played through the tutorial level. Runs at a stable 30fps, very minor texture flash on NPC noted. Runs at 50–60fps with the 60 fps patch",
+            "source": "@jaydropout",
+            "sourceURL": "https://github.com/jaydropout",
+            "author": "Jay",
+            "date": "2023-01-13",
+            "version": "2.0-25 (experimental)",
+            "hardware": "Macbook Air (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 13.1",
+            "renderingApi": "Vulkan",
+            "log": ""
+        }
+    ]
+}
