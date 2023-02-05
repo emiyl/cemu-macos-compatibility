@@ -1,0 +1,20 @@
+{
+  "name": "Pushmo World",
+  "region": "USA",                
+  "titleID": "0005000010171f00"
+  "tests": [
+      {
+          "rating": 5,
+          "comment": "Played through the first world. Runs at 60 FPS on M1 Macbook Air. Only graphical oddity noted is on shadows that fall on the main character having a blue tint, as if its not blending with the character.",
+          "source": "@jaydropout",
+          "sourceURL": "https://github.com/jaydropout",
+          "author": "Jay",
+          "date": "2023-01-13",
+          "version": "2.0-25 (experimental)",
+          "hardware": "Macbook Air (M1, 8-GPU, 16GB)",
+          "osVersion": "macOS 13.1",
+          "renderingApi": "Vulkan"
+      }
+    ]
+  ]
+}
