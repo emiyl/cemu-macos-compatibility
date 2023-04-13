@@ -2,8 +2,21 @@
     "name": "Pikmin 3",
     "region": "USA",
     "titleID": "000500001012bd00",
-    "outdated": true,
+    "outdated": false,
     "tests": [
+        {
+            "rating": 4,
+            "comment": "Text Based HUD elements flicker and cutscenes jump without transition. Gameplay runs perfect.",
+            "source": "@CoCoPay",
+            "sourceURL": "https://github.com/CoCoPay",
+            "author": "CoCoPay",
+            "date": "2023-04-13",
+            "version": "2.0-32",
+            "hardware": "MacBook Pro (M2 Max, 30 GPU Cores, 32 GB RAM)",
+            "osVersion": "macOS 13.3.1",
+            "renderingApi": "Vulkan on MoltenVK v1.2.3",
+            "log": ""
+        },
         {
             "rating": 1,
             "comment": "Segfaults when playing opening cutscene. If you remove the cutscene, the game is playable.",
