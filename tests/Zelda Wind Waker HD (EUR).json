@@ -5,6 +5,19 @@
     "tests": [
         {
             "rating": 3,
+            "comment": "Stable 30FPS in the Outset Island, Forsaken Fortress <15FPS, and <10FPS on the Pirate Ship and inside Dragon Roost Island. It seems to me that atmospheric effects are the cause.",
+            "source": "objartel",
+            "sourceURL": "",
+            "author": "objartel",
+            "date": "2023-07-30",
+            "version": "2.0-45",
+            "hardware": "MacBook Pro 13 2020 (M1, 8-GPU, 8GB)",
+            "osVersion": "macOS 13.3",
+            "renderingApi": "Vulkan on MoltenVK v1.2 and v1.3.250",
+            "log": ""
+        },
+        {
+            "rating": 3,
             "comment": "Great start with 20-30FPS, but as soon as any kind of atmospheric event happens, it drops to <10FPS. First noticed with the ashy wind on Dragon Roost Island",
             "source": "neumotora",
             "sourceURL": "",
