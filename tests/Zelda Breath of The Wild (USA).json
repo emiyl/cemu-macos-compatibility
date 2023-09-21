@@ -5,6 +5,19 @@
     "tests": [
         {
             "rating": 5,
+            "comment": "Runs perfectly at average 33fps outside and 50fps inside shrines with my current hardware and settings. Completed the game with 100+ shrines and most equipment upgraded. The good news is that the last remaining bug (shader caches loading issue) has been solved in experimental release 0.49 ! Now shader and pipelines load correctly (currently at 20k vulkan pipelines cached) albeit with a downside, as the cached vulkan pipelines now take much longer to load than before (2-3 minutes with 20 000 pipelines). Shader cache loading speed is unaffected. Keep in mind you need to set up the graphical packs correctly to get the best performance (disable fence and vulkan accurate barriers).",
+            "source": "@thibthib17",
+            "sourceURL": "https://github.com/thibthib17",
+            "author": "Thibault",
+            "date": "2023-09-21",
+            "version": "v2.0-49 build 2a735f1",
+            "hardware": "MacPro 4,1 (Xeon W3690, AMD RX580-8GB, 48GB)",
+            "osVersion": "macOS 12.6.9 (21G726)",
+            "renderingApi": "Vulkan on MoltenVK included in cemu v2.0-49",
+            "log": ""
+        },
+        {
+            "rating": 5,
             "comment": "Runs very well at average 32 frames per second with my current hardware and settings. Beating the game is achievable. The biggest bugs have been dealt with. The only big bug missing is often the game will not boot unless you delete the vulkan shaders cache each time. Also keep in mind you need to set up the graphical packs correctly to get the best performance.",
             "source": "@Durocks",
             "sourceURL": "https://github.com/Durocks",
