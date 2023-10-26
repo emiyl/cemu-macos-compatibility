@@ -4,6 +4,19 @@
     "titleID": "0005000010172600",
     "tests": [
         {
+            "rating": 4,
+            "comment": "Runs Well at 1440p 60fps after Applying fix, Has significant Slowdown in Inferno due to one enemy type Dumping the Framerate.",
+            "source": "Zexyen",
+            "sourceURL": "https://github.com/Zexyen",
+            "author": "Zexyen",
+            "date": "2023-10-26",
+            "version": "2.0-59",
+            "hardware": "MacBook Pro (16-inch, M2 Pro)",
+            "osVersion": "macOS 14.0)",
+            "renderingApi": "Vulkan on MoltenVK v1.2",
+            "log": ""
+        },
+        {
             "rating": 5,
             "comment": "Runs very well at 1440p, 60fps. Rendering issues resolved by applying fix.",
             "source": "PekaPete",
@@ -29,5 +42,6 @@
             "renderingApi": "Vulkan on MoltenVK v1.1.11",
             "log": ""
         }
+        
     ]
 }
