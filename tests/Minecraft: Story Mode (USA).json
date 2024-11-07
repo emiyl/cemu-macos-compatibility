@@ -4,6 +4,19 @@
     "titleID": "00050000101e0100",
     "tests": [
         {
+            "rating": 3,
+            "comment": "Game has minor graphical issues, everything renders now.",
+            "source": "aem64",
+            "sourceURL": "https://github.com/aem1024",
+            "author": "Elli",
+            "date": "2024-08-01",
+            "version": "2.0-82",
+            "hardware": "MacBook Air (M1, 8-GPU, 16GB)",
+            "osVersion": "macOS 15.0 Beta (24A5298h)",
+            "renderingApi": "Vulkan on MoltenVK in Cemu 2.0-82",
+            "log": ""
+        },
+        {
             "rating": 2,
             "comment": "Everything but the menus are black.",
             "source": "Aem#1268.",
