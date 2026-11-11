@@ -20,8 +20,8 @@
     </div>
   </div>
 
-  <template v-for="shownRatings in [showRatings.filter(x => x.show).sort((a,b) => b.rating - a.rating)]" :key="shownRatings"><div v-if="shownRatings.length > 0">
-    <template v-for="i in shownRatings" :key="i">
+  <div v-if="shownRatings.length > 0">
+    <template v-for="i in shownRatings" :key="i.rating">
       <div
         :style="{
           'width': getRatingPercentage(i.rating, showRatings.filter(x => !x.show).map(x => x.rating)) * 100 + '%',
@@ -32,20 +32,9 @@
         :class="ratingArr[i.rating-1].name.toLowerCase() + 'Bg'"
       />
     </template>
-  </div></template>
+  </div>
 
-  <template v-for="gridList in [compatList.filter(x => 
-      //showRegions.find(y => y.region == x.region).show && 
-      showRatings.find(y => y.rating == x.tests[0].rating).show 
-    ).sort(function(a,b) {
-      let bool = false
-      if (a.hasOwnProperty(sortBy) && b.hasOwnProperty) bool = a[sortBy] < b[sortBy]
-      else if (a.tests[0].hasOwnProperty(sortBy) && b.tests[0].hasOwnProperty(sortBy)) bool = a.tests[0][sortBy] < b.tests[0][sortBy]
-      
-      var m = (direction) ? -1 : 1
-      return bool ? -1*m : 1*m
-    })]" :key="gridList">
-    <template v-if="gridList.length > 0">
+  <template v-if="gridList.length > 0">
       <h5>Titles</h5>
 
       <div class="flexWrapper searchAndFilterWrapper">
@@ -127,7 +116,6 @@
           </template>
         </div>
       </template>
-    </template>
   </template>
 </template>
 
@@ -215,6 +203,25 @@
             description: 'Title can be played with no issues'
           }
         ]
+      }
+    },
+    computed: {
+      shownRatings() {
+        return this.showRatings.filter(x => x.show).sort((a, b) => b.rating - a.rating)
+      },
+      gridList() {
+        return this.compatList
+          .filter(x => this.showRatings.find(y => y.rating == x.tests[0].rating).show)
+          .sort((a, b) => {
+            let bool = false
+            if (a.hasOwnProperty(this.sortBy) && b.hasOwnProperty) bool = a[this.sortBy] < b[this.sortBy]
+            else if (a.tests[0].hasOwnProperty(this.sortBy) && b.tests[0].hasOwnProperty(this.sortBy)) {
+              bool = a.tests[0][this.sortBy] < b.tests[0][this.sortBy]
+            }
+
+            const multiplier = this.direction ? -1 : 1
+            return bool ? -1 * multiplier : 1 * multiplier
+          })
       }
     },
     methods: {
