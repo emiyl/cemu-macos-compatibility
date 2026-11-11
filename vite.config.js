@@ -166,7 +166,7 @@ function getAllFiles(dirPath, arrayOfFiles) {
 
 const titles = getAllFiles('./tests')
 .filter(file => file.endsWith('.json'))
-.map(x => require(`./${x}`))
+.map(x => JSON.parse(fs.readFileSync(x, 'utf8')))
 
 let titleObj = {}
 for (const title of titles) {

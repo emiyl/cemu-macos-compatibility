@@ -1,3 +1,6 @@
+@use "sass:color";
+@use './vars.scss' as *;
+
 .compatWrapper {
     margin-bottom: 2em;
 }
@@ -60,19 +63,19 @@
 }
 
 .perfectBg {
-    background: mix($perfect, $background);
+    background: color.mix($perfect, $background);
 }
 .playableBg {
-    background: mix($playable, $background);
+    background: color.mix($playable, $background);
 }
 .runsBg {
-    background: mix($runs, $background);
+    background: color.mix($runs, $background);
 }
 .loadsBg {
-    background: mix($loads, $background);
+    background: color.mix($loads, $background);
 }
 .unplayableBg {
-    background: mix($unplayable, $background);
+    background: color.mix($unplayable, $background);
 }
 
 @media (prefers-color-scheme: light) {
@@ -144,19 +147,19 @@
     }
 
     .perfectBg {
-        background: mix($perfect, $dm-background, 70%);
+        background: color.mix($perfect, $dm-background, 70%);
     }
     .playableBg {
-        background: mix($playable, $dm-background, 70%);
+        background: color.mix($playable, $dm-background, 70%);
     }
     .runsBg {
-        background: mix($runs, $dm-background, 70%);
+        background: color.mix($runs, $dm-background, 70%);
     }
     .loadsBg {
-        background: mix($loads, $dm-background, 70%);
+        background: color.mix($loads, $dm-background, 70%);
     }
     .unplayableBg {
-        background: mix($unplayable, $dm-background, 70%);
+        background: color.mix($unplayable, $dm-background, 70%);
     }
 
     .compatItemHidden {

@@ -1,5 +1,7 @@
+@use "sass:color";
+
 @function hexToRGB($hex) {
-    @return red($hex), green($hex), blue($hex);
+    @return color.channel($hex, "red"), color.channel($hex, "green"), color.channel($hex, "blue");
 }
 
 $brand: hsl(189, 80%, 45%);;
@@ -20,22 +22,22 @@ $unplayable: #f44336;
 
 :root {
     --c-brand: #{$brand};
-    --c-brand-hover: #{mix($brand, black, 80%)};
-    --c-navbar-hover: #{mix($brand, black, 80%)};
+    --c-brand-hover: #{color.mix($brand, black, 80%)};
+    --c-navbar-hover: #{color.mix($brand, black, 80%)};
 
     --c-bg: #{$background};
     --c-bg-rgb: #{$background-rgb};
-    --c-bg-light: #{mix($background, black, 99%)};
-    --c-bg-search: #{mix($background, white, 20%)};
-    --c-bg-code: #{mix($background, black, 97%)};
-    --c-bg-navbar-item: #{mix($background, black, 96%)};
+    --c-bg-light: #{color.mix($background, black, 99%)};
+    --c-bg-search: #{color.mix($background, white, 20%)};
+    --c-bg-code: #{color.mix($background, black, 97%)};
+    --c-bg-navbar-item: #{color.mix($background, black, 96%)};
 
     --c-text: #{$text};
-    --c-text-grey: #{rgba($text, .8)};
+    --c-text-grey: #{color.change($text, $alpha: .8)};
     --c-text-code: var(--c-text-grey);
 
-    --c-border: #{mix($text, white, 15%)};
-    --c-border-dark: #{mix($text, white, 10%)};
+    --c-border: #{color.mix($text, white, 15%)};
+    --c-border-dark: #{color.mix($text, white, 10%)};
 
     --c-container-bg: #{$container-background};
     --c-container-border: var(--c-container-bg);
@@ -51,11 +53,11 @@ $unplayable: #f44336;
     --c-loads: #{$loads};
     --c-unplayable: #{$unplayable};
 
-    --c-container-bg-perfect: #{rgba($perfect, .3)};
-    --c-container-bg-playable: #{rgba($playable, .3)};
-    --c-container-bg-runs: #{rgba($runs, .3)};
-    --c-container-bg-loads: #{rgba($loads, .3)};
-    --c-container-bg-unplayable: #{rgba($unplayable, .3)};
+    --c-container-bg-perfect: #{color.change($perfect, $alpha: .3)};
+    --c-container-bg-playable: #{color.change($playable, $alpha: .3)};
+    --c-container-bg-runs: #{color.change($runs, $alpha: .3)};
+    --c-container-bg-loads: #{color.change($loads, $alpha: .3)};
+    --c-container-bg-unplayable: #{color.change($unplayable, $alpha: .3)};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,28 +66,28 @@ $unplayable: #f44336;
 
         --c-bg: #{$dm-background};
         --c-bg-rgb: #{$dm-background-rgb};
-        --c-bg-light: #{mix($dm-background, black, 99%)};
-        --c-bg-lighter: #{mix($dm-container-background, white, 98%)};
+        --c-bg-light: #{color.mix($dm-background, black, 99%)};
+        --c-bg-lighter: #{color.mix($dm-container-background, white, 98%)};
         --c-bg-search: var(--c-bg-code);
-        --c-bg-code: #{mix($dm-background, white, 97%)};
-        --c-bg-navbar-item: #{mix($dm-background, white, 96%)};
+        --c-bg-code: #{color.mix($dm-background, white, 97%)};
+        --c-bg-navbar-item: #{color.mix($dm-background, white, 96%)};
 
         --c-text: #{$dm-text};
-        --c-text-grey: #{rgba($dm-text, .75)};
-        --c-text-code: #{mix($dm-text, black, 85%)};
+        --c-text-grey: #{color.change($dm-text, $alpha: .75)};
+        --c-text-code: #{color.mix($dm-text, black, 85%)};
 
-        --c-border: #{mix($dm-container-background, white, 92%)};
-        --c-border-dark: #{mix($dm-container-background, white, 87%)};
+        --c-border: #{color.mix($dm-container-background, white, 92%)};
+        --c-border-dark: #{color.mix($dm-container-background, white, 87%)};
 
         --c-container-bg: #{$dm-container-background};
         --c-container-border: var(--c-container-bg);
         --shadow: 0;
         --compat-shadow: 0;
 
-        --c-container-bg-perfect: #{rgba($perfect, .6)};
-        --c-container-bg-playable: #{rgba($playable, .6)};
-        --c-container-bg-runs: #{rgba($runs, .6)};
-        --c-container-bg-loads: #{rgba($loads, .6)};
-        --c-container-bg-unplayable: #{rgba($unplayable, .6)};
+        --c-container-bg-perfect: #{color.change($perfect, $alpha: .6)};
+        --c-container-bg-playable: #{color.change($playable, $alpha: .6)};
+        --c-container-bg-runs: #{color.change($runs, $alpha: .6)};
+        --c-container-bg-loads: #{color.change($loads, $alpha: .6)};
+        --c-container-bg-unplayable: #{color.change($unplayable, $alpha: .6)};
     }
 }
