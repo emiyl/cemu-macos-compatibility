@@ -11,9 +11,8 @@
 
     <h1>Troubleshooting</h1>
 
-    <p><b>Flickering or invisible textures:</b> In some games, such as Mario Kart 8 and Bayonetta 2, some textures appear to flicker or not appear. This can be fixed by setting the environment variable <code>MVK_CONFIG_FAST_MATH_ENABLED=0</code> in exchange for a 5-10% performance hit.</p>
-    <p><b>Pipeline failure</b>: Cemu can sometimes fail to create or compile a pipeine cache when using MoltenVK. The best solution to this currently is to delete your existing shader cache, by right-clicking on the title in Cemu and clicking "Remove shader caches".</p>
-    <p><b>No sound:</b> By default, Cemu on macOS sets audio output to 0%, with no audio device set. Go into the audio settings, select an audio device, and turn up the volume.</p>
+    <p><b>Low performance on Apple Silicon:</b> Try running the latest pre-release. At time of writing, the latest stable release is v2.6, which is not compiled for Apple Silicon. The pre-release builds are compiled for ARM processors and include a Metal renderer which will greatly improve performance.</p>
+    <p><b>No sound:</b> Sometimes Cemu on macOS sets audio output to 0%, with no audio device set. Go into the audio settings, select an audio device, and turn up the volume.</p>
     <p><b>DolphinBar Wiimote not recognized:</b> Cemu doesn't fully support DolphinBar, but with mode 3, we can manually map up to 1 Wiimote with SDL directly by setting following environment variable <code>SDL_GAMECONTROLLERCONFIG="03000000790000000318000000010000,Dolphinbar,platform:Mac OS X,a:b8,b:b12,x:b0,y:b4,back:b16,start:b20,leftstick:-a4,rightshoulder:b28,dpup:h0.1,dpdown:h0.4,dpleft:h0.8,dpright:h0.2,leftx:a0,-lefty:+a4,righttrigger:b24,"</code>. After restarting Cemu, your Wiimote will appear in input settings as a SDLController.</p>
 
     <h1>Non-portable paths</h1>
@@ -28,12 +27,28 @@
 
     <p>For more info, and Linux paths, view <a href="https://github.com/cemu-project/Cemu/pull/316" target="_blank">#316</a>.</p>
 
-    <h1>Updating MoltenVK</h1>
+    <!--<h1>Updating MoltenVK</h1>
 
     <p>Cemu is now bundled with the latest version MoltenVK included, so an installation of the library is not required. This does not automatically update however, and you would otherwise need to wait for a new Cemu release to get the latest version.</p>
     <p>If your Cemu application is stored anywhere other that <code>/Applications/Cemu.app</code>, please replace that path with whichever path your bundle is stored at instead in the commands below.</p>
 
     <div class="tab-container">
+        <section>
+            <input id="ARM" type="radio" :checked="cpuType == 'ARM'">
+            <label for="ARM" class="tab-link"  v-on:click="cpuType = 'ARM'">
+                Apple (ARM)
+            </label>
+            <div class="tab tab-last" style="overflow-x: auto;">
+                <ol>
+                    <li>Open the Terminal application</li>
+                    <li>Install brew (if you haven't already) by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
+                    <li>Install moltenvk by running <code>brew install molten-vk</code></li>
+                    <ul><li>Run <code>brew install molten-vk --HEAD</code> to grab the latest commit, but note that this may be unstable</li></ul>
+                    <li>Run <code>mv /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib.bak</code></li>
+                    <li>Run <code>cp /opt/homebrew/lib/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib</code></li>
+                </ol>
+            </div>
+        </section>
         <section>
             <input id="x86" type="radio" :checked="cpuType == 'x86'">
             <label for="x86" class="tab-link" v-on:click="cpuType = 'x86'">
@@ -50,24 +65,7 @@
                 </ol>
             </div>
         </section>
-        <section>
-            <input id="ARM" type="radio" :checked="cpuType == 'ARM'">
-            <label for="ARM" class="tab-link"  v-on:click="cpuType = 'ARM'">
-                Apple (ARM)
-            </label>
-            <div class="tab tab-last" style="overflow-x: auto;">
-                <p style="margin-top: .5em;">To update Cemu's MoltenVK, you must also install the x86 (Intel) versions of brew and moltenvk. This is necessary as Cemu is an x86 app and runs through Rosetta 2. This installation of brew will not conflict with a pre-existing ARM brew installation.</p>
-                <ol>
-                    <li>Open the Terminal application and run <code>arch --x86_64 zsh</code> to enter an x86 shell</li>
-                    <li>Install the x86 version of brew by running <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
-                    <li>Install the x86 version of moltenvk by running <code>/usr/local/Homebrew/bin/brew install molten-vk</code></li>
-                    <ul><li>Run <code>/usr/local/Homebrew/bin/brew install molten-vk --HEAD</code> to grab the latest commit, but note that this may be unstable</li></ul>
-                    <li>Run <code>mv /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib.bak</code></li>
-                    <li>Run <code>cp /usr/local/lib/libMoltenVK.dylib /Applications/Cemu.app/Contents/Frameworks/libMoltenVK.dylib</code></li>
-                </ol>
-            </div>
-        </section>
-    </div>
+    </div>-->
 
     <br>
   </div>
@@ -92,7 +90,7 @@
 export default {
     data() {
         return {
-            cpuType: 'x86'
+            cpuType: 'ARM'
         }
     },
     async created() {
