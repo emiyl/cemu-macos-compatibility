@@ -1,7 +1,7 @@
 <template>
     <h1 id="title">Redirecting...</h1>
 
-    <p><blockquote id="quote">Grabbing latest commit from GitHub API.</blockquote></p>
+    <blockquote id="quote">Grabbing latest commit from GitHub API.</blockquote>
 </template>
 
 <script>
